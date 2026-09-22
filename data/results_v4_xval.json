@@ -1,0 +1,48 @@
+{
+ "n_volumes": 899,
+ "rows": [
+  {
+   "author": "柳宗元",
+   "qt_n": 199,
+   "qt_chars": 15127,
+   "yd_n": 169,
+   "yd_chars": 13561,
+   "qt_net": 0.264,
+   "yd_net": 1.106,
+   "delta": 0.842
+  },
+  {
+   "author": "刘禹锡",
+   "qt_n": 876,
+   "qt_chars": 48300,
+   "yd_n": 703,
+   "yd_chars": 41602,
+   "qt_net": -1.036,
+   "yd_net": -2.019,
+   "delta": -0.983
+  },
+  {
+   "author": "韩愈",
+   "qt_n": 427,
+   "qt_chars": 46997,
+   "yd_n": 372,
+   "yd_chars": 42292,
+   "qt_net": -2.958,
+   "yd_net": -3.121,
+   "delta": -0.163
+  },
+  {
+   "author": "白居易",
+   "qt_n": 2931,
+   "qt_chars": 188914,
+   "yd_n": 2642,
+   "yd_chars": 165216,
+   "qt_net": 2.075,
+   "yd_net": 2.203,
+   "delta": 0.128
+  }
+ ],
+ "mean_abs_delta_net": 0.529,
+ "max_abs_delta_net": 0.983,
+ "cat_corr": 0.9972
+}

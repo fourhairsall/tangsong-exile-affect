@@ -1,0 +1,51 @@
+# --- raw corpora (never committed; fetch with tools/fetch_corpora.py) ---
+data/tang/
+data/songshi/
+data/yuding/
+data/song2/
+data/songchao/
+data/qtw/
+data/qsw/
+data/songbaijia/
+data/songyipu/
+data/yusong/
+data/ci/
+data/prose8/
+data/ci.db
+data/*.db
+data/_agg_cache_*.json
+data/dl_*.pkl
+data/*.npy
+
+# --- LaTeX build artefacts ---
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+texput.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+_venv_torch/
+.venv/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- scratch ---
+_*.txt
+_*.log
+*.bak

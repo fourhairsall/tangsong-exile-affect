@@ -1,0 +1,257 @@
+{
+ "cohort_author_level": {
+  "n_authors": 12,
+  "n_poems": 176,
+  "pearson": 0.7938731672482262,
+  "ci_pearson": [
+   0.45363573895014625,
+   0.9238695161718179
+  ],
+  "spearman": 0.6923076923076924,
+  "ci_spearman": [
+   0.1366906474820144,
+   0.9555555555555556
+  ]
+ },
+ "loo": {
+  "K1_kuang": {
+   "n_authors": 12,
+   "author_spearman_nmi": 0.9720279720279721,
+   "author_pearson_nmi": 0.9612761749415125,
+   "officials": {
+    "柳宗元": {
+     "n": 199,
+     "nmi_base": -1.301,
+     "nmi_var": -2.663,
+     "sign_flip": 0.0
+    },
+    "刘禹锡": {
+     "n": 876,
+     "nmi_base": -1.805,
+     "nmi_var": -3.506,
+     "sign_flip": 0.0
+    },
+    "韩愈": {
+     "n": 427,
+     "nmi_base": -3.395,
+     "nmi_var": -4.233,
+     "sign_flip": 0.0
+    },
+    "白居易": {
+     "n": 2931,
+     "nmi_base": 1.939,
+     "nmi_var": -0.682,
+     "sign_flip": 1.0
+    },
+    "苏轼": {
+     "n": 2824,
+     "nmi_base": 1.105,
+     "nmi_var": -1.058,
+     "sign_flip": 1.0
+    },
+    "欧阳修": {
+     "n": 954,
+     "nmi_base": 0.806,
+     "nmi_var": -1.013,
+     "sign_flip": 1.0
+    },
+    "黄庭坚": {
+     "n": 2204,
+     "nmi_base": 1.564,
+     "nmi_var": -0.26,
+     "sign_flip": 1.0
+    },
+    "秦观": {
+     "n": 468,
+     "nmi_base": -1.794,
+     "nmi_var": -3.143,
+     "sign_flip": 0.0
+    },
+    "王禹偁": {
+     "n": 668,
+     "nmi_base": -1.351,
+     "nmi_var": -3.093,
+     "sign_flip": 0.0
+    },
+    "范仲淹": {
+     "n": 311,
+     "nmi_base": 2.704,
+     "nmi_var": 0.619,
+     "sign_flip": 0.0
+    },
+    "辛弃疾": {
+     "n": 154,
+     "nmi_base": 3.78,
+     "nmi_var": 2.36,
+     "sign_flip": 0.0
+    },
+    "陆游": {
+     "n": 9271,
+     "nmi_base": 0.918,
+     "nmi_var": -2.224,
+     "sign_flip": 1.0
+    }
+   }
+  },
+  "K2_kong": {
+   "n_authors": 12,
+   "author_spearman_nmi": 1.0,
+   "author_pearson_nmi": 1.0,
+   "officials": {
+    "柳宗元": {
+     "n": 199,
+     "nmi_base": -1.301,
+     "nmi_var": -1.301,
+     "sign_flip": 0.0
+    },
+    "刘禹锡": {
+     "n": 876,
+     "nmi_base": -1.805,
+     "nmi_var": -1.805,
+     "sign_flip": 0.0
+    },
+    "韩愈": {
+     "n": 427,
+     "nmi_base": -3.395,
+     "nmi_var": -3.395,
+     "sign_flip": 0.0
+    },
+    "白居易": {
+     "n": 2931,
+     "nmi_base": 1.939,
+     "nmi_var": 1.939,
+     "sign_flip": 0.0
+    },
+    "苏轼": {
+     "n": 2824,
+     "nmi_base": 1.105,
+     "nmi_var": 1.105,
+     "sign_flip": 0.0
+    },
+    "欧阳修": {
+     "n": 954,
+     "nmi_base": 0.806,
+     "nmi_var": 0.806,
+     "sign_flip": 0.0
+    },
+    "黄庭坚": {
+     "n": 2204,
+     "nmi_base": 1.564,
+     "nmi_var": 1.564,
+     "sign_flip": 0.0
+    },
+    "秦观": {
+     "n": 468,
+     "nmi_base": -1.794,
+     "nmi_var": -1.794,
+     "sign_flip": 0.0
+    },
+    "王禹偁": {
+     "n": 668,
+     "nmi_base": -1.351,
+     "nmi_var": -1.351,
+     "sign_flip": 0.0
+    },
+    "范仲淹": {
+     "n": 311,
+     "nmi_base": 2.704,
+     "nmi_var": 2.704,
+     "sign_flip": 0.0
+    },
+    "辛弃疾": {
+     "n": 154,
+     "nmi_base": 3.78,
+     "nmi_var": 3.78,
+     "sign_flip": 0.0
+    },
+    "陆游": {
+     "n": 9271,
+     "nmi_base": 0.918,
+     "nmi_var": 0.918,
+     "sign_flip": 0.0
+    }
+   },
+   "kong_author_spearman": 0.8321678321678322
+  },
+  "K1K2": {
+   "n_authors": 12,
+   "author_spearman_nmi": 0.9720279720279721,
+   "author_pearson_nmi": 0.9612761749415125,
+   "officials": {
+    "柳宗元": {
+     "n": 199,
+     "nmi_base": -1.301,
+     "nmi_var": -2.663,
+     "sign_flip": 0.0
+    },
+    "刘禹锡": {
+     "n": 876,
+     "nmi_base": -1.805,
+     "nmi_var": -3.506,
+     "sign_flip": 0.0
+    },
+    "韩愈": {
+     "n": 427,
+     "nmi_base": -3.395,
+     "nmi_var": -4.233,
+     "sign_flip": 0.0
+    },
+    "白居易": {
+     "n": 2931,
+     "nmi_base": 1.939,
+     "nmi_var": -0.682,
+     "sign_flip": 1.0
+    },
+    "苏轼": {
+     "n": 2824,
+     "nmi_base": 1.105,
+     "nmi_var": -1.058,
+     "sign_flip": 1.0
+    },
+    "欧阳修": {
+     "n": 954,
+     "nmi_base": 0.806,
+     "nmi_var": -1.013,
+     "sign_flip": 1.0
+    },
+    "黄庭坚": {
+     "n": 2204,
+     "nmi_base": 1.564,
+     "nmi_var": -0.26,
+     "sign_flip": 1.0
+    },
+    "秦观": {
+     "n": 468,
+     "nmi_base": -1.794,
+     "nmi_var": -3.143,
+     "sign_flip": 0.0
+    },
+    "王禹偁": {
+     "n": 668,
+     "nmi_base": -1.351,
+     "nmi_var": -3.093,
+     "sign_flip": 0.0
+    },
+    "范仲淹": {
+     "n": 311,
+     "nmi_base": 2.704,
+     "nmi_var": 0.619,
+     "sign_flip": 0.0
+    },
+    "辛弃疾": {
+     "n": 154,
+     "nmi_base": 3.78,
+     "nmi_var": 2.36,
+     "sign_flip": 0.0
+    },
+    "陆游": {
+     "n": 9271,
+     "nmi_base": 0.918,
+     "nmi_var": -2.224,
+     "sign_flip": 1.0
+    }
+   },
+   "kong_author_spearman": 0.8321678321678322
+  }
+ }
+}

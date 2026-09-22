@@ -1,0 +1,389 @@
+{
+  "design": {
+    "n_poems": 160,
+    "n_authors": 77,
+    "coders": 2,
+    "blind": true,
+    "note": "两位专家独立编码同一批诗; 标注员不见词表输出与作者名",
+    "gold_NMI_formula": "mean(Man)-mean(Bei) 两位编码者均值"
+  },
+  "reliability": {
+    "Bei": {
+      "kappa_quadratic_weighted": 0.8081,
+      "krippendorff_alpha_ordinal": 0.9592,
+      "icc_2_1": 0.8091,
+      "mean_A": 1.006,
+      "mean_B": 1.306
+    },
+    "Quan": {
+      "kappa_quadratic_weighted": 0.8784,
+      "krippendorff_alpha_ordinal": 0.9647,
+      "icc_2_1": 0.8791,
+      "mean_A": 0.494,
+      "mean_B": 0.512
+    },
+    "Man": {
+      "kappa_quadratic_weighted": 0.7664,
+      "krippendorff_alpha_ordinal": 0.9434,
+      "icc_2_1": 0.7675,
+      "mean_A": 0.694,
+      "mean_B": 0.938
+    },
+    "Ziran": {
+      "kappa_quadratic_weighted": 0.7202,
+      "krippendorff_alpha_ordinal": 0.9296,
+      "icc_2_1": 0.7214,
+      "mean_A": 1.35,
+      "mean_B": 1.756
+    },
+    "Konghuan": {
+      "kappa_quadratic_weighted": 0.7521,
+      "krippendorff_alpha_ordinal": 0.9361,
+      "icc_2_1": 0.7533,
+      "mean_A": 0.531,
+      "mean_B": 0.725
+    },
+    "NMI_gold": {
+      "icc_2_1": 0.8627,
+      "pearson_A_vs_B": 0.8985,
+      "spearman_A_vs_B": 0.8998
+    }
+  },
+  "criterion_validity": {
+    "rho_lexiconNMI_vs_goldNMI": 0.1409,
+    "ci_cluster_bootstrap": [
+      -0.018,
+      0.312
+    ],
+    "n_bootstrap_reps_used": 8000,
+    "baseline_rho_length_vs_gold": -0.0294,
+    "rho_lexicon_vs_length": 0.1838,
+    "partial_rho_controlling_length": 0.1305,
+    "per_dimension": {
+      "Bei": {
+        "rho": 0.0867,
+        "ci": [
+          -0.091,
+          0.284
+        ],
+        "rho_vs_length_baseline": 0.007
+      },
+      "Quan": {
+        "rho": 0.0132,
+        "ci": [
+          -0.147,
+          0.21
+        ],
+        "rho_vs_length_baseline": 0.058
+      },
+      "Man": {
+        "rho": 0.0929,
+        "ci": [
+          -0.098,
+          0.268
+        ],
+        "rho_vs_length_baseline": -0.046
+      },
+      "Ziran": {
+        "rho": 0.0421,
+        "ci": [
+          -0.118,
+          0.201
+        ],
+        "rho_vs_length_baseline": -0.037
+      },
+      "Konghuan": {
+        "rho": -0.0158,
+        "ci": [
+          -0.193,
+          0.175
+        ],
+        "rho_vs_length_baseline": 0.187
+      }
+    },
+    "affect_only_rho": 0.085,
+    "affect_only_ci": [
+      -0.056,
+      0.248
+    ]
+  },
+  "sensitivity": {
+    "drop_len<28": {
+      "n": 153,
+      "rho": 0.1715,
+      "ci": [
+        0.023,
+        0.345
+      ]
+    },
+    "drop_extreme_nmi": {
+      "n": 146,
+      "rho": 0.1502,
+      "ci": [
+        0.001,
+        0.318
+      ]
+    },
+    "drop_long": {
+      "n": 153,
+      "rho": 0.143,
+      "ci": [
+        -0.013,
+        0.323
+      ]
+    }
+  },
+  "diagnostics": {
+    "distributions": {
+      "Bei": {
+        "gold_mean": 1.156,
+        "gold_sd": 0.879,
+        "gold_share_zero": 0.244,
+        "gold_share_ge2": 0.312,
+        "lexicon_rate_mean": 22.183,
+        "lexicon_rate_sd": 25.623,
+        "lexicon_share_zero": 0.381
+      },
+      "Quan": {
+        "gold_mean": 0.503,
+        "gold_sd": 0.807,
+        "gold_share_zero": 0.637,
+        "gold_share_ge2": 0.119,
+        "lexicon_rate_mean": 9.733,
+        "lexicon_rate_sd": 16.316,
+        "lexicon_share_zero": 0.669
+      },
+      "Man": {
+        "gold_mean": 0.816,
+        "gold_sd": 0.782,
+        "gold_share_zero": 0.356,
+        "gold_share_ge2": 0.125,
+        "lexicon_rate_mean": 11.92,
+        "lexicon_rate_sd": 18.122,
+        "lexicon_share_zero": 0.606
+      },
+      "Ziran": {
+        "gold_mean": 1.553,
+        "gold_sd": 0.847,
+        "gold_share_zero": 0.119,
+        "gold_share_ge2": 0.481,
+        "lexicon_rate_mean": 46.355,
+        "lexicon_rate_sd": 41.436,
+        "lexicon_share_zero": 0.206
+      },
+      "Konghuan": {
+        "gold_mean": 0.628,
+        "gold_sd": 0.744,
+        "gold_share_zero": 0.475,
+        "gold_share_ge2": 0.1,
+        "lexicon_rate_mean": 25.861,
+        "lexicon_rate_sd": 24.737,
+        "lexicon_share_zero": 0.331
+      }
+    },
+    "lexicon_reliability": {
+      "nmi": {
+        "r_half": 0.0488,
+        "reliability_spearman_brown": 0.0931,
+        "n_poems": 160
+      },
+      "悲苦孤寂": {
+        "r_half": -0.0722,
+        "reliability_spearman_brown": -0.1555,
+        "n_poems": 160
+      },
+      "贬谪羁旅": {
+        "r_half": -0.0054,
+        "reliability_spearman_brown": -0.0108,
+        "n_poems": 160
+      },
+      "旷达闲适": {
+        "r_half": 0.1599,
+        "reliability_spearman_brown": 0.2758,
+        "n_poems": 160
+      },
+      "自然山水": {
+        "r_half": 0.1562,
+        "reliability_spearman_brown": 0.2702,
+        "n_poems": 160
+      },
+      "空幻时空": {
+        "r_half": 0.0014,
+        "reliability_spearman_brown": 0.0028,
+        "n_poems": 160
+      }
+    },
+    "attenuation": {
+      "gold_reliability_2coder_mean_NMI": 0.9263,
+      "NMI_raw_rho": 0.1409,
+      "NMI_disattenuated": 0.4797,
+      "affect_raw_rho": 0.085,
+      "affect_disattenuated": 0.2894,
+      "per_dimension": {
+        "Bei": {
+          "rho_raw": 0.0867,
+          "lexicon_reliability": -0.1555,
+          "gold_reliability": 0.8945,
+          "rho_disattenuated": null
+        },
+        "Quan": {
+          "rho_raw": 0.0132,
+          "lexicon_reliability": -0.0108,
+          "gold_reliability": 0.9357,
+          "rho_disattenuated": null
+        },
+        "Man": {
+          "rho_raw": 0.0929,
+          "lexicon_reliability": 0.2758,
+          "gold_reliability": 0.8685,
+          "rho_disattenuated": 0.1898
+        },
+        "Ziran": {
+          "rho_raw": 0.0421,
+          "lexicon_reliability": 0.2702,
+          "gold_reliability": 0.8382,
+          "rho_disattenuated": 0.0885
+        },
+        "Konghuan": {
+          "rho_raw": -0.0158,
+          "lexicon_reliability": 0.0028,
+          "gold_reliability": 0.8593,
+          "rho_disattenuated": -0.3221
+        }
+      }
+    }
+  },
+  "quintile_dose_response": {
+    "rows": [
+      {
+        "quintile": 1,
+        "n": 32,
+        "lexicon_nmi_range": [
+          -107.143,
+          -35.714
+        ],
+        "gold_nmi_mean": -0.422
+      },
+      {
+        "quintile": 2,
+        "n": 32,
+        "lexicon_nmi_range": [
+          -35.714,
+          -17.857
+        ],
+        "gold_nmi_mean": -0.578
+      },
+      {
+        "quintile": 3,
+        "n": 32,
+        "lexicon_nmi_range": [
+          -17.857,
+          0.0
+        ],
+        "gold_nmi_mean": -0.406
+      },
+      {
+        "quintile": 4,
+        "n": 32,
+        "lexicon_nmi_range": [
+          0.0,
+          12.5
+        ],
+        "gold_nmi_mean": -0.547
+      },
+      {
+        "quintile": 5,
+        "n": 32,
+        "lexicon_nmi_range": [
+          12.5,
+          71.429
+        ],
+        "gold_nmi_mean": 0.25
+      }
+    ],
+    "Q5_minus_Q1": 0.672,
+    "Q5_minus_Q1_ci": [
+      -0.123,
+      1.366
+    ],
+    "contains_zero": true,
+    "spearman_across_quintiles": 0.5
+  },
+  "author_level": {
+    "n_authors": 7,
+    "rho": 0.25,
+    "ci": [
+      -0.774,
+      0.957
+    ],
+    "rows": [
+      {
+        "author": "王安石",
+        "n_poems": 3,
+        "lexicon_nmi": 0.0,
+        "gold_nmi": 0.0
+      },
+      {
+        "author": "白居易",
+        "n_poems": 27,
+        "lexicon_nmi": -17.31,
+        "gold_nmi": -0.185
+      },
+      {
+        "author": "刘禹锡",
+        "n_poems": 8,
+        "lexicon_nmi": -11.607,
+        "gold_nmi": -0.188
+      },
+      {
+        "author": "陆游",
+        "n_poems": 17,
+        "lexicon_nmi": -5.917,
+        "gold_nmi": -0.294
+      },
+      {
+        "author": "韩愈",
+        "n_poems": 5,
+        "lexicon_nmi": -17.5,
+        "gold_nmi": -0.6
+      },
+      {
+        "author": "黄庭坚",
+        "n_poems": 8,
+        "lexicon_nmi": -13.114,
+        "gold_nmi": -0.812
+      },
+      {
+        "author": "苏轼",
+        "n_poems": 8,
+        "lexicon_nmi": -8.393,
+        "gold_nmi": -0.938
+      }
+    ]
+  },
+  "author_grouped_cv": {
+    "k_folds": 5,
+    "pearson_mean": -0.041,
+    "pearson_std": 0.1299,
+    "spearman_mean": -0.0761,
+    "spearman_std": 0.1708,
+    "n_test_poems_total": 160
+  },
+  "inpool_outpool_validity": {
+    "inpool": {
+      "n": 80,
+      "rho": 0.0225,
+      "ci_low": -0.184,
+      "ci_high": 0.185,
+      "underpowered": false
+    },
+    "outpool": {
+      "n": 80,
+      "rho": 0.2161,
+      "ci_low": -0.026,
+      "ci_high": 0.445,
+      "underpowered": false
+    },
+    "note": "out-of-pool is the stricter external-validity check"
+  }
+}

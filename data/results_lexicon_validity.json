@@ -1,0 +1,76 @@
+{
+  "corpus": {
+    "n_poems": 21287,
+    "total_chars": 1466827
+  },
+  "category_frequency": {
+    "悲苦孤寂": {
+      "n_entries": 38,
+      "total_hits": 9022,
+      "poems_hit": 6280,
+      "poems_hit_pct": 29.5,
+      "rate_per_1k": 6.151
+    },
+    "贬谪羁旅": {
+      "n_entries": 34,
+      "total_hits": 7023,
+      "poems_hit": 5506,
+      "poems_hit_pct": 25.9,
+      "rate_per_1k": 4.788
+    },
+    "旷达闲适": {
+      "n_entries": 44,
+      "total_hits": 8326,
+      "poems_hit": 5871,
+      "poems_hit_pct": 27.6,
+      "rate_per_1k": 5.676
+    },
+    "自然山水": {
+      "n_entries": 46,
+      "total_hits": 35816,
+      "poems_hit": 15027,
+      "poems_hit_pct": 70.6,
+      "rate_per_1k": 24.417
+    },
+    "空幻时空": {
+      "n_entries": 46,
+      "total_hits": 18720,
+      "poems_hit": 9758,
+      "poems_hit_pct": 45.8,
+      "rate_per_1k": 12.762
+    }
+  },
+  "criterion_validity": {
+    "scholarly_claim": "Yuanhe exiles (Liu Zongyuan, Liu Yuxi, Han Yu) are characterised by 尚永亮 as melancholy/anxious/abandoned",
+    "nmi_ranking_most_bleak_first": [
+      "刘禹锡",
+      "韩愈",
+      "欧阳修",
+      "秦观",
+      "王禹偁",
+      "辛弃疾",
+      "白居易",
+      "范仲淹",
+      "苏轼",
+      "柳宗元",
+      "黄庭坚",
+      "陆游"
+    ],
+    "yuanhe_exiles_in_bleakest_5_of_12": 2,
+    "consistent": false
+  },
+  "nmi_by_author": {
+    "柳宗元": -0.386,
+    "刘禹锡": -2.679,
+    "韩愈": -2.545,
+    "白居易": -0.993,
+    "苏轼": -0.512,
+    "欧阳修": -2.069,
+    "黄庭坚": -0.026,
+    "秦观": -1.932,
+    "王禹偁": -1.439,
+    "范仲淹": -0.581,
+    "辛弃疾": -1.417,
+    "陆游": 0.531
+  }
+}

@@ -1,0 +1,325 @@
+% =============================================================
+%  Supplementary Material for
+%  "Reading the Banished: A Deep-Learning Emotion Analysis of
+%   Tang--Song Exiled Literati"
+%  Repository: https://github.com/fourhairsall/tangsong-exile-affect
+%  Compile: xelatex tangsong_exile_affect_supplement.tex
+% =============================================================
+\documentclass[11pt]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{geometry}
+\geometry{a4paper,margin=1in}
+\setlength{\emergencystretch}{2em}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{natbib}
+\setlength{\bibsep}{0.5ex}
+\bibliographystyle{plainnat}
+\renewcommand{\figurename}{Figure}
+\renewcommand{\tablename}{Table}
+\renewcommand{\refname}{References}
+
+\title{Supplementary Material\\[0.4em]
+\large Reading the Banished: A Deep-Learning Emotion Analysis of
+Tang--Song Exiled Literati}
+\author{Shujiang Tang\\
+Hunan University of Science and Engineering\\
+\texttt{sjtang@huse.edu.cn}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent This supplement carries the material referred to from the main text as
+\emph{Supplementary Material}: the corpus-construction record (App.~A), the
+cross-edition invariant-representation probe (App.~B), and the lexicon, exile
+chronology and gold-annotation protocol (App.~C). It is self-contained and cites the
+main paper only by name.
+
+\section{Corpus Construction: Transcription, Parsing and Attribution}
+\label{app:parse}
+\emph{Yu Xuan Song Shi} survives only as the mandoku plaintext of \emph{Yu Xuan Song
+Jin Yuan Ming Si Chao Shi} (kanripo KR4h0143), in which the 78 Song \emph{juan}
+interleave author registers, prefaces and a handful of Jin/Ming \emph{juan}. We
+parsed every \emph{shi} body line (the lowest-indent text) and attributed it to its
+enclosing author by exact-matching the (simplified) author name against the
+\emph{Quan Song Shi} author registry of 8{,}925 names; this yields 9{,}405 poems by
+660 authors, and \emph{all} 660 match an author present in QSS, confirming the
+parse. \emph{Song Shi Chao} is transcribed the same way: verse is the lowest-indent
+text, each poet's section is anchored on the \emph{ji}-name heading---including the
+上/中/下 continuation headings that carry 欧阳修, 王安石 and 苏轼 across several
+volumes---and the prose biographies that habitually follow those headings are
+discarded rather than counted as verse, since they narrate demotion and transfer and
+would inflate the 贬谪羁旅 and 悲苦孤寂 registers on the anthology side alone. The
+parse anchors 98 poet headings and yields 9{,}612 poems by 76 authors over 829{,}341
+characters of verse, with no unresolved attribution.
+
+Two documented features of this text bear on how the comparison should be read. The
+\emph{Siku} digest records that sixteen of the poets it lists appear here as headings
+without text (``有録無書\ldots 蓋剞劂未竣故竟無完帙也''), and describes the anthology
+as gathering 百家; if exact, this state should yield eighty-four poets with verse,
+and our 76 leave a residue of eight that we neither anchor nor explain away. The
+shortfall affects author \emph{coverage} only: $\delta$ is computed over authors
+present in both sources and is not directly biased by it. The same digest also reports
+that because each poet's section was printed as a separate booklet, copies in
+circulation differ in extent (``所傳之本往往多寡不同'')---the paper's own thesis
+stated by a Qing editor, for ``the edition'' of a selection anthology is not a stable
+object even before measurement begins.
+
+\label{app:attr}
+Attribution---identifying \emph{who} wrote a poem---is a separate question from whether
+the affect measurement is trustworthy, and we keep it out of the main line. The task is
+well studied: Cap-Transformer models for Tang-poet identification \citep{shiziren2022},
+LDA-Transformer mixtures \citep{zhou2021lda}, and imagery-based style separating 柳永
+from 苏轼 \citep{fang2011cld}. We compare three classifiers on identical 85/15
+stratified splits under one fixed seed: a character CNN \citep{kim2014convolutional},
+character $n$-gram TF-IDF with logistic regression, and the same features with a linear
+SVM. Table~\ref{tab:attr} shows the lightweight TF-IDF + SVM \emph{beats} the CNN on
+every task and is more reproducible and GPU-free; the 12-way author task is held back
+by severe class imbalance (minor authors 154--320 poems, major authors 2{,}000+), which
+gives low macro-F1 despite high weighted-F1.
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Attribution: accuracy / macro-F1. Best per row in bold.}
+\label{tab:attr}
+\begin{tabular}{lccc}
+\toprule
+Task & CNN & TF-IDF+LR & TF-IDF+SVM\\
+\midrule
+Author (12) & .624/.271 & .714/.351 & \textbf{.802/.568}\\
+Dynasty (2) & .894/.837 & .895/.808 & \textbf{.936/.898}\\
+Tang prose (4) & .619/.512 & .856/.812 & \textbf{.924/.908}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Cross-Edition Invariant-Representation Probe (M6)}
+\label{app:m6}
+As a probe---not a core claim---we ask whether a \emph{learned} representation could
+hold a poet's affect while shedding edition-specific leakage. We freeze the PPMI--SVD
+character embeddings (100-d, unit-norm), represent each poem by the mean-pool of its
+character vectors, and take the author-mean vector for every author present in
+\emph{both} editions with $\ge$300 characters. Affect is read out as in
+the transmission-robustness analysis of the main paper: project each author vector onto the five lexicon pole directions
+and compute $(A,S)$. We obtain a single linear ``source-invariant'' projector by a
+\emph{closed-form domain-adversarial} solution---train a logistic adversary to predict
+edition from the author-mean vector, then project out its weight direction,
+$g(\mathbf x)=\mathbf x-(\mathbf x\!\cdot\!\mathbf w)\mathbf w$---and apply it to both
+settings.
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{M6 invariant-representation probe. Frozen = identity projector on the
+PPMI--SVD author-mean backbone; M6 = closed-form domain-adversarial projector.
+$A$/$S$ are the concordance coefficients read out from the 5-dim pole projection.
+edAUROC = 5-fold logistic edition predictability (lower is more invariant); varR =
+dimensionwise variance retained by M6 ($1.0$ = none removed).}
+\label{tab:m6}
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{lcccccc}
+\toprule
+Setting & $n$ & Variant & $A$ & $S$ & edAUROC & varR\\
+\midrule
+Tang: QTS vs.\ YD & 363 & frozen & $0.865$ & $1.00$ & $0.536$ & $1.00$\\
+Tang: QTS vs.\ YD & 363 & M6 & $0.981$ & $1.00$ & $0.537$ & $0.69$\\
+\midrule
+Song: QSS vs.\ YXSS & 216 & frozen & $0.900$ & $1.00$ & $0.848$ & $1.00$\\
+Song: QSS vs.\ YXSS & 216 & M6 & $0.980$ & $1.00$ & $0.584$ & $0.49$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+On the Tang same-work pair the edition direction is negligible to begin with (edAUROC
+$0.536$ $\approx$ random), so M6 has almost nothing to remove. On the Song selection
+pair it is large and dominant (frozen edAUROC $0.848$); M6 removes precisely that axis,
+collapsing edition predictability to $0.584$ while retaining all five affect dimensions
+($S{=}1.00$) and raising $A$ from $0.900$ to $0.980$. This is a \emph{probe}: its
+$A$/$S$ values are \emph{not} directly comparable to the cross-edition concordance table of the main paper, and
+its only licensed reading is qualitative---edition information here is a single,
+low-rank, separable direction removable without harming the affect dimensions,
+consistent with the main finding that edition effects act along specific directions
+rather than as diffuse noise.
+
+\section{Lexicon, Chronology and Annotation Protocol}
+\label{app:lexicon}
+The lexicon $\mathcal{L}$ partitions words into five categories; the \emph{full}
+lists are recorded below. Each list mixes single characters with multi-character
+words; all entries are stored in simplified script, consistent with the corpora's
+normalisation (traditional$\to$simplified via OpenCC). The two affective poles
+are marked (A); the thematic
+exile--journey category (A$^\dagger$,
+the named condition rather than a felt affect) is marked separately; the two imagistic
+registers are marked (I).
+
+\smallskip
+\noindent\textbf{悲苦孤寂} \textsc{Bei} (A; sorrow--loneliness):
+悲 伤 愁 怨 苦 孤 寂 独 凄 惨 哀 痛 恨 忧 戚 惘 怆 涕 泪 殇 殁 愍 悴 惸 黯 销 魂 零 萧 雁 砧 捣 吏 灯 店 舫 猿 驿 帆 仆 僮
+断肠 凄凉 寂寥 孤危 憔悴 销魂 悲秋 苦辛 酸辛 辛酸 飘零 飘蓬 断蓬 飞蓬 转蓬
+
+\smallskip
+\noindent\textbf{贬谪羁旅} \textsc{Bian} (A$^\dagger$; exile--journey, the named condition rather than a felt affect):
+贬 谪 迁 逐 流 羁 旅 客 宦 远 荒 蛮 瘴 殊 遐 徼 陬 裔
+去国 天涯 海角 殊方 投荒 远谪 迁客 楚客 南荒 炎荒 瘴江 蛮烟
+
+\smallskip
+\noindent\textbf{旷达闲适} \textsc{Kuang} (A; detached--easeful):
+闲 适 达 旷 豁 放 醉 啸 傲 悠 淡 泊 乐 欣 悦 遣 兀 疏 狂 从 容 恬 静 禅 苔 钓 隐 亭 栽 莲 畦 眠
+旷达 闲适 放达 自适 陶然 悠然 忘机 委运 随遇 达观 适意
+
+\smallskip
+\noindent\textbf{自然山水} \textsc{Zi} (I; nature--landscape):
+山 水 风 月 林 泉 石 竹 松 江 河 湖 海 花 鸟 溪 岩 岚 汀 洲 屿 峰 崖 涧 泽 涯 渚 苹 蓼
+清风 明月 白云 沧浪 烟霞 苇岸 渔樵 桃源 落英 幽篁 暮云 孤云 寒云 春云 秋云 停云 烟云 云霞 云峰 云山
+
+\smallskip
+\noindent\textbf{空幻时空} \textsc{Kong} (I; void--temporality):
+空 幻 梦 影 尘 虚 浮 瞬 逝 昔 古 千 秋 万 须 臾 泡 电 光 隙 驹 阴
+浮生 如梦 梦幻 须臾 万古 古今 今古 泡影 微尘 刹那 弹指 过眼 逆旅 倏忽
+
+\smallskip
+\noindent\textbf{Corpus coverage of the lexicon.}
+Table~\ref{tab:lexfreq} reports how often each category fires on the unified
+\emph{shi} corpus (21{,}287 poems, 1{,}466{,}827 characters). All five categories
+fire frequently and in reasonable balance; 自然山水 is expectedly the most
+frequent, reflecting the centrality of
+landscape in classical verse.
+
+\begin{table}[H]
+\centering\footnotesize
+\caption{Lexicon corpus coverage (unified \emph{shi} layer).}
+\label{tab:lexfreq}
+\begin{tabular}{lrrrr}
+\toprule
+Category & Entries & Hits & Poems hit (\%) & Rate / 1k\\
+\midrule
+悲苦孤寂 Bei & 56 & 18,677 & 10,303 (48.4\%) & 12.73\\
+贬谪羁旅 Bian & 30 & 9,549 & 6,721 (31.6\%) & 6.51\\
+旷达闲适 Kuang & 43 & 19,446 & 11,054 (51.9\%) & 13.26\\
+自然山水 Zi & 49 & 45,254 & 16,478 (77.4\%) & 30.85\\
+空幻时空 Kong & 36 & 26,442 & 13,308 (62.5\%) & 18.03\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent The ABI is
+$\mathrm{ABI}(a)=\phi_{a,\textsc{Kuang}}-\phi_{a,\textsc{Bei}}$
+(Eq.~2).
+
+\begin{sloppypar}
+\noindent The quietist (静禅) register is carried by the 旷达 detached--easeful
+class via 禅/苔/钓/隐/亭/栽/畦/眠; the exile--journey and homesickness registers
+are carried by the 悲苦 sorrow--loneliness class via 驿/帆/舫/店/灯/砧/捣/仆/僮
+(entry counts in \texttt{results\_lexicon\_v2\_curation.json}: 悲苦孤寂
+37$\to$47$\to$56, 旷达闲适 33$\to$43).
+\end{sloppypar}
+
+\label{app:chron}
+None of the four corpora carries per-poem dating metadata (0 of 356{,}714 poems
+across QTS/QSS/YD/YXSS carries a usable year field; the \emph{tags} of the Tang
+files are thematic labels and the \emph{strains} of the Song files are tonal
+patterns), so within-author period assignment required an external chronology
+layer. For each queue official a set of exile events was compiled from the
+standard scholarship (biographies, chronologies, and annotated editions), each
+graded A (histories plus a dated chronology agree), B (scholarly consensus), or C
+(disputed; never merged into A/B). Poems were then attached to periods by two
+routes: internal chronological ordering, verified against anchor poems whose
+dates are certain (for Su Shi the \emph{Quan Song Shi} sequence is chronological
+from its first poem; the Crow-Terrace poem, \emph{First Arriving in Huangzhou},
+\emph{Leaving Huangzhou}, \emph{First Arriving in Huizhou}, the Hainan poems and
+the last poem all fall in strict order; the supplementary block after the final
+poem is not chronological and was marked \emph{unknown}), or poem-level
+attachment from dated annotated editions where the collection is ordered by
+genre rather than by year. A $\pm1$-year buffer around each event boundary is
+excluded from all contrasts. Coverage: Su Shi 473 exile / 995 pre / 860 post
+poems (85\% of his corpus attached at grade A); Bai Juyi 59 / 66 / 18 at grade B
+with a documented genre-selection caveat; the other four officials fell below
+pairing power on attachment (Liu Yuxi 42 exile poems with no separable
+pre/post control; Ouyang Xiu 12; Wang Yucheng 29; Huang Tingjian 4). Attachments, grades and coverage are released in
+the replication package (\texttt{poem\_period\_labels.csv},
+\texttt{exile\_chronology.csv}).
+
+\label{app:goldrep}
+
+\paragraph{Sampling.}
+The gold sample is 160 \emph{shi} poems, 80 per dynasty, drawn by stratified random
+sampling (seed 20260917) over the cross of dynasty, membership in the twelve-poet
+cohort, and whether the poem's lexicon ABI falls above or below the median; within
+each dynasty 60 poems come from the complete collection and 20 from a selection
+anthology, so that the sample spans both transmission regimes and the full range of
+the instrument's output rather than only its middle. Poems are restricted to 20--160
+characters; below 20 characters a per-1{,}000-character rate is meaningless, and
+above 160 characters the burden of close reading per item makes a blind double
+coding impractical. The realised sample covers 78 authors. Coders received the poems
+in a fixed random order with author, title, dynasty, anthology membership and all
+lexicon output withheld, so the coding cannot be anchored on prior reputation.
+
+\paragraph{Instrument and reliability.}
+Each poem is rated on the five categories on a 0--3 ordinal scale (0 = absent, 1 =
+present once incidentally, 2 = clearly present, 3 = dominant), with the category
+definitions of \S\ref{app:lexicon} and two anchor examples per category agreed before
+coding began; both coders rated all 160 poems independently and no disagreement was
+resolved by discussion, so the reliability figures are not inflated by consensus.
+Agreement is reported as quadratic-weighted $\kappa$, ordinal Krippendorff $\alpha$
+and ICC$(2,1)$, and the gold index as the coder mean, exactly as in Eq.~(2).
+
+\paragraph{Why split-half here is contiguous, not odd--even.}
+Per-poem reliability of the lexicon is computed by applying the lexicon separately to
+the first and second half of each poem's characters and reporting the Spearman--Brown
+correction of the resulting correlation. Splitting by alternating characters would
+sever every bigram and every parallel pair (对仗), driving the correlation to zero for
+reasons that have nothing to do with the validity of a word-counting instrument; the
+estimate is therefore conservative in construction and its near-zero value should be
+read as a statement about the sparsity of poem-level word counts, not about the
+lexicon's design. The same caution applies to $|\widehat{\rho}|$: a lexicon that
+fires a handful of times in a 40-character poem cannot be reliable at that unit
+whatever its aggregate behaviour.
+
+\paragraph{Gold-set sensitivity and per-author agreement.}
+Dropping poems shorter than 28 characters ($n{=}150$), dropping the extreme 5\% of
+lexicon scores ($n{=}147$) or dropping the longest poems ($n{=}150$) leaves the
+aggregate correlation at $0.43$, $0.38$ and $0.40$ respectively, each with a 95\%
+CI, confirming the aggregate correlation is not driven by any subset of poems. Per-author
+agreement is weaker: across the ten gold authors with at least three sampled poems the
+agreement is $\rho{=}0.13$ (95\% CI $[-0.55,0.69]$, $n{=}10$), indistinguishable from
+nothing at that sample size; we report it rather than search for the aggregation that
+flatters the instrument. The gold set is confined to \emph{shi}; nothing here licenses
+the analyser for \emph{ci} or prose.
+
+
+\begin{thebibliography}{9}
+\bibitem[Kim(2014)]{kim2014convolutional}
+Y.~Kim.
+\newblock Convolutional neural networks for sentence classification.
+\newblock In \emph{EMNLP}, 2014.
+
+\bibitem[Zhou et al.(2022)]{shiziren2022}
+A.~Zhou, C.~Sang, Y.~Zhang, and M.~Lu.
+\newblock 诗人密码: 唐诗作者身份识别 (The Poet Code: Tang Poetry Authorship
+Identification).
+\newblock \emph{Journal of Chinese Information Processing
+(中文信息学报)}, 36(6):162--170, 2022. DOI: 10.3969/j.issn.1003-0077.2022.06.017.
+
+\bibitem[Zhou et al.(2021)]{zhou2021lda}
+A.~Zhou, Y.~Zhang, H.~Wei, and M.~Lu.
+\newblock LDA-Transformer Model in Chinese Poetry Authorship Attribution.
+\newblock In \emph{Information Retrieval: 27th China Conference, CCIR 2021,
+Dalian, China, October 29--31, 2021, Proceedings (LNCS, vol.~13026)}, pages
+59--73. Springer, 2021. DOI: 10.1007/978-3-030-88189-4\_5.
+
+\bibitem[Fang(2011)]{fang2011cld}
+A.~C.~Fang, W.-y.~Li, and J.~Cao.
+\newblock In search of poetic discourse of classical Chinese poetry: an
+  imagery-based stylistic analysis of Liu Yong and Su Shi.
+\newblock \emph{Chinese Language and Discourse}, 2(2):232--249, 2011.
+  John Benjamins. DOI: 10.1075/cld.2.2.04fan.
+\end{thebibliography}
+
+\end{document}

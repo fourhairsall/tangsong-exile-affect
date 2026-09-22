@@ -1,0 +1,847 @@
+{
+  "method": "within-author paired period contrast on the M1 lexicon; rates per 1000 chars; stratified bootstrap (strata = 100-poem chronological bins, seed 20260918, B=10000); period boundaries are 陈善本 event anchors (乌台狱995/初到黄州1022/别黄州1190/初到惠州2003/吾谪海南2161/渡海2294/答径山琳长老2386)",
+  "join_verification": {
+    "su": {
+      "matched": 2824,
+      "head_mismatch": 0,
+      "missing": 0
+    },
+    "bai": {
+      "matched": 2931,
+      "head_mismatch": 0,
+      "missing": 0
+    }
+  },
+  "su_shi": {
+    "segment_counts": {
+      "null": 496,
+      "exile_B_suppl": 17,
+      "pre": 995,
+      "儋州": 131,
+      "北归": 90,
+      "惠州": 157,
+      "汝州元祐": 770,
+      "黄州": 168
+    },
+    "period_curve": {
+      "pre": {
+        "n_poems": 995,
+        "chars_mean": 82172.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 12.709,
+            "ci95": [
+              11.802,
+              13.616
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 6.875,
+            "ci95": [
+              6.289,
+              7.503
+            ]
+          },
+          "旷达闲适": {
+            "rate": 12.075,
+            "ci95": [
+              11.249,
+              12.935
+            ]
+          },
+          "自然山水": {
+            "rate": 33.959,
+            "ci95": [
+              32.168,
+              35.814
+            ]
+          },
+          "空幻时空": {
+            "rate": 19.67,
+            "ci95": [
+              18.666,
+              20.71
+            ]
+          },
+          "NMI": {
+            "rate": -0.634,
+            "ci95": [
+              -1.846,
+              0.586
+            ]
+          }
+        }
+      },
+      "黄州": {
+        "n_poems": 168,
+        "chars_mean": 14125.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 12.337,
+            "ci95": [
+              10.364,
+              14.505
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 7.868,
+            "ci95": [
+              6.435,
+              9.402
+            ]
+          },
+          "旷达闲适": {
+            "rate": 9.059,
+            "ci95": [
+              7.597,
+              10.573
+            ]
+          },
+          "自然山水": {
+            "rate": 31.964,
+            "ci95": [
+              27.974,
+              36.131
+            ]
+          },
+          "空幻时空": {
+            "rate": 18.419,
+            "ci95": [
+              16.113,
+              20.744
+            ]
+          },
+          "NMI": {
+            "rate": -3.277,
+            "ci95": [
+              -5.897,
+              -0.806
+            ]
+          }
+        }
+      },
+      "汝州元祐": {
+        "n_poems": 770,
+        "chars_mean": 58456.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 9.633,
+            "ci95": [
+              8.81,
+              10.501
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 5.564,
+            "ci95": [
+              4.939,
+              6.187
+            ]
+          },
+          "旷达闲适": {
+            "rate": 11.056,
+            "ci95": [
+              10.094,
+              12.048
+            ]
+          },
+          "自然山水": {
+            "rate": 33.664,
+            "ci95": [
+              31.696,
+              35.671
+            ]
+          },
+          "空幻时空": {
+            "rate": 20.309,
+            "ci95": [
+              19.101,
+              21.558
+            ]
+          },
+          "NMI": {
+            "rate": 1.423,
+            "ci95": [
+              0.118,
+              2.757
+            ]
+          }
+        }
+      },
+      "惠州": {
+        "n_poems": 157,
+        "chars_mean": 13619.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 10.721,
+            "ci95": [
+              8.774,
+              12.751
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 8.515,
+            "ci95": [
+              7.032,
+              10.079
+            ]
+          },
+          "旷达闲适": {
+            "rate": 11.312,
+            "ci95": [
+              9.325,
+              13.456
+            ]
+          },
+          "自然山水": {
+            "rate": 32.455,
+            "ci95": [
+              28.642,
+              36.382
+            ]
+          },
+          "空幻时空": {
+            "rate": 19.333,
+            "ci95": [
+              17.099,
+              21.676
+            ]
+          },
+          "NMI": {
+            "rate": 0.591,
+            "ci95": [
+              -2.335,
+              3.537
+            ]
+          }
+        }
+      },
+      "儋州": {
+        "n_poems": 131,
+        "chars_mean": 10749.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 10.622,
+            "ci95": [
+              8.653,
+              12.845
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 6.891,
+            "ci95": [
+              5.364,
+              8.531
+            ]
+          },
+          "旷达闲适": {
+            "rate": 13.409,
+            "ci95": [
+              11.258,
+              15.658
+            ]
+          },
+          "自然山水": {
+            "rate": 24.784,
+            "ci95": [
+              21.48,
+              28.249
+            ]
+          },
+          "空幻时空": {
+            "rate": 16.212,
+            "ci95": [
+              13.727,
+              18.815
+            ]
+          },
+          "NMI": {
+            "rate": 2.787,
+            "ci95": [
+              -0.194,
+              5.704
+            ]
+          }
+        }
+      },
+      "北归": {
+        "n_poems": 90,
+        "chars_mean": 6608.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 9.397,
+            "ci95": [
+              7.014,
+              12.064
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 7.309,
+            "ci95": [
+              5.127,
+              9.772
+            ]
+          },
+          "旷达闲适": {
+            "rate": 11.518,
+            "ci95": [
+              8.987,
+              14.3
+            ]
+          },
+          "自然山水": {
+            "rate": 31.99,
+            "ci95": [
+              26.049,
+              38.339
+            ]
+          },
+          "空幻时空": {
+            "rate": 20.644,
+            "ci95": [
+              17.18,
+              24.354
+            ]
+          },
+          "NMI": {
+            "rate": 2.121,
+            "ci95": [
+              -1.755,
+              6.037
+            ]
+          }
+        }
+      },
+      "exile_B_suppl": {
+        "n_poems": 17,
+        "chars_mean": 624.0,
+        "rates": {
+          "悲苦孤寂": {
+            "rate": 15.909,
+            "ci95": [
+              6.579,
+              25.915
+            ]
+          },
+          "贬谪羁旅": {
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "旷达闲适": {
+            "rate": 12.769,
+            "ci95": [
+              7.622,
+              17.857
+            ]
+          },
+          "自然山水": {
+            "rate": 43.169,
+            "ci95": [
+              27.778,
+              62.5
+            ]
+          },
+          "空幻时空": {
+            "rate": 22.407,
+            "ci95": [
+              15.625,
+              29.514
+            ]
+          },
+          "NMI": {
+            "rate": -3.14,
+            "ci95": [
+              -13.72,
+              7.818
+            ]
+          }
+        }
+      }
+    },
+    "main_diff_exile_vs_prepost": {
+      "exile_chars_mean": 39118.0,
+      "control_chars_mean": 147236.0,
+      "悲苦孤寂": {
+        "exile_rate": 11.355,
+        "control_rate": 11.338,
+        "diff": 0.017,
+        "ci95": [
+          -1.302,
+          1.348
+        ],
+        "ci_excludes_zero": false
+      },
+      "贬谪羁旅": {
+        "exile_rate": 7.697,
+        "control_rate": 6.373,
+        "diff": 1.324,
+        "ci95": [
+          0.387,
+          2.296
+        ],
+        "ci_excludes_zero": true
+      },
+      "旷达闲适": {
+        "exile_rate": 11.098,
+        "control_rate": 11.644,
+        "diff": -0.546,
+        "ci95": [
+          -1.776,
+          0.723
+        ],
+        "ci_excludes_zero": false
+      },
+      "自然山水": {
+        "exile_rate": 30.334,
+        "control_rate": 33.749,
+        "diff": -3.415,
+        "ci95": [
+          -5.961,
+          -0.805
+        ],
+        "ci_excludes_zero": true
+      },
+      "空幻时空": {
+        "exile_rate": 18.19,
+        "control_rate": 19.966,
+        "diff": -1.776,
+        "ci95": [
+          -3.316,
+          -0.22
+        ],
+        "ci_excludes_zero": true
+      },
+      "NMI": {
+        "exile_rate": -0.257,
+        "control_rate": 0.306,
+        "diff": -0.563,
+        "ci95": [
+          -2.365,
+          1.247
+        ],
+        "ci_excludes_zero": false,
+        "boot_p_two_sided": 0.5466
+      }
+    },
+    "a_grade_only_diff": {
+      "exile_chars_mean": 38494.0,
+      "control_chars_mean": 147236.0,
+      "悲苦孤寂": {
+        "exile_rate": 11.279,
+        "control_rate": 11.338,
+        "diff": -0.059,
+        "ci95": [
+          -1.379,
+          1.295
+        ],
+        "ci_excludes_zero": false
+      },
+      "贬谪羁旅": {
+        "exile_rate": 7.822,
+        "control_rate": 6.373,
+        "diff": 1.449,
+        "ci95": [
+          0.5,
+          2.432
+        ],
+        "ci_excludes_zero": true
+      },
+      "旷达闲适": {
+        "exile_rate": 11.07,
+        "control_rate": 11.644,
+        "diff": -0.574,
+        "ci95": [
+          -1.819,
+          0.711
+        ],
+        "ci_excludes_zero": false
+      },
+      "自然山水": {
+        "exile_rate": 30.126,
+        "control_rate": 33.749,
+        "diff": -3.623,
+        "ci95": [
+          -6.163,
+          -1.007
+        ],
+        "ci_excludes_zero": true
+      },
+      "空幻时空": {
+        "exile_rate": 18.121,
+        "control_rate": 19.966,
+        "diff": -1.844,
+        "ci95": [
+          -3.41,
+          -0.271
+        ],
+        "ci_excludes_zero": true
+      },
+      "NMI": {
+        "exile_rate": -0.209,
+        "control_rate": 0.306,
+        "diff": -0.515,
+        "ci95": [
+          -2.338,
+          1.309
+        ],
+        "ci_excludes_zero": false,
+        "boot_p_two_sided": 0.5814
+      }
+    },
+    "dose_response": {
+      "design": "黄州 sev=2 → 惠州 sev=3 → 儋州 sev=4 (exile_chronology.csv severity_grade)",
+      "per_period": {
+        "黄州": {
+          "severity": 2,
+          "NMI": {
+            "rate": -3.277,
+            "ci95": [
+              -5.897,
+              -0.806
+            ]
+          }
+        },
+        "惠州": {
+          "severity": 3,
+          "NMI": {
+            "rate": 0.591,
+            "ci95": [
+              -2.335,
+              3.537
+            ]
+          }
+        },
+        "儋州": {
+          "severity": 4,
+          "NMI": {
+            "rate": 2.787,
+            "ci95": [
+              -0.194,
+              5.704
+            ]
+          }
+        }
+      },
+      "weighted_linear_slope_per_grade": {
+        "point": 3.072,
+        "ci95": [
+          1.107,
+          4.999
+        ],
+        "boot_p_two_sided": 0.0026
+      },
+      "spearman_trend_across_3_periods": {
+        "rho": 1.0,
+        "ci95": [
+          0.5,
+          1.0
+        ],
+        "note": "n=3 期, 把握度极低, 仅作方向参考"
+      },
+      "monotonic_in_point_estimates": true
+    },
+    "robustness": {
+      "a_only_diff_NMI": {
+        "exile_rate": -0.209,
+        "control_rate": 0.306,
+        "diff": -0.515,
+        "ci95": [
+          -2.338,
+          1.309
+        ],
+        "ci_excludes_zero": false,
+        "boot_p_two_sided": 0.5814
+      },
+      "drop_poems_under_40chars": {
+        "n_dropped": 633,
+        "diff": {
+          "悲苦孤寂": {
+            "exile_rate": 11.153,
+            "control_rate": 11.547,
+            "diff": -0.394,
+            "ci95": [
+              -1.731,
+              0.991
+            ],
+            "ci_excludes_zero": false
+          },
+          "贬谪羁旅": {
+            "exile_rate": 7.816,
+            "control_rate": 6.473,
+            "diff": 1.343,
+            "ci95": [
+              0.325,
+              2.399
+            ],
+            "ci_excludes_zero": true
+          },
+          "旷达闲适": {
+            "exile_rate": 11.103,
+            "control_rate": 11.469,
+            "diff": -0.366,
+            "ci95": [
+              -1.632,
+              0.946
+            ],
+            "ci_excludes_zero": false
+          },
+          "自然山水": {
+            "exile_rate": 29.453,
+            "control_rate": 32.375,
+            "diff": -2.921,
+            "ci95": [
+              -5.524,
+              -0.242
+            ],
+            "ci_excludes_zero": true
+          },
+          "空幻时空": {
+            "exile_rate": 18.144,
+            "control_rate": 19.75,
+            "diff": -1.606,
+            "ci95": [
+              -3.195,
+              -0.017
+            ],
+            "ci_excludes_zero": true
+          },
+          "NMI": {
+            "exile_rate": -0.051,
+            "control_rate": -0.079,
+            "diff": 0.028,
+            "ci95": [
+              -1.851,
+              1.873
+            ],
+            "ci_excludes_zero": false,
+            "boot_p_two_sided": 0.974
+          }
+        }
+      },
+      "buffer_tier0_nearest_reassign": {
+        "悲苦孤寂": {
+          "exile_rate": 11.066,
+          "control_rate": 11.357,
+          "diff": -0.291,
+          "ci95": [
+            -1.559,
+            0.985
+          ],
+          "ci_excludes_zero": false
+        },
+        "贬谪羁旅": {
+          "exile_rate": 7.678,
+          "control_rate": 6.393,
+          "diff": 1.285,
+          "ci95": [
+            0.351,
+            2.229
+          ],
+          "ci_excludes_zero": true
+        },
+        "旷达闲适": {
+          "exile_rate": 11.04,
+          "control_rate": 11.575,
+          "diff": -0.536,
+          "ci95": [
+            -1.713,
+            0.668
+          ],
+          "ci_excludes_zero": false
+        },
+        "自然山水": {
+          "exile_rate": 30.629,
+          "control_rate": 33.894,
+          "diff": -3.265,
+          "ci95": [
+            -5.775,
+            -0.754
+          ],
+          "ci_excludes_zero": true
+        },
+        "空幻时空": {
+          "exile_rate": 18.162,
+          "control_rate": 19.953,
+          "diff": -1.791,
+          "ci95": [
+            -3.278,
+            -0.284
+          ],
+          "ci_excludes_zero": true
+        },
+        "NMI": {
+          "exile_rate": -0.026,
+          "control_rate": 0.218,
+          "diff": -0.244,
+          "ci95": [
+            -1.977,
+            1.485
+          ],
+          "ci_excludes_zero": false,
+          "boot_p_two_sided": 0.7812
+        }
+      },
+      "buffer_tier2_exclude_within_2seqyears": {
+        "n_extra_dropped": 869,
+        "surviving_n_per_seg": {
+          "pre": 75759,
+          "黄州": 631,
+          "汝州元祐": 37886,
+          "惠州": 0,
+          "儋州": 0,
+          "北归": 0
+        },
+        "diff": {
+          "悲苦孤寂": {
+            "exile_rate": 17.416,
+            "control_rate": 11.61,
+            "diff": 5.805,
+            "ci95": [
+              -2.44,
+              15.151
+            ],
+            "ci_excludes_zero": false
+          },
+          "贬谪羁旅": {
+            "exile_rate": 4.618,
+            "control_rate": 6.503,
+            "diff": -1.885,
+            "ci95": [
+              -4.931,
+              1.607
+            ],
+            "ci_excludes_zero": false
+          },
+          "旷达闲适": {
+            "exile_rate": 4.834,
+            "control_rate": 11.828,
+            "diff": -6.994,
+            "ci95": [
+              -11.666,
+              -1.204
+            ],
+            "ci_excludes_zero": true
+          },
+          "自然山水": {
+            "exile_rate": 28.752,
+            "control_rate": 33.807,
+            "diff": -5.056,
+            "ci95": [
+              -17.745,
+              10.229
+            ],
+            "ci_excludes_zero": false
+          },
+          "空幻时空": {
+            "exile_rate": 18.982,
+            "control_rate": 19.693,
+            "diff": -0.711,
+            "ci95": [
+              -9.106,
+              7.926
+            ],
+            "ci_excludes_zero": false
+          },
+          "NMI": {
+            "exile_rate": -12.582,
+            "control_rate": 0.217,
+            "diff": -12.799,
+            "ci95": [
+              -21.977,
+              -2.71
+            ],
+            "ci_excludes_zero": true,
+            "boot_p_two_sided": 0.0116
+          }
+        }
+      },
+      "note": "tier1=主分析(剔除 CSV boundary_buffer 76 首); tier0=缓冲诗按编年序就近归期; tier2=在 tier1 基础上再剔除距任一事件边界 <2 序列年(锚点线性插值)的诗"
+    }
+  },
+  "bai_juyi_conditional": {
+    "grade": "B (条件性佐证)",
+    "groups": {
+      "exile": {
+        "n": 59
+      },
+      "nonexile_merged": {
+        "n": 84
+      }
+    },
+    "diff_exile_vs_merged_nonexile": {
+      "exile_chars_mean": 5537.0,
+      "control_chars_mean": 14637.0,
+      "悲苦孤寂": {
+        "exile_rate": 11.178,
+        "control_rate": 12.106,
+        "diff": -0.928,
+        "ci95": [
+          -4.624,
+          2.613
+        ],
+        "ci_excludes_zero": false
+      },
+      "贬谪羁旅": {
+        "exile_rate": 7.959,
+        "control_rate": 4.299,
+        "diff": 3.659,
+        "ci95": [
+          0.832,
+          6.543
+        ],
+        "ci_excludes_zero": true
+      },
+      "旷达闲适": {
+        "exile_rate": 11.583,
+        "control_rate": 7.992,
+        "diff": 3.591,
+        "ci95": [
+          0.522,
+          6.658
+        ],
+        "ci_excludes_zero": true
+      },
+      "自然山水": {
+        "exile_rate": 45.319,
+        "control_rate": 20.982,
+        "diff": 24.338,
+        "ci95": [
+          17.082,
+          32.507
+        ],
+        "ci_excludes_zero": true
+      },
+      "空幻时空": {
+        "exile_rate": 14.254,
+        "control_rate": 13.732,
+        "diff": 0.523,
+        "ci95": [
+          -2.506,
+          3.451
+        ],
+        "ci_excludes_zero": false
+      },
+      "NMI": {
+        "exile_rate": 0.405,
+        "control_rate": -4.115,
+        "diff": 4.52,
+        "ci95": [
+          -0.221,
+          9.625
+        ],
+        "ci_excludes_zero": false,
+        "boot_p_two_sided": 0.0658
+      }
+    },
+    "selection_bias": "pre 组 66 首中 50 首为新乐府讽谕诗(元和初谏官期, 陈善本裁定), 讽谕诗本身高悲苦/贬谪语汇, 故非贬期对照被系统性拉向'忧愤'; 因此白居易结果只作条件性佐证, 不分 pre/post、不进剂量梯度",
+    "no_dose_gradient": true
+  },
+  "others_not_run": {
+    "柳宗元": "贬前存诗不足, 无法作者内配对",
+    "黄庭坚": "逐诗分期实测样本极少(4首)且实测试点推翻编年挂接, 不跑",
+    "欧阳修/王禹偁": "exile 样本 12/29 首, 达不到配对功效, 按裁决不跑"
+  }
+}

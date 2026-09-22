@@ -1,0 +1,107 @@
+{
+ "p2_12_per_category": {
+  "悲苦孤寂": {
+   "pearson": 0.576,
+   "spearman": 0.571
+  },
+  "贬谪羁旅": {
+   "pearson": 0.336,
+   "spearman": 0.214
+  },
+  "旷达闲适": {
+   "pearson": -0.035,
+   "spearman": 0.321
+  },
+  "自然山水": {
+   "pearson": 0.366,
+   "spearman": 0.286
+  },
+  "空幻时空": {
+   "pearson": 0.893,
+   "spearman": 0.75
+  }
+ },
+ "p2_12_lowrank_top1_cosine": -0.634,
+ "p2_12_overlap_authors": [
+  "苏轼",
+  "欧阳修",
+  "黄庭坚",
+  "秦观",
+  "王禹偁",
+  "范仲淹",
+  "陆游"
+ ],
+ "p2_11_lda_topics": [
+  {
+   "id": 0,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 1,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 2,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 3,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "贬谪羁旅"
+  },
+  {
+   "id": 4,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "自然山水"
+  },
+  {
+   "id": 5,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 6,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 7,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 8,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  },
+  {
+   "id": 9,
+   "valence_seed": 0,
+   "bei_overlap": 0.0,
+   "kuang_overlap": 0.0,
+   "best_cat": "悲苦孤寂"
+  }
+ ],
+ "p2_11_max_bei_kuang_overlap_div": 0.0
+}

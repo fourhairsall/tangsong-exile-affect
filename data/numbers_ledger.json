@@ -1,0 +1,3639 @@
+{
+ "shi_poems_total": {
+  "value": 21287,
+  "source": "results_v4.json",
+  "key": "meta.corpus_sizes.shi_total"
+ },
+ "ci_total": {
+  "value": 1665,
+  "source": "results_v4.json",
+  "key": "meta.corpus_sizes.ci_total"
+ },
+ "tangwen_essays_total": {
+  "value": 1854,
+  "source": "results_v4.json",
+  "key": "meta.corpus_sizes.tangwen_total_essays"
+ },
+ "tangwen_chars_total": {
+  "value": 577878,
+  "source": "results_v4.json",
+  "key": "meta.corpus_sizes.tangwen_total_chars"
+ },
+ "dl_reg_metrics": {
+  "value": {
+   "pool_size": 20912,
+   "vocab_size": 7657,
+   "test_MAE": 7.314016819000244,
+   "test_RMSE": 10.544622878760219,
+   "test_Pearson_r": 0.93147394810351,
+   "test_Spearman_rho": 0.9124217051086205
+  },
+  "source": "results_v4.json",
+  "key": "meta.dl_reg"
+ },
+ "attr_author_acc": {
+  "value": 0.6236693800876644,
+  "source": "results_v4.json",
+  "key": "meta.attr_author.accuracy"
+ },
+ "attr_author_macroF1": {
+  "value": 0.2708449383572968,
+  "source": "results_v4.json",
+  "key": "meta.attr_author.macro_F1"
+ },
+ "attr_dynasty_acc": {
+  "value": 0.8935170685875352,
+  "source": "results_v4.json",
+  "key": "meta.attr_dynasty.accuracy"
+ },
+ "attr_dynasty_macroF1": {
+  "value": 0.8374728876954751,
+  "source": "results_v4.json",
+  "key": "meta.attr_dynasty.macro_F1"
+ },
+ "attr_prose_acc": {
+  "value": 0.6187050359712231,
+  "source": "results_v4.json",
+  "key": "meta.attr_prose.accuracy"
+ },
+ "attr_prose_macroF1": {
+  "value": 0.5121842702931332,
+  "source": "results_v4.json",
+  "key": "meta.attr_prose.macro_F1"
+ },
+ "nmi_by_author": {
+  "value": {
+   "柳宗元": 0.264,
+   "刘禹锡": -1.036,
+   "韩愈": -2.958,
+   "白居易": 2.075,
+   "苏轼": 0.476,
+   "欧阳修": -0.205,
+   "黄庭坚": 1.575,
+   "秦观": -2.471,
+   "王禹偁": -1.154,
+   "范仲淹": 3.954,
+   "辛弃疾": 4.923,
+   "陆游": 0.659
+  },
+  "source": "results_v4.json",
+  "key": "shi_stat[*].净心指数"
+ },
+ "method_compare": {
+  "value": {
+   "authors": [
+    "柳宗元",
+    "刘禹锡",
+    "韩愈",
+    "白居易",
+    "苏轼",
+    "欧阳修",
+    "黄庭坚",
+    "秦观",
+    "王禹偁",
+    "范仲淹",
+    "辛弃疾",
+    "陆游"
+   ],
+   "M1_lexicon": {
+    "柳宗元": 0.221,
+    "刘禹锡": -0.881,
+    "韩愈": -2.491,
+    "白居易": 1.762,
+    "苏轼": 0.407,
+    "欧阳修": -0.175,
+    "黄庭坚": 1.344,
+    "秦观": -2.113,
+    "王禹偁": -0.982,
+    "范仲淹": 3.354,
+    "辛弃疾": 4.25,
+    "陆游": 0.565
+   },
+   "M2_tfidf": {
+    "柳宗元": 0.4910992418958247,
+    "刘禹锡": -7.581640440948711,
+    "韩愈": -13.763832359470708,
+    "白居易": 4.077961238349367,
+    "苏轼": -0.5740118670462755,
+    "欧阳修": -4.739240805703964,
+    "黄庭坚": 3.1645532409301724,
+    "秦观": -12.931105133636992,
+    "王禹偁": -8.730330729284864,
+    "范仲淹": 13.918795780260734,
+    "辛弃疾": 16.55803111858221,
+    "陆游": -0.9977460667926624
+   },
+   "M3_lsa": {
+    "柳宗元": -0.001127826565811484,
+    "刘禹锡": 0.009461242026006777,
+    "韩愈": 0.017020507485666244,
+    "白居易": 0.01719934691253089,
+    "苏轼": 0.018100785606447227,
+    "欧阳修": 0.01967702785619085,
+    "黄庭坚": 0.015700686713556643,
+    "秦观": 0.02474655318454307,
+    "王禹偁": 0.010235368078616318,
+    "范仲淹": 0.04381795185782753,
+    "辛弃疾": 0.01525378375741722,
+    "陆游": 0.015104251889563958
+   },
+   "M4_lda": {
+    "柳宗元": 0.0,
+    "刘禹锡": 0.0,
+    "韩愈": 0.0,
+    "白居易": 0.0,
+    "苏轼": 0.0,
+    "欧阳修": 0.0,
+    "黄庭坚": 0.0,
+    "秦观": 0.0,
+    "王禹偁": 0.0,
+    "范仲淹": 0.0,
+    "辛弃疾": 0.0,
+    "陆游": 0.0
+   },
+   "corr_M1_M2": {
+    "pearson": 0.9935497641749207,
+    "spearman": 0.9720279720279721
+   },
+   "corr_M1_M3": {
+    "pearson": 0.308380173128787,
+    "spearman": 0.11188811188811189
+   },
+   "corr_M2_M3": {
+    "pearson": 0.3049678378738233,
+    "spearman": 0.06993006993006995
+   },
+   "corr_M1_M4": {
+    "pearson": NaN,
+    "spearman": NaN
+   }
+  },
+  "source": "results_v5_methods.json",
+  "key": "net_mind_methods"
+ },
+ "attribution_compare": {
+  "value": {
+   "author_12way": {
+    "tfidf_logreg": {
+     "accuracy": 0.7135253600500939,
+     "macro_F1": 0.35130138704241465,
+     "weighted_F1": 0.6642026940588356,
+     "n_test": 3194
+    },
+    "tfidf_svm": {
+     "accuracy": 0.8018159048215404,
+     "macro_F1": 0.56819114756642,
+     "weighted_F1": 0.7823761691396792,
+     "n_test": 3194
+    },
+    "char_cnn": {
+     "accuracy": 0.6236693800876644,
+     "macro_F1": 0.2708449383572968,
+     "weighted_F1": 0.5954164300987871
+    }
+   },
+   "dynasty_2way": {
+    "tfidf_logreg": {
+     "accuracy": 0.8947698089570937,
+     "macro_F1": 0.8076315642253751,
+     "weighted_F1": 0.8831730020733005,
+     "n_test": 3193
+    },
+    "tfidf_svm": {
+     "accuracy": 0.9364234262449107,
+     "macro_F1": 0.8981088535145489,
+     "weighted_F1": 0.9345644454433866,
+     "n_test": 3193
+    },
+    "char_cnn": {
+     "accuracy": 0.8935170685875352,
+     "macro_F1": 0.8374728876954751
+    }
+   },
+   "prose_4way": {
+    "tfidf_logreg": {
+     "accuracy": 0.8561151079136691,
+     "macro_F1": 0.8120669622979341,
+     "weighted_F1": 0.8471407702274624,
+     "n_test": 278
+    },
+    "tfidf_svm": {
+     "accuracy": 0.9244604316546763,
+     "macro_F1": 0.9076547843785028,
+     "weighted_F1": 0.9229049271938711,
+     "n_test": 278
+    },
+    "char_cnn": {
+     "accuracy": 0.6187050359712231,
+     "macro_F1": 0.5121842702931332
+    }
+   }
+  },
+  "source": "results_v5_methods.json",
+  "key": "attribution_compare"
+ },
+ "tang_n_volumes": {
+  "value": 899,
+  "source": "results_v4_xval.json",
+  "key": "n_volumes"
+ },
+ "tang_mean_abs_delta": {
+  "value": 0.529,
+  "source": "results_v4_xval.json",
+  "key": "mean_abs_delta_net"
+ },
+ "tang_cat_corr_20cell": {
+  "value": 0.9972,
+  "source": "results_v4_xval.json",
+  "key": "cat_corr"
+ },
+ "tang_rows": {
+  "value": [
+   {
+    "author": "柳宗元",
+    "qt_n": 199,
+    "qt_chars": 15127,
+    "yd_n": 169,
+    "yd_chars": 13561,
+    "qt_net": 0.264,
+    "yd_net": 1.106,
+    "delta": 0.842
+   },
+   {
+    "author": "刘禹锡",
+    "qt_n": 876,
+    "qt_chars": 48300,
+    "yd_n": 703,
+    "yd_chars": 41602,
+    "qt_net": -1.036,
+    "yd_net": -2.019,
+    "delta": -0.983
+   },
+   {
+    "author": "韩愈",
+    "qt_n": 427,
+    "qt_chars": 46997,
+    "yd_n": 372,
+    "yd_chars": 42292,
+    "qt_net": -2.958,
+    "yd_net": -3.121,
+    "delta": -0.163
+   },
+   {
+    "author": "白居易",
+    "qt_n": 2931,
+    "qt_chars": 188914,
+    "yd_n": 2642,
+    "yd_chars": 165216,
+    "qt_net": 2.075,
+    "yd_net": 2.203,
+    "delta": 0.128
+   }
+  ],
+  "source": "results_v4_xval.json",
+  "key": "rows"
+ },
+ "tang_r_nmi_479": {
+  "value": 0.9596,
+  "source": "results_phase1b_song.json",
+  "key": "M1.tang.r_nmi"
+ },
+ "tang_S_479": {
+  "value": 5,
+  "source": "results_phase1b_song.json",
+  "key": "M1.tang.n_preserved"
+ },
+ "tang_dim_r_479": {
+  "value": [
+   [
+    "悲苦孤寂",
+    0.9561266435193958
+   ],
+   [
+    "贬谪羁旅",
+    0.9771461333247506
+   ],
+   [
+    "旷达闲适",
+    0.9498955430232131
+   ],
+   [
+    "自然山水",
+    0.9757396135543833
+   ],
+   [
+    "空幻时空",
+    0.9576235369945569
+   ]
+  ],
+  "source": "results_phase1b_song.json",
+  "key": "M1.tang.dim_r"
+ },
+ "song_r_nmi_256": {
+  "value": 0.557,
+  "source": "results_phase1b_song.json",
+  "key": "M1.song.r_nmi"
+ },
+ "song_S_256": {
+  "value": 3,
+  "source": "results_phase1b_song.json",
+  "key": "M1.song.n_preserved"
+ },
+ "song_dim_r_256": {
+  "value": [
+   [
+    "悲苦孤寂",
+    0.5824010175028757
+   ],
+   [
+    "贬谪羁旅",
+    0.47927214576716937
+   ],
+   [
+    "旷达闲适",
+    0.4842528031055822
+   ],
+   [
+    "自然山水",
+    0.7006168871088981
+   ],
+   [
+    "空幻时空",
+    0.6284698758641425
+   ]
+  ],
+  "source": "results_phase1b_song.json",
+  "key": "M1.song.dim_r"
+ },
+ "tang_r_nmi_479_ind": {
+  "value": 0.9375,
+  "source": "results_phase1b_song.json",
+  "key": "Learned.tang.r_nmi"
+ },
+ "song_r_nmi_256_ind": {
+  "value": 0.5673,
+  "source": "results_phase1b_song.json",
+  "key": "Learned.song.r_nmi"
+ },
+ "corpus_author_counts": {
+  "value": {
+   "songshi": 8925,
+   "yusong": 660,
+   "tang": 2627,
+   "yuding": 2621
+  },
+  "source": "results_phase1b_song.json",
+  "key": "n_authors"
+ },
+ "song_pilot_net_r_7": {
+  "value": 0.3334,
+  "source": "results_song2_xval.json",
+  "key": "net_pearson"
+ },
+ "song_pilot_net_rho_7": {
+  "value": 0.1786,
+  "source": "results_song2_xval.json",
+  "key": "net_spearman"
+ },
+ "song_pilot_cat_corr_35cell": {
+  "value": 0.9114,
+  "source": "results_song2_xval.json",
+  "key": "cat_freq_pearson"
+ },
+ "song_pilot_rows": {
+  "value": [
+   {
+    "author": "苏轼",
+    "quansongshi": {
+     "n_char": 180314,
+     "net": 0.476,
+     "悲苦孤寂": 13.0,
+     "贬谪羁旅": 7.764,
+     "旷达闲适": 13.476,
+     "自然山水": 39.076,
+     "空幻时空": 22.827
+    },
+    "yuxuan": {
+     "n_char": 2078,
+     "net": 5.294,
+     "悲苦孤寂": 8.662,
+     "贬谪羁旅": 7.7,
+     "旷达闲适": 13.956,
+     "自然山水": 36.092,
+     "空幻时空": 18.768
+    },
+    "delta_net": 4.818
+   },
+   {
+    "author": "欧阳修",
+    "quansongshi": {
+     "n_char": 73075,
+     "net": -0.205,
+     "悲苦孤寂": 13.575,
+     "贬谪羁旅": 9.415,
+     "旷达闲适": 13.37,
+     "自然山水": 40.109,
+     "空幻时空": 20.623
+    },
+    "yuxuan": {
+     "n_char": 1069,
+     "net": 3.742,
+     "悲苦孤寂": 12.161,
+     "贬谪羁旅": 14.032,
+     "旷达闲适": 15.903,
+     "自然山水": 47.708,
+     "空幻时空": 19.645
+    },
+    "delta_net": 3.947
+   },
+   {
+    "author": "黄庭坚",
+    "quansongshi": {
+     "n_char": 132057,
+     "net": 1.575,
+     "悲苦孤寂": 10.67,
+     "贬谪羁旅": 6.156,
+     "旷达闲适": 12.245,
+     "自然山水": 39.104,
+     "空幻时空": 22.127
+    },
+    "yuxuan": {
+     "n_char": 532,
+     "net": 7.519,
+     "悲苦孤寂": 5.639,
+     "贬谪羁旅": 3.759,
+     "旷达闲适": 13.158,
+     "自然山水": 54.511,
+     "空幻时空": 16.917
+    },
+    "delta_net": 5.944
+   },
+   {
+    "author": "秦观",
+    "quansongshi": {
+     "n_char": 28320,
+     "net": -2.471,
+     "悲苦孤寂": 14.124,
+     "贬谪羁旅": 8.651,
+     "旷达闲适": 11.653,
+     "自然山水": 39.089,
+     "空幻时空": 23.34
+    },
+    "yuxuan": {
+     "n_char": 349,
+     "net": -5.731,
+     "悲苦孤寂": 22.923,
+     "贬谪羁旅": 8.596,
+     "旷达闲适": 17.192,
+     "自然山水": 74.499,
+     "空幻时空": 25.788
+    },
+    "delta_net": -3.26
+   },
+   {
+    "author": "王禹偁",
+    "quansongshi": {
+     "n_char": 50287,
+     "net": -1.154,
+     "悲苦孤寂": 13.463,
+     "贬谪羁旅": 10.937,
+     "旷达闲适": 12.309,
+     "自然山水": 30.465,
+     "空幻时空": 17.161
+    },
+    "yuxuan": {
+     "n_char": 771,
+     "net": 2.594,
+     "悲苦孤寂": 6.485,
+     "贬谪羁旅": 2.594,
+     "旷达闲适": 9.079,
+     "自然山水": 35.019,
+     "空幻时空": 9.079
+    },
+    "delta_net": 3.748
+   },
+   {
+    "author": "范仲淹",
+    "quansongshi": {
+     "n_char": 18970,
+     "net": 3.954,
+     "悲苦孤寂": 11.386,
+     "贬谪羁旅": 7.222,
+     "旷达闲适": 15.34,
+     "自然山水": 46.178,
+     "空幻时空": 25.725
+    },
+    "yuxuan": {
+     "n_char": 716,
+     "net": 1.396,
+     "悲苦孤寂": 9.777,
+     "贬谪羁旅": 4.19,
+     "旷达闲适": 11.173,
+     "自然山水": 61.453,
+     "空幻时空": 43.296
+    },
+    "delta_net": -2.558
+   },
+   {
+    "author": "辛弃疾",
+    "quansongshi": {
+     "n_char": 6094,
+     "net": 4.923,
+     "悲苦孤寂": 10.338,
+     "贬谪羁旅": 4.595,
+     "旷达闲适": 15.261,
+     "自然山水": 40.696,
+     "空幻时空": 24.122
+    },
+    "yuxuan": {
+     "n_char": 0,
+     "net": 0.0,
+     "悲苦孤寂": 0.0,
+     "贬谪羁旅": 0.0,
+     "旷达闲适": 0.0,
+     "自然山水": 0.0,
+     "空幻时空": 0.0
+    },
+    "delta_net": -4.923
+   },
+   {
+    "author": "陆游",
+    "quansongshi": {
+     "n_char": 464784,
+     "net": 0.659,
+     "悲苦孤寂": 17.778,
+     "贬谪羁旅": 7.115,
+     "旷达闲适": 18.437,
+     "自然山水": 34.758,
+     "空幻时空": 22.404
+    },
+    "yuxuan": {
+     "n_char": 2410,
+     "net": -7.054,
+     "悲苦孤寂": 18.672,
+     "贬谪羁旅": 7.054,
+     "旷达闲适": 11.618,
+     "自然山水": 33.195,
+     "空幻时空": 24.896
+    },
+    "delta_net": -7.713
+   }
+  ],
+  "source": "results_song2_xval.json",
+  "key": "rows"
+ },
+ "clustering_k": {
+  "value": 1.1531,
+  "source": "results_hb_model.json",
+  "key": "clustering_inflation_k"
+ },
+ "hb_population_n": {
+  "value": 253,
+  "source": "results_hb_model.json",
+  "key": "population_n_authors"
+ },
+ "hb_edition_effect": {
+  "value": {
+   "delta": 0.079,
+   "se": 0.263,
+   "ci95_normal": [
+    -0.436,
+    0.595
+   ],
+   "ci95_bootstrap": [
+    -0.48,
+    0.592
+   ],
+   "invariance_h0_not_rejected": true
+  },
+  "source": "results_hb_model.json",
+  "key": "edition_effect"
+ },
+ "hb_latent_population": {
+  "value": {
+   "mu": 0.923,
+   "mu_ci95_boot": [
+    0.377,
+    1.534
+   ],
+   "tau": 4.125,
+   "tau_ci95_boot": [
+    3.641,
+    4.552
+   ],
+   "tau2": 17.018
+  },
+  "source": "results_hb_model.json",
+  "key": "latent_population"
+ },
+ "hb_per_dimension_delta": {
+  "value": {
+   "悲苦孤寂": {
+    "delta": -0.366,
+    "se": 0.178,
+    "ci": [
+     -0.714,
+     -0.018
+    ],
+    "systematic_shift": true
+   },
+   "贬谪羁旅": {
+    "delta": -1.052,
+    "se": 0.135,
+    "ci": [
+     -1.317,
+     -0.787
+    ],
+    "systematic_shift": true
+   },
+   "旷达闲适": {
+    "delta": -0.205,
+    "se": 0.186,
+    "ci": [
+     -0.57,
+     0.16
+    ],
+    "systematic_shift": false
+   },
+   "自然山水": {
+    "delta": 11.453,
+    "se": 0.347,
+    "ci": [
+     10.773,
+     12.134
+    ],
+    "systematic_shift": true
+   },
+   "空幻时空": {
+    "delta": -1.272,
+    "se": 0.233,
+    "ci": [
+     -1.729,
+     -0.815
+    ],
+    "systematic_shift": true
+   }
+  },
+  "source": "results_hb_model.json",
+  "key": "per_dimension_delta"
+ },
+ "hb_luyou_pp": {
+  "value": {
+   "z": -1.524,
+   "p_two_sided": 0.1275
+  },
+  "source": "results_hb_model.json",
+  "key": "luyou_posterior_predictive"
+ },
+ "m6_settings": {
+  "value": {
+   "Tang_same_book": {
+    "edA": "全唐詩(QTS)",
+    "edB": "御定全唐詩(YD)",
+    "n_shared_authors": 363,
+    "frozen": {
+     "A": 0.8645313221861108,
+     "S": 1.0,
+     "dim_r": [
+      0.9771178687550454,
+      0.9744790445837166,
+      0.9753195772351473,
+      0.9593367069813162,
+      0.9622365892299053
+     ],
+     "edition_auc": 0.535546850566085,
+     "var_retain": 1.0
+    },
+    "m6": {
+     "A": 0.9805933805906997,
+     "S": 1.0,
+     "dim_r": [
+      0.9777762485824898,
+      0.976402480844862,
+      0.9754184157120918,
+      0.9727016507572329,
+      0.9636065517435323
+     ],
+     "edition_auc": 0.5374463105439837,
+     "var_retain": 0.692
+    }
+   },
+   "Song_corpus_vs_sel": {
+    "edA": "全宋诗(QSS)",
+    "edB": "御選宋詩(selection)",
+    "n_shared_authors": 216,
+    "frozen": {
+     "A": 0.8996796848211424,
+     "S": 1.0,
+     "dim_r": [
+      0.6956083216371287,
+      0.7387647377791842,
+      0.738227781781959,
+      0.666152302983165,
+      0.7180112810382565
+     ],
+     "edition_auc": 0.8482275431437142,
+     "var_retain": 1.0
+    },
+    "m6": {
+     "A": 0.9796588682140862,
+     "S": 1.0,
+     "dim_r": [
+      0.701201811372778,
+      0.739376661624909,
+      0.7552325079873691,
+      0.7761215781440717,
+      0.7183895024102698
+     ],
+     "edition_auc": 0.5840552632872806,
+     "var_retain": 0.492
+    }
+   }
+  },
+  "source": "results_m6.json",
+  "key": "settings"
+ },
+ "m6_lexicon_baseline": {
+  "value": {
+   "Tang_same_book": {
+    "A": 0.94,
+    "S": 1.0
+   },
+   "Song_corpus_vs_sel": {
+    "A": 0.49,
+    "S": 0.6
+   }
+  },
+  "source": "results_m6.json",
+  "key": "phase2_lexicon_baseline"
+ },
+ "songchao_n_poems": {
+  "value": 9612,
+  "source": "results_parse_songchao.json",
+  "key": "n_poems"
+ },
+ "songchao_n_authors": {
+  "value": 76,
+  "source": "results_parse_songchao.json",
+  "key": "n_authors"
+ },
+ "songchao_verse_chars": {
+  "value": 829341,
+  "source": "results_parse_songchao.json",
+  "key": "total_verse_chars"
+ },
+ "songchao_n_ji_lines": {
+  "value": 98,
+  "source": "results_parse_songchao.json",
+  "key": "n_ji_lines"
+ },
+ "songchao_bio_lines_discarded": {
+  "value": 825,
+  "source": "results_parse_songchao.json",
+  "key": "n_bio_lines_discarded"
+ },
+ "songchao_n_verse_lines": {
+  "value": 43304,
+  "source": "results_parse_songchao.json",
+  "key": "n_verse_lines"
+ },
+ "songchao_unresolved_ji": {
+  "value": 3,
+  "source": "results_parse_songchao.json",
+  "key": "unresolved_ji"
+ },
+ "song3_yxss_A": {
+  "value": 0.557,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.A_nmi_pearson"
+ },
+ "song3_yxss_S": {
+  "value": 3,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.S_dims_preserved"
+ },
+ "song3_yxss_delta": {
+  "value": 0.079,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.delta_nmi.delta"
+ },
+ "song3_yxss_delta_ci": {
+  "value": [
+   -0.437,
+   0.596
+  ],
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.delta_nmi.ci"
+ },
+ "song3_yxss_n_authors": {
+  "value": 253,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.n_authors"
+ },
+ "song3_ssc_A": {
+  "value": 0.8217,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.A_nmi_pearson"
+ },
+ "song3_ssc_S": {
+  "value": 5,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.S_dims_preserved"
+ },
+ "song3_ssc_delta": {
+  "value": -0.698,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.delta_nmi.delta"
+ },
+ "song3_ssc_delta_ci": {
+  "value": [
+   -1.152,
+   -0.244
+  ],
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.delta_nmi.ci"
+ },
+ "song3_ssc_n_authors": {
+  "value": 75,
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.n_authors"
+ },
+ "song3_yxss_dim_delta": {
+  "value": {
+   "悲苦孤寂": -0.366,
+   "贬谪羁旅": -1.052,
+   "旷达闲适": -0.205,
+   "自然山水": 11.453,
+   "空幻时空": -1.272
+  },
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.per_dimension.*.delta"
+ },
+ "song3_yxss_dim_delta_ci": {
+  "value": {
+   "悲苦孤寂": [
+    -0.715,
+    -0.018
+   ],
+   "贬谪羁旅": [
+    -1.318,
+    -0.786
+   ],
+   "旷达闲适": [
+    -0.571,
+    0.161
+   ],
+   "自然山水": [
+    10.772,
+    12.135
+   ],
+   "空幻时空": [
+    -1.73,
+    -0.814
+   ]
+  },
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_YXSS.per_dimension.*.ci"
+ },
+ "song3_ssc_dim_delta": {
+  "value": {
+   "悲苦孤寂": -0.212,
+   "贬谪羁旅": -0.892,
+   "旷达闲适": -0.901,
+   "自然山水": -0.736,
+   "空幻时空": -2.958
+  },
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.per_dimension.*.delta"
+ },
+ "song3_ssc_dim_delta_ci": {
+  "value": {
+   "悲苦孤寂": [
+    -0.531,
+    0.108
+   ],
+   "贬谪羁旅": [
+    -1.133,
+    -0.652
+   ],
+   "旷达闲适": [
+    -1.219,
+    -0.584
+   ],
+   "自然山水": [
+    -1.284,
+    -0.188
+   ],
+   "空幻时空": [
+    -3.357,
+    -2.559
+   ]
+  },
+  "source": "results_song3_rep.json",
+  "key": "pair_QSS_vs_SSC.per_dimension.*.ci"
+ },
+ "song3_delta_sign_agree": {
+  "value": "4/5",
+  "source": "results_song3_rep.json",
+  "key": "delta_sign_agreement.n_sign_agree / .n_dims"
+ },
+ "song3_delta_spearman": {
+  "value": 0.5,
+  "source": "results_song3_rep.json",
+  "key": "delta_sign_agreement.spearman_of_delta_vectors"
+ },
+ "song3_delta_pearson": {
+  "value": 0.2728,
+  "source": "results_song3_rep.json",
+  "key": "delta_sign_agreement.pearson_of_delta_vectors"
+ },
+ "song3_delta_sign_test_p": {
+  "value": 0.1875,
+  "source": "results_song3_rep.json",
+  "key": "delta_sign_agreement.sign_test_p_greater"
+ },
+ "song3_clustering_inflation_k": {
+  "value": 1.1558,
+  "source": "results_song3_rep.json",
+  "key": "design.clustering_inflation_k"
+ },
+ "song3_taboo_immune_ssc_delta": {
+  "value": {
+   "悲苦孤寂": -0.212,
+   "贬谪羁旅": -0.892,
+   "旷达闲适": -0.901,
+   "自然山水": -0.736,
+   "空幻时空": -2.958
+  },
+  "source": "results_song3_rep.json",
+  "key": "robustness_taboo_immune.SSC"
+ },
+ "song3_taboo_immune_yxss_delta": {
+  "value": {
+   "悲苦孤寂": -0.366,
+   "贬谪羁旅": -1.052,
+   "旷达闲适": -0.205,
+   "自然山水": 11.453,
+   "空幻时空": -1.272
+  },
+  "source": "results_song3_rep.json",
+  "key": "robustness_taboo_immune.YXSS"
+ },
+ "song3_split_half_sign_agree": {
+  "value": {
+   "YXSS": "5/5",
+   "SSC": "5/5"
+  },
+  "source": "results_song3_rep.json",
+  "key": "robustness_split_half.*.sign_agree_between_halves"
+ },
+ "song3_matched_n_authors": {
+  "value": 68,
+  "source": "results_song3_matched.json",
+  "key": "n_three_way_authors"
+ },
+ "song3_matched_yxss_A": {
+  "value": 0.6012,
+  "source": "results_song3_matched.json",
+  "key": "YXSS_matched.A_nmi"
+ },
+ "song3_matched_yxss_S": {
+  "value": 4,
+  "source": "results_song3_matched.json",
+  "key": "YXSS_matched.S_dims"
+ },
+ "song3_matched_ssc_A": {
+  "value": 0.7602,
+  "source": "results_song3_matched.json",
+  "key": "SSC_matched.A_nmi"
+ },
+ "song3_matched_ssc_S": {
+  "value": 5,
+  "source": "results_song3_matched.json",
+  "key": "SSC_matched.S_dims"
+ },
+ "song3_matched_dim_delta_pearson": {
+  "value": 0.2991,
+  "source": "results_song3_matched.json",
+  "key": "sign_agreement_matched.pearson_of_delta_vectors"
+ },
+ "song3_matched_sign_agree": {
+  "value": 4,
+  "source": "results_song3_matched.json",
+  "key": "sign_agreement_matched.n_sign_agree"
+ },
+ "song3_author_shift_corr": {
+  "value": {
+   "悲苦孤寂": 0.288,
+   "贬谪羁旅": 0.4172,
+   "旷达闲适": 0.2016,
+   "自然山水": -0.1623,
+   "空幻时空": 0.0815,
+   "nmi": 0.3275
+  },
+  "source": "results_song3_matched.json",
+  "key": "author_level_shift_correlation_matched"
+ },
+ "song3_missing_char_markers": {
+  "value": 57,
+  "source": "results_song3_matched.json",
+  "key": "missing_char_markers.count"
+ },
+ "gold_sample_size": {
+  "value": 160,
+  "source": "gold_sample.json",
+  "key": "len(sample list)"
+ },
+ "gold_sample_n_authors": {
+  "value": 77,
+  "source": "gold_sample.json",
+  "key": "unique(author)"
+ },
+ "gold_sample_strata": {
+  "value": {
+   "Tang/xuanben": 20,
+   "Song/quanji": 60,
+   "Tang/quanji": 60,
+   "Song/xuanben": 20
+  },
+  "source": "gold_sample.json",
+  "key": "count(dynasty/carrier)"
+ },
+ "gold_n_poems": {
+  "value": 160,
+  "source": "results_gold_validity.json",
+  "key": "design.n_poems"
+ },
+ "gold_n_authors": {
+  "value": 77,
+  "source": "results_gold_validity.json",
+  "key": "design.n_authors"
+ },
+ "gold_coders": {
+  "value": 2,
+  "source": "results_gold_validity.json",
+  "key": "design.coders"
+ },
+ "gold_qwk_5dim": {
+  "value": {
+   "Bei": 0.8081,
+   "Quan": 0.8784,
+   "Man": 0.7664,
+   "Ziran": 0.7202,
+   "Konghuan": 0.7521
+  },
+  "source": "results_gold_validity.json",
+  "key": "reliability.<dim>.kappa_quadratic_weighted"
+ },
+ "gold_krippendorff_alpha_5dim": {
+  "value": {
+   "Bei": 0.9592,
+   "Quan": 0.9647,
+   "Man": 0.9434,
+   "Ziran": 0.9296,
+   "Konghuan": 0.9361
+  },
+  "source": "results_gold_validity.json",
+  "key": "reliability.<dim>.krippendorff_alpha_ordinal"
+ },
+ "gold_nmi_icc_2_1": {
+  "value": 0.8627,
+  "source": "results_gold_validity.json",
+  "key": "reliability.NMI_gold.icc_2_1"
+ },
+ "gold_nmi_pearson_A_vs_B": {
+  "value": 0.8985,
+  "source": "results_gold_validity.json",
+  "key": "reliability.NMI_gold.pearson_A_vs_B"
+ },
+ "gold_rho_lexicon_vs_gold": {
+  "value": 0.1409,
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.rho_lexiconNMI_vs_goldNMI"
+ },
+ "gold_rho_lexicon_vs_gold_ci": {
+  "value": [
+   -0.018,
+   0.312
+  ],
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.ci_cluster_bootstrap"
+ },
+ "gold_baseline_rho_length": {
+  "value": -0.0294,
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.baseline_rho_length_vs_gold"
+ },
+ "gold_partial_rho_length": {
+  "value": 0.1305,
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.partial_rho_controlling_length"
+ },
+ "gold_per_dim_rho": {
+  "value": {
+   "Bei": 0.0867,
+   "Quan": 0.0132,
+   "Man": 0.0929,
+   "Ziran": 0.0421,
+   "Konghuan": -0.0158
+  },
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.per_dimension.<dim>.rho"
+ },
+ "gold_affect_only_rho": {
+  "value": 0.085,
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.affect_only_rho"
+ },
+ "gold_affect_only_ci": {
+  "value": [
+   -0.056,
+   0.248
+  ],
+  "source": "results_gold_validity.json",
+  "key": "criterion_validity.affect_only_ci"
+ },
+ "gold_quintile_rows": {
+  "value": [
+   {
+    "quintile": 1,
+    "n": 32,
+    "lexicon_nmi_range": [
+     -107.143,
+     -35.714
+    ],
+    "gold_nmi_mean": -0.422
+   },
+   {
+    "quintile": 2,
+    "n": 32,
+    "lexicon_nmi_range": [
+     -35.714,
+     -17.857
+    ],
+    "gold_nmi_mean": -0.578
+   },
+   {
+    "quintile": 3,
+    "n": 32,
+    "lexicon_nmi_range": [
+     -17.857,
+     0.0
+    ],
+    "gold_nmi_mean": -0.406
+   },
+   {
+    "quintile": 4,
+    "n": 32,
+    "lexicon_nmi_range": [
+     0.0,
+     12.5
+    ],
+    "gold_nmi_mean": -0.547
+   },
+   {
+    "quintile": 5,
+    "n": 32,
+    "lexicon_nmi_range": [
+     12.5,
+     71.429
+    ],
+    "gold_nmi_mean": 0.25
+   }
+  ],
+  "source": "results_gold_validity.json",
+  "key": "quintile_dose_response.rows"
+ },
+ "gold_q5_minus_q1": {
+  "value": 0.672,
+  "source": "results_gold_validity.json",
+  "key": "quintile_dose_response.Q5_minus_Q1"
+ },
+ "gold_q5_minus_q1_ci": {
+  "value": [
+   -0.123,
+   1.366
+  ],
+  "source": "results_gold_validity.json",
+  "key": "quintile_dose_response.Q5_minus_Q1_ci"
+ },
+ "tab:extbench": {
+  "value": {
+   "pool_size": 20912,
+   "seed": 20260918,
+   "epochs": 14,
+   "models": {
+    "wideplain_cnn": {
+     "params": 600134,
+     "pooled_r": 0.9708696563912047,
+     "pooled_rho": 0.921934327187597,
+     "pooled_MAE": 3.891089756585535,
+     "pooled_RMSE": 5.820927828518205,
+     "cv_r_mean": 0.973650491492082,
+     "cv_r_std": 0.002081236452628596,
+     "cv_fold_r": [
+      0.9764,
+      0.9759,
+      0.9726,
+      0.9719,
+      0.9715
+     ],
+     "author_rho": 0.9930069930069931,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.40305285362709475,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "overlock_1d": {
+     "params": 896838,
+     "pooled_r": 0.9676380999620882,
+     "pooled_rho": 0.918905659538365,
+     "pooled_MAE": 4.139795091575553,
+     "pooled_RMSE": 6.109068686128863,
+     "cv_r_mean": 0.9684508632977016,
+     "cv_r_std": 0.002747107349897754,
+     "cv_fold_r": [
+      0.9703,
+      0.9727,
+      0.9673,
+      0.9671,
+      0.9648
+     ],
+     "author_rho": 1.0,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.41777217860072663,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "transxnet_1d": {
+     "params": 643974,
+     "pooled_r": 0.9791971690376226,
+     "pooled_rho": 0.9293700156598129,
+     "pooled_MAE": 3.1570675266877797,
+     "pooled_RMSE": 4.8607611353980005,
+     "cv_r_mean": 0.9801032841796342,
+     "cv_r_std": 0.0019798096874216915,
+     "cv_fold_r": [
+      0.981,
+      0.9823,
+      0.9817,
+      0.9774,
+      0.9781
+     ],
+     "author_rho": 0.9930069930069931,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.4111039493730224,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "pfgn_1d": {
+     "params": 739401,
+     "pooled_r": 0.9690513202171509,
+     "pooled_rho": 0.9229866097564013,
+     "pooled_MAE": 3.606548759119272,
+     "pooled_RMSE": 5.930285517126105,
+     "cv_r_mean": 0.9696031620242259,
+     "cv_r_std": 0.0026095806249832724,
+     "cv_fold_r": [
+      0.9678,
+      0.9727,
+      0.9722,
+      0.9658,
+      0.9694
+     ],
+     "author_rho": 1.0,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.4566418610101957,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "tacnn_1d": {
+     "params": 583158,
+     "pooled_r": 0.9714735688304534,
+     "pooled_rho": 0.92186617658126,
+     "pooled_MAE": 3.8693812804673073,
+     "pooled_RMSE": 5.725406964881112,
+     "cv_r_mean": 0.9732549193614102,
+     "cv_r_std": 0.0013061381892321877,
+     "cv_fold_r": [
+      0.9745,
+      0.9745,
+      0.9713,
+      0.9722,
+      0.9738
+     ],
+     "author_rho": 0.9930069930069931,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.426998124926755,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "facnn_1d": {
+     "params": 682182,
+     "pooled_r": 0.9738344036675631,
+     "pooled_rho": 0.9238975928222896,
+     "pooled_MAE": 3.609672748695698,
+     "pooled_RMSE": 5.467989955957476,
+     "cv_r_mean": 0.9742788873403898,
+     "cv_r_std": 0.001162978561967096,
+     "cv_fold_r": [
+      0.9752,
+      0.9757,
+      0.9723,
+      0.9744,
+      0.9739
+     ],
+     "author_rho": 0.9930069930069931,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.4369916793624751,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "attnfractal_cnn": {
+     "params": 631046,
+     "pooled_r": 0.9837994486716026,
+     "pooled_rho": 0.9299153112479908,
+     "pooled_MAE": 2.6893160203459727,
+     "pooled_RMSE": 4.423826176273964,
+     "cv_r_mean": 0.9840409467165276,
+     "cv_r_std": 0.001839540837637893,
+     "cv_fold_r": [
+      0.9833,
+      0.9851,
+      0.9832,
+      0.9816,
+      0.987
+     ],
+     "author_rho": 1.0,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.4073245048634712,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "attnfractal_deep": {
+     "params": 648070,
+     "pooled_r": 0.985999345997478,
+     "pooled_rho": 0.9312554218891854,
+     "pooled_MAE": 2.413363872566334,
+     "pooled_RMSE": 4.069533294701379,
+     "cv_r_mean": 0.9864255037091116,
+     "cv_r_std": 0.00265588753026303,
+     "cv_fold_r": [
+      0.983,
+      0.9903,
+      0.9841,
+      0.9882,
+      0.9865
+     ],
+     "author_rho": 1.0,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.43096214695886553,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "attnfractal_lexfeat": {
+     "params": 632006,
+     "pooled_r": 0.9887566331338662,
+     "pooled_rho": 0.9335406159870714,
+     "pooled_MAE": 2.230011661518219,
+     "pooled_RMSE": 3.6669817424042144,
+     "cv_r_mean": 0.9891381090316003,
+     "cv_r_std": 0.001850882148538446,
+     "cv_fold_r": [
+      0.9917,
+      0.9877,
+      0.9887,
+      0.9907,
+      0.9868
+     ],
+     "author_rho": 0.9930069930069931,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.4255859603890777,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "attnfractal_attcons": {
+     "params": 631046,
+     "pooled_r": 0.98739294517805,
+     "pooled_rho": 0.9334331306470832,
+     "pooled_MAE": 2.359884421171085,
+     "pooled_RMSE": 3.85816513939562,
+     "cv_r_mean": 0.9877788732041637,
+     "cv_r_std": 0.0012129767232920974,
+     "cv_fold_r": [
+      0.9892,
+      0.9893,
+      0.9865,
+      0.9871,
+      0.9867
+     ],
+     "author_rho": 1.0,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.43090941052384857,
+     "gold_rho_lexicon": 0.41856908472987225
+    },
+    "transformer_1d": {
+     "params": 1547782,
+     "pooled_r": 0.9841567613606172,
+     "pooled_rho": 0.9309552500813931,
+     "pooled_MAE": 2.836917851313303,
+     "pooled_RMSE": 4.634543611205759,
+     "cv_r_mean": 0.984990150976671,
+     "cv_r_std": 0.0028313459618044367,
+     "cv_fold_r": [
+      0.9887,
+      0.985,
+      0.981,
+      0.9873,
+      0.9829
+     ],
+     "author_rho": 0.9930069930069931,
+     "gold_n_total": 160,
+     "gold_n_inpool": 61,
+     "gold_n_oos": 99,
+     "gold_rho_model": 0.4162691902027423,
+     "gold_rho_lexicon": 0.41856908472987225
+    }
+   }
+  },
+  "source": "results_cnn2025_v2.json",
+  "key": "models (+ meta.pool_size/seed/epochs)"
+ },
+ "§robust:cf": {
+  "value": {
+   "delta_nmi_official_recomputed": 0.148,
+   "delta_nmi_official_published_hb": 0.148,
+   "delta_nmi_private_recomputed": -0.676,
+   "delta_nmi_private_published_song3": -0.676,
+   "dim_deltas_official_recomputed": {
+    "悲苦孤寂": 1.389,
+    "贬谪羁旅": 0.046,
+    "旷达闲适": 1.671,
+    "自然山水": 16.678,
+    "空幻时空": 1.84
+   },
+   "dim_deltas_official_published_hb": {
+    "悲苦孤寂": 1.389,
+    "贬谪羁旅": 0.046,
+    "旷达闲适": 1.671,
+    "自然山水": 16.678,
+    "空幻时空": 1.84
+   }
+  },
+  "source": "results_counterfactual.json",
+  "key": "reproducibility_check"
+ },
+ "§exile": {
+  "value": {
+   "segment_counts": {
+    "null": 496,
+    "exile_B_suppl": 17,
+    "pre": 995,
+    "儋州": 131,
+    "北归": 90,
+    "惠州": 157,
+    "汝州元祐": 770,
+    "黄州": 168
+   },
+   "period_curve": {
+    "pre": {
+     "n_poems": 995,
+     "chars_mean": 82172.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 12.709,
+       "ci95": [
+        11.802,
+        13.616
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 6.875,
+       "ci95": [
+        6.289,
+        7.503
+       ]
+      },
+      "旷达闲适": {
+       "rate": 12.075,
+       "ci95": [
+        11.249,
+        12.935
+       ]
+      },
+      "自然山水": {
+       "rate": 33.959,
+       "ci95": [
+        32.168,
+        35.814
+       ]
+      },
+      "空幻时空": {
+       "rate": 19.67,
+       "ci95": [
+        18.666,
+        20.71
+       ]
+      },
+      "NMI": {
+       "rate": -0.634,
+       "ci95": [
+        -1.846,
+        0.586
+       ]
+      }
+     }
+    },
+    "黄州": {
+     "n_poems": 168,
+     "chars_mean": 14125.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 12.337,
+       "ci95": [
+        10.364,
+        14.505
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 7.868,
+       "ci95": [
+        6.435,
+        9.402
+       ]
+      },
+      "旷达闲适": {
+       "rate": 9.059,
+       "ci95": [
+        7.597,
+        10.573
+       ]
+      },
+      "自然山水": {
+       "rate": 31.964,
+       "ci95": [
+        27.974,
+        36.131
+       ]
+      },
+      "空幻时空": {
+       "rate": 18.419,
+       "ci95": [
+        16.113,
+        20.744
+       ]
+      },
+      "NMI": {
+       "rate": -3.277,
+       "ci95": [
+        -5.897,
+        -0.806
+       ]
+      }
+     }
+    },
+    "汝州元祐": {
+     "n_poems": 770,
+     "chars_mean": 58456.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 9.633,
+       "ci95": [
+        8.81,
+        10.501
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 5.564,
+       "ci95": [
+        4.939,
+        6.187
+       ]
+      },
+      "旷达闲适": {
+       "rate": 11.056,
+       "ci95": [
+        10.094,
+        12.048
+       ]
+      },
+      "自然山水": {
+       "rate": 33.664,
+       "ci95": [
+        31.696,
+        35.671
+       ]
+      },
+      "空幻时空": {
+       "rate": 20.309,
+       "ci95": [
+        19.101,
+        21.558
+       ]
+      },
+      "NMI": {
+       "rate": 1.423,
+       "ci95": [
+        0.118,
+        2.757
+       ]
+      }
+     }
+    },
+    "惠州": {
+     "n_poems": 157,
+     "chars_mean": 13619.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 10.721,
+       "ci95": [
+        8.774,
+        12.751
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 8.515,
+       "ci95": [
+        7.032,
+        10.079
+       ]
+      },
+      "旷达闲适": {
+       "rate": 11.312,
+       "ci95": [
+        9.325,
+        13.456
+       ]
+      },
+      "自然山水": {
+       "rate": 32.455,
+       "ci95": [
+        28.642,
+        36.382
+       ]
+      },
+      "空幻时空": {
+       "rate": 19.333,
+       "ci95": [
+        17.099,
+        21.676
+       ]
+      },
+      "NMI": {
+       "rate": 0.591,
+       "ci95": [
+        -2.335,
+        3.537
+       ]
+      }
+     }
+    },
+    "儋州": {
+     "n_poems": 131,
+     "chars_mean": 10749.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 10.622,
+       "ci95": [
+        8.653,
+        12.845
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 6.891,
+       "ci95": [
+        5.364,
+        8.531
+       ]
+      },
+      "旷达闲适": {
+       "rate": 13.409,
+       "ci95": [
+        11.258,
+        15.658
+       ]
+      },
+      "自然山水": {
+       "rate": 24.784,
+       "ci95": [
+        21.48,
+        28.249
+       ]
+      },
+      "空幻时空": {
+       "rate": 16.212,
+       "ci95": [
+        13.727,
+        18.815
+       ]
+      },
+      "NMI": {
+       "rate": 2.787,
+       "ci95": [
+        -0.194,
+        5.704
+       ]
+      }
+     }
+    },
+    "北归": {
+     "n_poems": 90,
+     "chars_mean": 6608.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 9.397,
+       "ci95": [
+        7.014,
+        12.064
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 7.309,
+       "ci95": [
+        5.127,
+        9.772
+       ]
+      },
+      "旷达闲适": {
+       "rate": 11.518,
+       "ci95": [
+        8.987,
+        14.3
+       ]
+      },
+      "自然山水": {
+       "rate": 31.99,
+       "ci95": [
+        26.049,
+        38.339
+       ]
+      },
+      "空幻时空": {
+       "rate": 20.644,
+       "ci95": [
+        17.18,
+        24.354
+       ]
+      },
+      "NMI": {
+       "rate": 2.121,
+       "ci95": [
+        -1.755,
+        6.037
+       ]
+      }
+     }
+    },
+    "exile_B_suppl": {
+     "n_poems": 17,
+     "chars_mean": 624.0,
+     "rates": {
+      "悲苦孤寂": {
+       "rate": 15.909,
+       "ci95": [
+        6.579,
+        25.915
+       ]
+      },
+      "贬谪羁旅": {
+       "rate": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ]
+      },
+      "旷达闲适": {
+       "rate": 12.769,
+       "ci95": [
+        7.622,
+        17.857
+       ]
+      },
+      "自然山水": {
+       "rate": 43.169,
+       "ci95": [
+        27.778,
+        62.5
+       ]
+      },
+      "空幻时空": {
+       "rate": 22.407,
+       "ci95": [
+        15.625,
+        29.514
+       ]
+      },
+      "NMI": {
+       "rate": -3.14,
+       "ci95": [
+        -13.72,
+        7.818
+       ]
+      }
+     }
+    }
+   },
+   "main_diff_exile_vs_prepost": {
+    "exile_chars_mean": 39118.0,
+    "control_chars_mean": 147236.0,
+    "悲苦孤寂": {
+     "exile_rate": 11.355,
+     "control_rate": 11.338,
+     "diff": 0.017,
+     "ci95": [
+      -1.302,
+      1.348
+     ],
+     "ci_excludes_zero": false
+    },
+    "贬谪羁旅": {
+     "exile_rate": 7.697,
+     "control_rate": 6.373,
+     "diff": 1.324,
+     "ci95": [
+      0.387,
+      2.296
+     ],
+     "ci_excludes_zero": true
+    },
+    "旷达闲适": {
+     "exile_rate": 11.098,
+     "control_rate": 11.644,
+     "diff": -0.546,
+     "ci95": [
+      -1.776,
+      0.723
+     ],
+     "ci_excludes_zero": false
+    },
+    "自然山水": {
+     "exile_rate": 30.334,
+     "control_rate": 33.749,
+     "diff": -3.415,
+     "ci95": [
+      -5.961,
+      -0.805
+     ],
+     "ci_excludes_zero": true
+    },
+    "空幻时空": {
+     "exile_rate": 18.19,
+     "control_rate": 19.966,
+     "diff": -1.776,
+     "ci95": [
+      -3.316,
+      -0.22
+     ],
+     "ci_excludes_zero": true
+    },
+    "NMI": {
+     "exile_rate": -0.257,
+     "control_rate": 0.306,
+     "diff": -0.563,
+     "ci95": [
+      -2.365,
+      1.247
+     ],
+     "ci_excludes_zero": false,
+     "boot_p_two_sided": 0.5466
+    }
+   },
+   "a_grade_only_diff": {
+    "exile_chars_mean": 38494.0,
+    "control_chars_mean": 147236.0,
+    "悲苦孤寂": {
+     "exile_rate": 11.279,
+     "control_rate": 11.338,
+     "diff": -0.059,
+     "ci95": [
+      -1.379,
+      1.295
+     ],
+     "ci_excludes_zero": false
+    },
+    "贬谪羁旅": {
+     "exile_rate": 7.822,
+     "control_rate": 6.373,
+     "diff": 1.449,
+     "ci95": [
+      0.5,
+      2.432
+     ],
+     "ci_excludes_zero": true
+    },
+    "旷达闲适": {
+     "exile_rate": 11.07,
+     "control_rate": 11.644,
+     "diff": -0.574,
+     "ci95": [
+      -1.819,
+      0.711
+     ],
+     "ci_excludes_zero": false
+    },
+    "自然山水": {
+     "exile_rate": 30.126,
+     "control_rate": 33.749,
+     "diff": -3.623,
+     "ci95": [
+      -6.163,
+      -1.007
+     ],
+     "ci_excludes_zero": true
+    },
+    "空幻时空": {
+     "exile_rate": 18.121,
+     "control_rate": 19.966,
+     "diff": -1.844,
+     "ci95": [
+      -3.41,
+      -0.271
+     ],
+     "ci_excludes_zero": true
+    },
+    "NMI": {
+     "exile_rate": -0.209,
+     "control_rate": 0.306,
+     "diff": -0.515,
+     "ci95": [
+      -2.338,
+      1.309
+     ],
+     "ci_excludes_zero": false,
+     "boot_p_two_sided": 0.5814
+    }
+   },
+   "dose_response": {
+    "design": "黄州 sev=2 → 惠州 sev=3 → 儋州 sev=4 (exile_chronology.csv severity_grade)",
+    "per_period": {
+     "黄州": {
+      "severity": 2,
+      "NMI": {
+       "rate": -3.277,
+       "ci95": [
+        -5.897,
+        -0.806
+       ]
+      }
+     },
+     "惠州": {
+      "severity": 3,
+      "NMI": {
+       "rate": 0.591,
+       "ci95": [
+        -2.335,
+        3.537
+       ]
+      }
+     },
+     "儋州": {
+      "severity": 4,
+      "NMI": {
+       "rate": 2.787,
+       "ci95": [
+        -0.194,
+        5.704
+       ]
+      }
+     }
+    },
+    "weighted_linear_slope_per_grade": {
+     "point": 3.072,
+     "ci95": [
+      1.107,
+      4.999
+     ],
+     "boot_p_two_sided": 0.0026
+    },
+    "spearman_trend_across_3_periods": {
+     "rho": 1.0,
+     "ci95": [
+      0.5,
+      1.0
+     ],
+     "note": "n=3 期, 把握度极低, 仅作方向参考"
+    },
+    "monotonic_in_point_estimates": true
+   },
+   "robustness": {
+    "a_only_diff_NMI": {
+     "exile_rate": -0.209,
+     "control_rate": 0.306,
+     "diff": -0.515,
+     "ci95": [
+      -2.338,
+      1.309
+     ],
+     "ci_excludes_zero": false,
+     "boot_p_two_sided": 0.5814
+    },
+    "drop_poems_under_40chars": {
+     "n_dropped": 633,
+     "diff": {
+      "悲苦孤寂": {
+       "exile_rate": 11.153,
+       "control_rate": 11.547,
+       "diff": -0.394,
+       "ci95": [
+        -1.731,
+        0.991
+       ],
+       "ci_excludes_zero": false
+      },
+      "贬谪羁旅": {
+       "exile_rate": 7.816,
+       "control_rate": 6.473,
+       "diff": 1.343,
+       "ci95": [
+        0.325,
+        2.399
+       ],
+       "ci_excludes_zero": true
+      },
+      "旷达闲适": {
+       "exile_rate": 11.103,
+       "control_rate": 11.469,
+       "diff": -0.366,
+       "ci95": [
+        -1.632,
+        0.946
+       ],
+       "ci_excludes_zero": false
+      },
+      "自然山水": {
+       "exile_rate": 29.453,
+       "control_rate": 32.375,
+       "diff": -2.921,
+       "ci95": [
+        -5.524,
+        -0.242
+       ],
+       "ci_excludes_zero": true
+      },
+      "空幻时空": {
+       "exile_rate": 18.144,
+       "control_rate": 19.75,
+       "diff": -1.606,
+       "ci95": [
+        -3.195,
+        -0.017
+       ],
+       "ci_excludes_zero": true
+      },
+      "NMI": {
+       "exile_rate": -0.051,
+       "control_rate": -0.079,
+       "diff": 0.028,
+       "ci95": [
+        -1.851,
+        1.873
+       ],
+       "ci_excludes_zero": false,
+       "boot_p_two_sided": 0.974
+      }
+     }
+    },
+    "buffer_tier0_nearest_reassign": {
+     "悲苦孤寂": {
+      "exile_rate": 11.066,
+      "control_rate": 11.357,
+      "diff": -0.291,
+      "ci95": [
+       -1.559,
+       0.985
+      ],
+      "ci_excludes_zero": false
+     },
+     "贬谪羁旅": {
+      "exile_rate": 7.678,
+      "control_rate": 6.393,
+      "diff": 1.285,
+      "ci95": [
+       0.351,
+       2.229
+      ],
+      "ci_excludes_zero": true
+     },
+     "旷达闲适": {
+      "exile_rate": 11.04,
+      "control_rate": 11.575,
+      "diff": -0.536,
+      "ci95": [
+       -1.713,
+       0.668
+      ],
+      "ci_excludes_zero": false
+     },
+     "自然山水": {
+      "exile_rate": 30.629,
+      "control_rate": 33.894,
+      "diff": -3.265,
+      "ci95": [
+       -5.775,
+       -0.754
+      ],
+      "ci_excludes_zero": true
+     },
+     "空幻时空": {
+      "exile_rate": 18.162,
+      "control_rate": 19.953,
+      "diff": -1.791,
+      "ci95": [
+       -3.278,
+       -0.284
+      ],
+      "ci_excludes_zero": true
+     },
+     "NMI": {
+      "exile_rate": -0.026,
+      "control_rate": 0.218,
+      "diff": -0.244,
+      "ci95": [
+       -1.977,
+       1.485
+      ],
+      "ci_excludes_zero": false,
+      "boot_p_two_sided": 0.7812
+     }
+    },
+    "buffer_tier2_exclude_within_2seqyears": {
+     "n_extra_dropped": 869,
+     "surviving_n_per_seg": {
+      "pre": 75759,
+      "黄州": 631,
+      "汝州元祐": 37886,
+      "惠州": 0,
+      "儋州": 0,
+      "北归": 0
+     },
+     "diff": {
+      "悲苦孤寂": {
+       "exile_rate": 17.416,
+       "control_rate": 11.61,
+       "diff": 5.805,
+       "ci95": [
+        -2.44,
+        15.151
+       ],
+       "ci_excludes_zero": false
+      },
+      "贬谪羁旅": {
+       "exile_rate": 4.618,
+       "control_rate": 6.503,
+       "diff": -1.885,
+       "ci95": [
+        -4.931,
+        1.607
+       ],
+       "ci_excludes_zero": false
+      },
+      "旷达闲适": {
+       "exile_rate": 4.834,
+       "control_rate": 11.828,
+       "diff": -6.994,
+       "ci95": [
+        -11.666,
+        -1.204
+       ],
+       "ci_excludes_zero": true
+      },
+      "自然山水": {
+       "exile_rate": 28.752,
+       "control_rate": 33.807,
+       "diff": -5.056,
+       "ci95": [
+        -17.745,
+        10.229
+       ],
+       "ci_excludes_zero": false
+      },
+      "空幻时空": {
+       "exile_rate": 18.982,
+       "control_rate": 19.693,
+       "diff": -0.711,
+       "ci95": [
+        -9.106,
+        7.926
+       ],
+       "ci_excludes_zero": false
+      },
+      "NMI": {
+       "exile_rate": -12.582,
+       "control_rate": 0.217,
+       "diff": -12.799,
+       "ci95": [
+        -21.977,
+        -2.71
+       ],
+       "ci_excludes_zero": true,
+       "boot_p_two_sided": 0.0116
+      }
+     }
+    },
+    "note": "tier1=主分析(剔除 CSV boundary_buffer 76 首); tier0=缓冲诗按编年序就近归期; tier2=在 tier1 基础上再剔除距任一事件边界 <2 序列年(锚点线性插值)的诗"
+   }
+  },
+  "source": "results_exile_dose.json",
+  "key": "su_shi"
+ },
+ "author_level_r_057": {
+  "value": {
+   "pearson": 0.5715,
+   "ci": [
+    0.3624,
+    0.7317
+   ],
+   "n_authors": 40,
+   "n_poems": 363
+  },
+  "source": "results_gold_p0.json",
+  "key": "author_level_merged.pearson / ci_pearson"
+ },
+ "leave-k-out": {
+  "value": {
+   "K1_kuang": {
+    "n_authors": 12,
+    "author_spearman_nmi": 0.9720279720279721,
+    "author_pearson_nmi": 0.9612761749415125,
+    "officials": {
+     "柳宗元": {
+      "n": 199,
+      "nmi_base": -1.301,
+      "nmi_var": -2.663,
+      "sign_flip": 0.0
+     },
+     "刘禹锡": {
+      "n": 876,
+      "nmi_base": -1.805,
+      "nmi_var": -3.506,
+      "sign_flip": 0.0
+     },
+     "韩愈": {
+      "n": 427,
+      "nmi_base": -3.395,
+      "nmi_var": -4.233,
+      "sign_flip": 0.0
+     },
+     "白居易": {
+      "n": 2931,
+      "nmi_base": 1.939,
+      "nmi_var": -0.682,
+      "sign_flip": 1.0
+     },
+     "苏轼": {
+      "n": 2824,
+      "nmi_base": 1.105,
+      "nmi_var": -1.058,
+      "sign_flip": 1.0
+     },
+     "欧阳修": {
+      "n": 954,
+      "nmi_base": 0.806,
+      "nmi_var": -1.013,
+      "sign_flip": 1.0
+     },
+     "黄庭坚": {
+      "n": 2204,
+      "nmi_base": 1.564,
+      "nmi_var": -0.26,
+      "sign_flip": 1.0
+     },
+     "秦观": {
+      "n": 468,
+      "nmi_base": -1.794,
+      "nmi_var": -3.143,
+      "sign_flip": 0.0
+     },
+     "王禹偁": {
+      "n": 668,
+      "nmi_base": -1.351,
+      "nmi_var": -3.093,
+      "sign_flip": 0.0
+     },
+     "范仲淹": {
+      "n": 311,
+      "nmi_base": 2.704,
+      "nmi_var": 0.619,
+      "sign_flip": 0.0
+     },
+     "辛弃疾": {
+      "n": 154,
+      "nmi_base": 3.78,
+      "nmi_var": 2.36,
+      "sign_flip": 0.0
+     },
+     "陆游": {
+      "n": 9271,
+      "nmi_base": 0.918,
+      "nmi_var": -2.224,
+      "sign_flip": 1.0
+     }
+    }
+   },
+   "K2_kong": {
+    "n_authors": 12,
+    "author_spearman_nmi": 1.0,
+    "author_pearson_nmi": 1.0,
+    "officials": {
+     "柳宗元": {
+      "n": 199,
+      "nmi_base": -1.301,
+      "nmi_var": -1.301,
+      "sign_flip": 0.0
+     },
+     "刘禹锡": {
+      "n": 876,
+      "nmi_base": -1.805,
+      "nmi_var": -1.805,
+      "sign_flip": 0.0
+     },
+     "韩愈": {
+      "n": 427,
+      "nmi_base": -3.395,
+      "nmi_var": -3.395,
+      "sign_flip": 0.0
+     },
+     "白居易": {
+      "n": 2931,
+      "nmi_base": 1.939,
+      "nmi_var": 1.939,
+      "sign_flip": 0.0
+     },
+     "苏轼": {
+      "n": 2824,
+      "nmi_base": 1.105,
+      "nmi_var": 1.105,
+      "sign_flip": 0.0
+     },
+     "欧阳修": {
+      "n": 954,
+      "nmi_base": 0.806,
+      "nmi_var": 0.806,
+      "sign_flip": 0.0
+     },
+     "黄庭坚": {
+      "n": 2204,
+      "nmi_base": 1.564,
+      "nmi_var": 1.564,
+      "sign_flip": 0.0
+     },
+     "秦观": {
+      "n": 468,
+      "nmi_base": -1.794,
+      "nmi_var": -1.794,
+      "sign_flip": 0.0
+     },
+     "王禹偁": {
+      "n": 668,
+      "nmi_base": -1.351,
+      "nmi_var": -1.351,
+      "sign_flip": 0.0
+     },
+     "范仲淹": {
+      "n": 311,
+      "nmi_base": 2.704,
+      "nmi_var": 2.704,
+      "sign_flip": 0.0
+     },
+     "辛弃疾": {
+      "n": 154,
+      "nmi_base": 3.78,
+      "nmi_var": 3.78,
+      "sign_flip": 0.0
+     },
+     "陆游": {
+      "n": 9271,
+      "nmi_base": 0.918,
+      "nmi_var": 0.918,
+      "sign_flip": 0.0
+     }
+    },
+    "kong_author_spearman": 0.8321678321678322
+   },
+   "K1K2": {
+    "n_authors": 12,
+    "author_spearman_nmi": 0.9720279720279721,
+    "author_pearson_nmi": 0.9612761749415125,
+    "officials": {
+     "柳宗元": {
+      "n": 199,
+      "nmi_base": -1.301,
+      "nmi_var": -2.663,
+      "sign_flip": 0.0
+     },
+     "刘禹锡": {
+      "n": 876,
+      "nmi_base": -1.805,
+      "nmi_var": -3.506,
+      "sign_flip": 0.0
+     },
+     "韩愈": {
+      "n": 427,
+      "nmi_base": -3.395,
+      "nmi_var": -4.233,
+      "sign_flip": 0.0
+     },
+     "白居易": {
+      "n": 2931,
+      "nmi_base": 1.939,
+      "nmi_var": -0.682,
+      "sign_flip": 1.0
+     },
+     "苏轼": {
+      "n": 2824,
+      "nmi_base": 1.105,
+      "nmi_var": -1.058,
+      "sign_flip": 1.0
+     },
+     "欧阳修": {
+      "n": 954,
+      "nmi_base": 0.806,
+      "nmi_var": -1.013,
+      "sign_flip": 1.0
+     },
+     "黄庭坚": {
+      "n": 2204,
+      "nmi_base": 1.564,
+      "nmi_var": -0.26,
+      "sign_flip": 1.0
+     },
+     "秦观": {
+      "n": 468,
+      "nmi_base": -1.794,
+      "nmi_var": -3.143,
+      "sign_flip": 0.0
+     },
+     "王禹偁": {
+      "n": 668,
+      "nmi_base": -1.351,
+      "nmi_var": -3.093,
+      "sign_flip": 0.0
+     },
+     "范仲淹": {
+      "n": 311,
+      "nmi_base": 2.704,
+      "nmi_var": 0.619,
+      "sign_flip": 0.0
+     },
+     "辛弃疾": {
+      "n": 154,
+      "nmi_base": 3.78,
+      "nmi_var": 2.36,
+      "sign_flip": 0.0
+     },
+     "陆游": {
+      "n": 9271,
+      "nmi_base": 0.918,
+      "nmi_var": -2.224,
+      "sign_flip": 1.0
+     }
+    },
+    "kong_author_spearman": 0.8321678321678322
+   }
+  },
+  "source": "results_p0_fixes.json",
+  "key": "loo"
+ },
+ "tab:lexfreq": {
+  "value": {
+   "悲苦孤寂": [
+    "悲",
+    "伤",
+    "愁",
+    "怨",
+    "苦",
+    "孤",
+    "寂",
+    "独",
+    "凄",
+    "惨",
+    "哀",
+    "痛",
+    "恨",
+    "忧",
+    "戚",
+    "惘",
+    "怆",
+    "涕",
+    "泪",
+    "殇",
+    "殁",
+    "愍",
+    "悴",
+    "惸",
+    "黯",
+    "销",
+    "魂",
+    "断肠",
+    "凄凉",
+    "寂寥",
+    "孤危",
+    "憔悴",
+    "销魂",
+    "悲秋",
+    "苦辛",
+    "酸辛",
+    "辛酸",
+    "零",
+    "萧",
+    "雁",
+    "砧",
+    "捣",
+    "飘零",
+    "飘蓬",
+    "断蓬",
+    "飞蓬",
+    "转蓬",
+    "吏",
+    "灯",
+    "店",
+    "舫",
+    "猿",
+    "驿",
+    "帆",
+    "仆",
+    "僮"
+   ],
+   "贬谪羁旅": [
+    "贬",
+    "谪",
+    "迁",
+    "逐",
+    "流",
+    "羁",
+    "旅",
+    "客",
+    "宦",
+    "远",
+    "荒",
+    "蛮",
+    "瘴",
+    "殊",
+    "遐",
+    "徼",
+    "陬",
+    "裔",
+    "去国",
+    "天涯",
+    "海角",
+    "殊方",
+    "投荒",
+    "远谪",
+    "迁客",
+    "楚客",
+    "南荒",
+    "炎荒",
+    "瘴江",
+    "蛮烟"
+   ],
+   "旷达闲适": [
+    "闲",
+    "适",
+    "达",
+    "旷",
+    "豁",
+    "放",
+    "醉",
+    "啸",
+    "傲",
+    "悠",
+    "淡",
+    "泊",
+    "乐",
+    "欣",
+    "悦",
+    "遣",
+    "兀",
+    "疏",
+    "狂",
+    "从",
+    "容",
+    "恬",
+    "旷达",
+    "闲适",
+    "放达",
+    "自适",
+    "陶然",
+    "悠然",
+    "忘机",
+    "委运",
+    "随遇",
+    "达观",
+    "适意",
+    "静",
+    "禅",
+    "苔",
+    "钓",
+    "隐",
+    "亭",
+    "栽",
+    "莲",
+    "畦",
+    "眠"
+   ],
+   "自然山水": [
+    "山",
+    "水",
+    "风",
+    "月",
+    "林",
+    "泉",
+    "石",
+    "竹",
+    "松",
+    "江",
+    "河",
+    "湖",
+    "海",
+    "花",
+    "鸟",
+    "溪",
+    "岩",
+    "岚",
+    "汀",
+    "洲",
+    "屿",
+    "峰",
+    "崖",
+    "涧",
+    "泽",
+    "涯",
+    "渚",
+    "苹",
+    "蓼",
+    "清风",
+    "明月",
+    "白云",
+    "沧浪",
+    "烟霞",
+    "苇岸",
+    "渔樵",
+    "桃源",
+    "落英",
+    "幽篁",
+    "暮云",
+    "孤云",
+    "寒云",
+    "春云",
+    "秋云",
+    "停云",
+    "烟云",
+    "云霞",
+    "云峰",
+    "云山"
+   ],
+   "空幻时空": [
+    "空",
+    "幻",
+    "梦",
+    "影",
+    "尘",
+    "虚",
+    "浮",
+    "瞬",
+    "逝",
+    "昔",
+    "古",
+    "千",
+    "秋",
+    "万",
+    "须",
+    "臾",
+    "泡",
+    "电",
+    "光",
+    "隙",
+    "驹",
+    "阴",
+    "浮生",
+    "如梦",
+    "梦幻",
+    "须臾",
+    "万古",
+    "古今",
+    "今古",
+    "泡影",
+    "微尘",
+    "刹那",
+    "弹指",
+    "过眼",
+    "逆旅",
+    "倏忽"
+   ]
+  },
+  "source": "lexicon_v2_entries.json",
+  "key": "(root: 5-category lexicon)"
+ },
+ "tab:realign": {
+  "value": {
+   "_source": "align_works.py -- POOLED mode reproduces the published tab:invariance A values, which validates this realignment pipeline against the existing one before its new numbers are read",
+   "_key_definition": "work key = (simplified author, canonical title); the title is t2s-converted, stripped of punctuation and whitespace and of trailing series numerals, so that a QTS numbered poem-series re-flows onto the same key as YD's single record; records sharing a key are merged",
+   "_inclusion": ">=300 chars per author per source (same rule as cross_edition_points.py)",
+   "_selfcheck": {
+    "tang_A_pooled_alignworks": 0.9596,
+    "tang_A_pooled_phase1b_M1": 0.9596,
+    "tang_agree_delta": 0.0,
+    "qss_yxss_A_pooled_alignworks": 0.557,
+    "qss_yxss_A_pooled_phase1b_M1": 0.557,
+    "qss_yxss_agree_delta": 0.0,
+    "qss_ssc_A_pooled_alignworks": 0.8217,
+    "qss_ssc_A_pooled_published_preP0": 0.82,
+    "preP0_published_constants": {
+     "tang": 0.95,
+     "qss_yxss": 0.515,
+     "qss_ssc": 0.82
+    },
+    "note": "Pooled realignment A reproduces the punctuation-normalised phase1b M1 invariance values (Tang 0.9596, Song-QSS/YXSS 0.557); pre-P0 published constants were 0.95/0.515/0.82."
+   },
+   "variants": {
+    "strict": {
+     "QTS_vs_YD": {
+      "label": "Tang: QTS vs YD (same work, two digitizations)",
+      "n_authors_shared": 2467,
+      "A_pooled": 0.9596,
+      "n_pooled": 432,
+      "A_matched": 0.9662,
+      "n_matched": 415,
+      "coverage_matched_over_pooled_chars": 0.9324,
+      "pooled_chars": 5656911,
+      "matched_chars": 5274439
+     },
+     "QSS_vs_YXSS": {
+      "label": "Song: QSS vs YuXuan (independent selection)",
+      "n_authors_shared": 660,
+      "A_pooled": 0.557,
+      "n_pooled": 253,
+      "A_matched": 0.8992,
+      "n_matched": 179,
+      "coverage_matched_over_pooled_chars": 0.0746,
+      "pooled_chars": 9806616,
+      "matched_chars": 732038
+     },
+     "QSS_vs_SSC": {
+      "label": "Song: QSS vs SongShiChao (private selection)",
+      "n_authors_shared": 75,
+      "A_pooled": 0.8217,
+      "n_pooled": 75,
+      "A_matched": 0.9569,
+      "n_matched": 73,
+      "coverage_matched_over_pooled_chars": 0.2155,
+      "pooled_chars": 4718282,
+      "matched_chars": 1016809
+     },
+     "YXSS_vs_SSC": {
+      "label": "Song: two anthologies vs each other",
+      "n_authors_shared": 72,
+      "A_pooled": 0.6344,
+      "n_pooled": 68,
+      "A_matched": 0.9611,
+      "n_matched": 51,
+      "coverage_matched_over_pooled_chars": 0.1418,
+      "pooled_chars": 1131702,
+      "matched_chars": 160468
+     }
+    },
+    "loose_strip_parentheticals": {
+     "QTS_vs_YD": {
+      "label": "Tang: QTS vs YD (same work, two digitizations)",
+      "n_authors_shared": 2467,
+      "A_pooled": 0.9596,
+      "n_pooled": 432,
+      "A_matched": 0.9663,
+      "n_matched": 415,
+      "coverage_matched_over_pooled_chars": 0.9325,
+      "pooled_chars": 5656911,
+      "matched_chars": 5274790
+     },
+     "QSS_vs_YXSS": {
+      "label": "Song: QSS vs YuXuan (independent selection)",
+      "n_authors_shared": 660,
+      "A_pooled": 0.557,
+      "n_pooled": 253,
+      "A_matched": 0.8965,
+      "n_matched": 182,
+      "coverage_matched_over_pooled_chars": 0.0777,
+      "pooled_chars": 9806616,
+      "matched_chars": 761632
+     },
+     "QSS_vs_SSC": {
+      "label": "Song: QSS vs SongShiChao (private selection)",
+      "n_authors_shared": 75,
+      "A_pooled": 0.8217,
+      "n_pooled": 75,
+      "A_matched": 0.9625,
+      "n_matched": 73,
+      "coverage_matched_over_pooled_chars": 0.228,
+      "pooled_chars": 4718282,
+      "matched_chars": 1075939
+     },
+     "YXSS_vs_SSC": {
+      "label": "Song: two anthologies vs each other",
+      "n_authors_shared": 72,
+      "A_pooled": 0.6344,
+      "n_pooled": 68,
+      "A_matched": 0.9613,
+      "n_matched": 51,
+      "coverage_matched_over_pooled_chars": 0.1544,
+      "pooled_chars": 1131702,
+      "matched_chars": 174703
+     }
+    }
+   },
+   "identity_baseline": {
+    "_source": "align_variants.py -- guards against reading the aligned concordance as a trivially identical-string artifact",
+    "pairs": {
+     "QTS_vs_YD": {
+      "shared_works": 39079,
+      "identical_strings": 18229,
+      "frac_identical": 0.4665,
+      "variant_works": 20850,
+      "mean_char_similarity": 0.8744
+     },
+     "QSS_vs_YXSS": {
+      "shared_works": 4639,
+      "identical_strings": 0,
+      "frac_identical": 0.0,
+      "variant_works": 4639,
+      "mean_char_similarity": 0.7927
+     },
+     "QSS_vs_SSC": {
+      "shared_works": 5378,
+      "identical_strings": 0,
+      "frac_identical": 0.0,
+      "variant_works": 5378,
+      "mean_char_similarity": 0.8425
+     },
+     "YXSS_vs_SSC": {
+      "shared_works": 1067,
+      "identical_strings": 83,
+      "frac_identical": 0.0778,
+      "variant_works": 984,
+      "mean_char_similarity": 0.8342
+     }
+    }
+   },
+   "threshold_sweep": {
+    "QTS_vs_YD": {
+     "pooled": [
+      {
+       "minc": 20,
+       "n": 2346,
+       "A": 0.9598
+      },
+      {
+       "minc": 50,
+       "n": 1455,
+       "A": 0.9589
+      },
+      {
+       "minc": 100,
+       "n": 884,
+       "A": 0.9531
+      },
+      {
+       "minc": 200,
+       "n": 547,
+       "A": 0.956
+      },
+      {
+       "minc": 300,
+       "n": 432,
+       "A": 0.9596
+      },
+      {
+       "minc": 500,
+       "n": 334,
+       "A": 0.9637
+      },
+      {
+       "minc": 1000,
+       "n": 240,
+       "A": 0.9634
+      },
+      {
+       "minc": 2000,
+       "n": 160,
+       "A": 0.9686
+      }
+     ],
+     "matched": [
+      {
+       "minc": 20,
+       "n": 2275,
+       "A": 0.9649
+      },
+      {
+       "minc": 50,
+       "n": 1391,
+       "A": 0.9642
+      },
+      {
+       "minc": 100,
+       "n": 840,
+       "A": 0.9559
+      },
+      {
+       "minc": 200,
+       "n": 522,
+       "A": 0.9622
+      },
+      {
+       "minc": 300,
+       "n": 415,
+       "A": 0.9662
+      },
+      {
+       "minc": 500,
+       "n": 325,
+       "A": 0.9674
+      },
+      {
+       "minc": 1000,
+       "n": 234,
+       "A": 0.966
+      },
+      {
+       "minc": 2000,
+       "n": 159,
+       "A": 0.9704
+      }
+     ]
+    },
+    "QSS_vs_YXSS": {
+     "pooled": [
+      {
+       "minc": 20,
+       "n": 659,
+       "A": 0.5349
+      },
+      {
+       "minc": 50,
+       "n": 535,
+       "A": 0.5156
+      },
+      {
+       "minc": 100,
+       "n": 378,
+       "A": 0.4408
+      },
+      {
+       "minc": 200,
+       "n": 303,
+       "A": 0.4951
+      },
+      {
+       "minc": 300,
+       "n": 253,
+       "A": 0.557
+      },
+      {
+       "minc": 500,
+       "n": 204,
+       "A": 0.5914
+      },
+      {
+       "minc": 1000,
+       "n": 135,
+       "A": 0.5799
+      },
+      {
+       "minc": 2000,
+       "n": 84,
+       "A": 0.6893
+      }
+     ],
+     "matched": [
+      {
+       "minc": 20,
+       "n": 499,
+       "A": 0.9553
+      },
+      {
+       "minc": 50,
+       "n": 393,
+       "A": 0.9347
+      },
+      {
+       "minc": 100,
+       "n": 287,
+       "A": 0.9196
+      },
+      {
+       "minc": 200,
+       "n": 228,
+       "A": 0.9207
+      },
+      {
+       "minc": 300,
+       "n": 179,
+       "A": 0.8992
+      },
+      {
+       "minc": 500,
+       "n": 135,
+       "A": 0.9181
+      },
+      {
+       "minc": 1000,
+       "n": 75,
+       "A": 0.9299
+      },
+      {
+       "minc": 2000,
+       "n": 33,
+       "A": 0.9209
+      }
+     ]
+    },
+    "QSS_vs_SSC": {
+     "pooled": [
+      {
+       "minc": 20,
+       "n": 75,
+       "A": 0.8217
+      },
+      {
+       "minc": 50,
+       "n": 75,
+       "A": 0.8217
+      },
+      {
+       "minc": 100,
+       "n": 75,
+       "A": 0.8217
+      },
+      {
+       "minc": 200,
+       "n": 75,
+       "A": 0.8217
+      },
+      {
+       "minc": 300,
+       "n": 75,
+       "A": 0.8217
+      },
+      {
+       "minc": 500,
+       "n": 73,
+       "A": 0.7806
+      },
+      {
+       "minc": 1000,
+       "n": 73,
+       "A": 0.7806
+      },
+      {
+       "minc": 2000,
+       "n": 68,
+       "A": 0.7704
+      }
+     ],
+     "matched": [
+      {
+       "minc": 20,
+       "n": 75,
+       "A": 0.952
+      },
+      {
+       "minc": 50,
+       "n": 75,
+       "A": 0.952
+      },
+      {
+       "minc": 100,
+       "n": 75,
+       "A": 0.952
+      },
+      {
+       "minc": 200,
+       "n": 74,
+       "A": 0.9496
+      },
+      {
+       "minc": 300,
+       "n": 73,
+       "A": 0.9569
+      },
+      {
+       "minc": 500,
+       "n": 72,
+       "A": 0.9537
+      },
+      {
+       "minc": 1000,
+       "n": 68,
+       "A": 0.956
+      },
+      {
+       "minc": 2000,
+       "n": 52,
+       "A": 0.9514
+      }
+     ]
+    },
+    "YXSS_vs_SSC": {
+     "pooled": [
+      {
+       "minc": 20,
+       "n": 72,
+       "A": 0.7236
+      },
+      {
+       "minc": 50,
+       "n": 72,
+       "A": 0.7236
+      },
+      {
+       "minc": 100,
+       "n": 72,
+       "A": 0.7236
+      },
+      {
+       "minc": 200,
+       "n": 70,
+       "A": 0.719
+      },
+      {
+       "minc": 300,
+       "n": 68,
+       "A": 0.6344
+      },
+      {
+       "minc": 500,
+       "n": 65,
+       "A": 0.6939
+      },
+      {
+       "minc": 1000,
+       "n": 52,
+       "A": 0.7087
+      },
+      {
+       "minc": 2000,
+       "n": 41,
+       "A": 0.6623
+      }
+     ],
+     "matched": [
+      {
+       "minc": 20,
+       "n": 70,
+       "A": 0.9076
+      },
+      {
+       "minc": 50,
+       "n": 68,
+       "A": 0.9508
+      },
+      {
+       "minc": 100,
+       "n": 67,
+       "A": 0.954
+      },
+      {
+       "minc": 200,
+       "n": 57,
+       "A": 0.9583
+      },
+      {
+       "minc": 300,
+       "n": 51,
+       "A": 0.9611
+      },
+      {
+       "minc": 500,
+       "n": 38,
+       "A": 0.9497
+      },
+      {
+       "minc": 1000,
+       "n": 24,
+       "A": 0.9339
+      },
+      {
+       "minc": 2000,
+       "n": 10,
+       "A": 0.9657
+      }
+     ]
+    }
+   },
+   "decomposition": {
+    "QTS_vs_YD": {
+     "pair": "QTS_vs_YD",
+     "label": "Tang: QTS vs YD (same work, two digitizations)",
+     "A_pooled_full": 0.9596,
+     "A_pooled_on_matched_authors": 0.9594,
+     "A_matched": 0.9662,
+     "composition_effect": -0.0002,
+     "alignment_effect": 0.0068
+    },
+    "QSS_vs_YXSS": {
+     "pair": "QSS_vs_YXSS",
+     "label": "Song: QSS vs YuXuan (independent selection)",
+     "A_pooled_full": 0.557,
+     "A_pooled_on_matched_authors": 0.5575,
+     "A_matched": 0.8992,
+     "composition_effect": 0.0005,
+     "alignment_effect": 0.3417
+    },
+    "QSS_vs_SSC": {
+     "pair": "QSS_vs_SSC",
+     "label": "Song: QSS vs SongShiChao (private selection)",
+     "A_pooled_full": 0.8217,
+     "A_pooled_on_matched_authors": 0.8217,
+     "A_matched": 0.9569,
+     "composition_effect": 0.0,
+     "alignment_effect": 0.1352
+    },
+    "YXSS_vs_SSC": {
+     "pair": "YXSS_vs_SSC",
+     "label": "Song: two anthologies vs each other",
+     "A_pooled_full": 0.6344,
+     "A_pooled_on_matched_authors": 0.6381,
+     "A_matched": 0.9611,
+     "composition_effect": 0.0037,
+     "alignment_effect": 0.323
+    }
+   },
+   "constrained": {
+    "strict": {
+     "QTS_vs_YD": {
+      "pair": "QTS_vs_YD",
+      "label": "Tang: QTS vs YD (same work, two digitizations)",
+      "n_shared_before": 39079,
+      "n_shared_after": 38166,
+      "pooled": {
+       "A": 0.9592,
+       "n": 426
+      },
+      "matched": {
+       "A": 0.9608,
+       "n": 398
+      },
+      "coverage_constrained_chars": 4759762
+     },
+     "QSS_vs_YXSS": {
+      "pair": "QSS_vs_YXSS",
+      "label": "Song: QSS vs YuXuan (independent selection)",
+      "n_shared_before": 4639,
+      "n_shared_after": 4363,
+      "pooled": {
+       "A": 0.5494,
+       "n": 237
+      },
+      "matched": {
+       "A": 0.9347,
+       "n": 168
+      },
+      "coverage_constrained_chars": 617649
+     },
+     "QSS_vs_SSC": {
+      "pair": "QSS_vs_SSC",
+      "label": "Song: QSS vs SongShiChao (private selection)",
+      "n_shared_before": 5378,
+      "n_shared_after": 5083,
+      "pooled": {
+       "A": 0.8217,
+       "n": 75
+      },
+      "matched": {
+       "A": 0.9707,
+       "n": 73
+      },
+      "coverage_constrained_chars": 881818
+     },
+     "YXSS_vs_SSC": {
+      "pair": "YXSS_vs_SSC",
+      "label": "Song: two anthologies vs each other",
+      "n_shared_before": 1067,
+      "n_shared_after": 1059,
+      "pooled": {
+       "A": 0.6381,
+       "n": 67
+      },
+      "matched": {
+       "A": 0.9639,
+       "n": 51
+      },
+      "coverage_constrained_chars": 157821
+     }
+    },
+    "loose_strip_parentheticals": {
+     "QTS_vs_YD": {
+      "pair": "QTS_vs_YD",
+      "label": "Tang: QTS vs YD (same work, two digitizations)",
+      "n_shared_before": 39081,
+      "n_shared_after": 38168,
+      "pooled": {
+       "A": 0.9592,
+       "n": 426
+      },
+      "matched": {
+       "A": 0.961,
+       "n": 398
+      },
+      "coverage_constrained_chars": 4760113
+     },
+     "QSS_vs_YXSS": {
+      "pair": "QSS_vs_YXSS",
+      "label": "Song: QSS vs YuXuan (independent selection)",
+      "n_shared_before": 4728,
+      "n_shared_after": 4426,
+      "pooled": {
+       "A": 0.5494,
+       "n": 237
+      },
+      "matched": {
+       "A": 0.9352,
+       "n": 170
+      },
+      "coverage_constrained_chars": 631526
+     },
+     "QSS_vs_SSC": {
+      "pair": "QSS_vs_SSC",
+      "label": "Song: QSS vs SongShiChao (private selection)",
+      "n_shared_before": 5612,
+      "n_shared_after": 5313,
+      "pooled": {
+       "A": 0.8217,
+       "n": 75
+      },
+      "matched": {
+       "A": 0.9745,
+       "n": 73
+      },
+      "coverage_constrained_chars": 938798
+     },
+     "YXSS_vs_SSC": {
+      "pair": "YXSS_vs_SSC",
+      "label": "Song: two anthologies vs each other",
+      "n_shared_before": 1116,
+      "n_shared_after": 1108,
+      "pooled": {
+       "A": 0.6344,
+       "n": 68
+      },
+      "matched": {
+       "A": 0.9632,
+       "n": 51
+      },
+      "coverage_constrained_chars": 172056
+     }
+    }
+   },
+   "bootstrap_ci": {
+    "strict": {
+     "QTS_vs_YD": {
+      "pooled": {
+       "A": 0.9596,
+       "ci_low": 0.9476,
+       "ci_high": 0.9709,
+       "n": 432
+      },
+      "matched": {
+       "A": 0.9662,
+       "ci_low": 0.9573,
+       "ci_high": 0.9741,
+       "n": 415
+      },
+      "paired_delta": {
+       "mean": -0.0833,
+       "ci_low": -0.2385,
+       "ci_high": 0.0629,
+       "n": 2383
+      }
+     },
+     "QSS_vs_YXSS": {
+      "pooled": {
+       "A": 0.557,
+       "ci_low": 0.4585,
+       "ci_high": 0.6471,
+       "n": 253
+      },
+      "matched": {
+       "A": 0.8992,
+       "ci_low": 0.8526,
+       "ci_high": 0.9362,
+       "n": 179
+      },
+      "paired_delta": {
+       "mean": -0.153,
+       "ci_low": -1.5458,
+       "ci_high": 1.1689,
+       "n": 500
+      }
+     },
+     "QSS_vs_SSC": {
+      "pooled": {
+       "A": 0.8217,
+       "ci_low": 0.6302,
+       "ci_high": 0.9212,
+       "n": 75
+      },
+      "matched": {
+       "A": 0.9569,
+       "ci_low": 0.9242,
+       "ci_high": 0.979,
+       "n": 73
+      },
+      "paired_delta": {
+       "mean": -0.9276,
+       "ci_low": -1.8896,
+       "ci_high": -0.0204,
+       "n": 75
+      }
+     },
+     "YXSS_vs_SSC": {
+      "pooled": {
+       "A": 0.6344,
+       "ci_low": 0.4604,
+       "ci_high": 0.7681,
+       "n": 68
+      },
+      "matched": {
+       "A": 0.9611,
+       "ci_low": 0.896,
+       "ci_high": 0.9871,
+       "n": 51
+      },
+      "paired_delta": {
+       "mean": -0.8755,
+       "ci_low": -3.2593,
+       "ci_high": 1.4865,
+       "n": 70
+      }
+     }
+    },
+    "loose_strip_parentheticals": {
+     "QTS_vs_YD": {
+      "pooled": {
+       "A": 0.9596,
+       "ci_low": 0.9476,
+       "ci_high": 0.9709,
+       "n": 432
+      },
+      "matched": {
+       "A": 0.9663,
+       "ci_low": 0.9574,
+       "ci_high": 0.9743,
+       "n": 415
+      },
+      "paired_delta": {
+       "mean": -0.0836,
+       "ci_low": -0.2385,
+       "ci_high": 0.0619,
+       "n": 2383
+      }
+     },
+     "QSS_vs_YXSS": {
+      "pooled": {
+       "A": 0.557,
+       "ci_low": 0.4585,
+       "ci_high": 0.6471,
+       "n": 253
+      },
+      "matched": {
+       "A": 0.8965,
+       "ci_low": 0.8518,
+       "ci_high": 0.9317,
+       "n": 182
+      },
+      "paired_delta": {
+       "mean": -0.09,
+       "ci_low": -1.4095,
+       "ci_high": 1.2592,
+       "n": 501
+      }
+     },
+     "QSS_vs_SSC": {
+      "pooled": {
+       "A": 0.8217,
+       "ci_low": 0.6302,
+       "ci_high": 0.9212,
+       "n": 75
+      },
+      "matched": {
+       "A": 0.9625,
+       "ci_low": 0.9336,
+       "ci_high": 0.9816,
+       "n": 73
+      },
+      "paired_delta": {
+       "mean": -0.8,
+       "ci_low": -1.6762,
+       "ci_high": 0.0352,
+       "n": 75
+      }
+     },
+     "YXSS_vs_SSC": {
+      "pooled": {
+       "A": 0.6344,
+       "ci_low": 0.4604,
+       "ci_high": 0.7681,
+       "n": 68
+      },
+      "matched": {
+       "A": 0.9613,
+       "ci_low": 0.8908,
+       "ci_high": 0.9858,
+       "n": 51
+      },
+      "paired_delta": {
+       "mean": -0.8593,
+       "ci_low": -3.1695,
+       "ci_high": 1.3406,
+       "n": 71
+      }
+     }
+    }
+   },
+   "threshold_order": {
+    "QTS_vs_YD": {
+     "pooled": {
+      "post_intersection": 0.9596,
+      "pre_intersection": 0.9596
+     },
+     "matched": {
+      "post_intersection": 0.9662,
+      "pre_intersection": 0.964
+     }
+    },
+    "QSS_vs_YXSS": {
+     "pooled": {
+      "post_intersection": 0.557,
+      "pre_intersection": 0.557
+     },
+     "matched": {
+      "post_intersection": 0.8992,
+      "pre_intersection": 0.9141
+     }
+    },
+    "QSS_vs_SSC": {
+     "pooled": {
+      "post_intersection": 0.8217,
+      "pre_intersection": 0.8217
+     },
+     "matched": {
+      "post_intersection": 0.9569,
+      "pre_intersection": 0.952
+     }
+    },
+    "YXSS_vs_SSC": {
+     "pooled": {
+      "post_intersection": 0.6344,
+      "pre_intersection": 0.6344
+     },
+     "matched": {
+      "post_intersection": 0.9611,
+      "pre_intersection": 0.9039
+     }
+    }
+   },
+   "per_poem_paired_delta": {
+    "QTS_vs_YD": {
+     "mean_abs_delta": 4.5478,
+     "mean_abs_delta_variant": 8.5239,
+     "between_author_sd": 28.5464,
+     "ratio_mean_abs_over_sd": 0.1593,
+     "n_shared_works_for_delta": 39079
+    },
+    "QSS_vs_YXSS": {
+     "mean_abs_delta": 5.1789,
+     "mean_abs_delta_variant": 5.1789,
+     "between_author_sd": 15.9592,
+     "ratio_mean_abs_over_sd": 0.3245,
+     "n_shared_works_for_delta": 4639
+    },
+    "QSS_vs_SSC": {
+     "mean_abs_delta": 3.4162,
+     "mean_abs_delta_variant": 3.4162,
+     "between_author_sd": 4.3741,
+     "ratio_mean_abs_over_sd": 0.781,
+     "n_shared_works_for_delta": 5378
+    },
+    "YXSS_vs_SSC": {
+     "mean_abs_delta": 4.5949,
+     "mean_abs_delta_variant": 4.9825,
+     "between_author_sd": 7.877,
+     "ratio_mean_abs_over_sd": 0.5833,
+     "n_shared_works_for_delta": 1067
+    }
+   }
+  },
+  "source": "results_cross_edition_aligned_{strict,loose}.json + results_align_variants.json",
+  "key": "variants.* / identity_baseline.pairs.* / threshold_sweep / decomposition / constrained / bootstrap_ci / threshold_order / per_poem_paired_delta"
+ },
+ "__stages__": "rebuilt after realign statistical rebuild (full history in recompute.log)"
+}

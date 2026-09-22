@@ -1,0 +1,157 @@
+{
+ "note": "符号统一为 (选本 − 总集)。song3_rep.py 的 robustness_size_matched 存的是 (总集 − 选本), 即本表之相反数。",
+ "YXSS": {
+  "n_authors": 256,
+  "per_dimension": {
+   "悲苦孤寂": {
+    "weighted_delta_full": 0.222,
+    "unweighted_shift_full": 0.834,
+    "unweighted_shift_sizematch": {
+     "mean": 0.826,
+     "ci": [
+      0.426,
+      1.21
+     ]
+    },
+    "sizematch_minus_full": -0.008
+   },
+   "贬谪羁旅": {
+    "weighted_delta_full": 1.179,
+    "unweighted_shift_full": 1.77,
+    "unweighted_shift_sizematch": {
+     "mean": 1.737,
+     "ci": [
+      1.488,
+      2.056
+     ]
+    },
+    "sizematch_minus_full": -0.033
+   },
+   "旷达闲适": {
+    "weighted_delta_full": 0.011,
+    "unweighted_shift_full": 0.532,
+    "unweighted_shift_sizematch": {
+     "mean": 0.471,
+     "ci": [
+      0.194,
+      0.752
+     ]
+    },
+    "sizematch_minus_full": -0.061
+   },
+   "自然山水": {
+    "weighted_delta_full": 13.279,
+    "unweighted_shift_full": 15.12,
+    "unweighted_shift_sizematch": {
+     "mean": 15.28,
+     "ci": [
+      14.254,
+      16.264
+     ]
+    },
+    "sizematch_minus_full": 0.16
+   },
+   "空幻时空": {
+    "weighted_delta_full": 2.495,
+    "unweighted_shift_full": 3.521,
+    "unweighted_shift_sizematch": {
+     "mean": 3.552,
+     "ci": [
+      2.95,
+      4.218
+     ]
+    },
+    "sizematch_minus_full": 0.031
+   }
+  },
+  "nmi": {
+   "weighted_delta_full": -0.224,
+   "unweighted_shift_full": -0.302,
+   "unweighted_shift_sizematch": {
+    "mean": -0.355,
+    "ci": [
+     -0.814,
+     0.103
+    ]
+   },
+   "sizematch_minus_full": -0.053
+  }
+ },
+ "SSC": {
+  "n_authors": 75,
+  "per_dimension": {
+   "悲苦孤寂": {
+    "weighted_delta_full": 0.58,
+    "unweighted_shift_full": 0.748,
+    "unweighted_shift_sizematch": {
+     "mean": 0.717,
+     "ci": [
+      0.375,
+      0.99
+     ]
+    },
+    "sizematch_minus_full": -0.031
+   },
+   "贬谪羁旅": {
+    "weighted_delta_full": 0.891,
+    "unweighted_shift_full": 1.326,
+    "unweighted_shift_sizematch": {
+     "mean": 1.267,
+     "ci": [
+      1.039,
+      1.487
+     ]
+    },
+    "sizematch_minus_full": -0.059
+   },
+   "旷达闲适": {
+    "weighted_delta_full": 0.209,
+    "unweighted_shift_full": 0.285,
+    "unweighted_shift_sizematch": {
+     "mean": 0.297,
+     "ci": [
+      0.043,
+      0.542
+     ]
+    },
+    "sizematch_minus_full": 0.012
+   },
+   "自然山水": {
+    "weighted_delta_full": 4.138,
+    "unweighted_shift_full": 5.668,
+    "unweighted_shift_sizematch": {
+     "mean": 5.624,
+     "ci": [
+      4.593,
+      6.779
+     ]
+    },
+    "sizematch_minus_full": -0.044
+   },
+   "空幻时空": {
+    "weighted_delta_full": 0.413,
+    "unweighted_shift_full": 1.212,
+    "unweighted_shift_sizematch": {
+     "mean": 1.177,
+     "ci": [
+      0.608,
+      1.73
+     ]
+    },
+    "sizematch_minus_full": -0.035
+   }
+  },
+  "nmi": {
+   "weighted_delta_full": -0.427,
+   "unweighted_shift_full": -0.463,
+   "unweighted_shift_sizematch": {
+    "mean": -0.42,
+    "ci": [
+     -0.77,
+     -0.016
+    ]
+   },
+   "sizematch_minus_full": 0.043
+  }
+ }
+}

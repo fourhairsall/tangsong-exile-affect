@@ -1,0 +1,1505 @@
+{
+  "method": "counterfactual edition-channel projection on the empirical-Bayes hierarchical model of hb_model.py: latent author dimension rates alpha_d (posterior combining corpus-side, official-anthology and private-anthology observations) projected to each channel via its dimension-level edition effect delta_d^C; NMI_cf = cf_旷达 - cf_悲苦; uncertainty = parametric bootstrap over (mu, tau, delta) x author posterior draws, B=300",
+  "design": {
+    "seed": 20260918,
+    "n_bootstrap": 300,
+    "clustering_inflation_k": 1.0108,
+    "minc_chars": 300,
+    "channels": {
+      "official": "御選宋詩 (四庫文淵閣, KR4h0143)",
+      "private": "宋詩鈔 (吳之振, 四庫文淵閣, KR4h0157)",
+      "tang_reprint": "御定全唐诗 vs 全唐诗 (同书重印渠道)"
+    }
+  },
+  "n_authors": {
+    "official": 256,
+    "private": 75,
+    "tri_way_author_level": 68,
+    "tang": 479
+  },
+  "reproducibility_check": {
+    "delta_nmi_official_recomputed": 0.148,
+    "delta_nmi_official_published_hb": 0.148,
+    "delta_nmi_private_recomputed": -0.676,
+    "delta_nmi_private_published_song3": -0.676,
+    "dim_deltas_official_recomputed": {
+      "悲苦孤寂": 1.389,
+      "贬谪羁旅": 0.046,
+      "旷达闲适": 1.671,
+      "自然山水": 16.678,
+      "空幻时空": 1.84
+    },
+    "dim_deltas_official_published_hb": {
+      "悲苦孤寂": 1.389,
+      "贬谪羁旅": 0.046,
+      "旷达闲适": 1.671,
+      "自然山水": 16.678,
+      "空幻时空": 1.84
+    }
+  },
+  "channel_deltas": {
+    "official_yuxuan_songshi": {
+      "n_authors": 256,
+      "悲苦孤寂": {
+        "delta": 1.389,
+        "se": 0.152,
+        "ci95_normal": [
+          1.091,
+          1.687
+        ],
+        "ci95_boot": [
+          1.091,
+          1.691
+        ],
+        "ci_excludes_zero": true
+      },
+      "贬谪羁旅": {
+        "delta": 0.046,
+        "se": 0.116,
+        "ci95_normal": [
+          -0.181,
+          0.273
+        ],
+        "ci95_boot": [
+          -0.168,
+          0.299
+        ],
+        "ci_excludes_zero": false
+      },
+      "旷达闲适": {
+        "delta": 1.671,
+        "se": 0.16,
+        "ci95_normal": [
+          1.358,
+          1.984
+        ],
+        "ci95_boot": [
+          1.371,
+          1.96
+        ],
+        "ci_excludes_zero": true
+      },
+      "自然山水": {
+        "delta": 16.678,
+        "se": 0.298,
+        "ci95_normal": [
+          16.095,
+          17.262
+        ],
+        "ci95_boot": [
+          16.117,
+          17.324
+        ],
+        "ci_excludes_zero": true
+      },
+      "空幻时空": {
+        "delta": 1.84,
+        "se": 0.199,
+        "ci95_normal": [
+          1.449,
+          2.231
+        ],
+        "ci95_boot": [
+          1.393,
+          2.257
+        ],
+        "ci_excludes_zero": true
+      },
+      "nmi": {
+        "delta": 0.148,
+        "se": 0.225,
+        "ci95_normal": [
+          -0.293,
+          0.59
+        ],
+        "ci95_boot": [
+          -0.219,
+          0.559
+        ],
+        "ci_excludes_zero": false
+      }
+    },
+    "private_songshichao": {
+      "n_authors": 75,
+      "悲苦孤寂": {
+        "delta": 1.532,
+        "se": 0.137,
+        "ci95_normal": [
+          1.263,
+          1.801
+        ],
+        "ci95_boot": [
+          1.296,
+          1.826
+        ],
+        "ci_excludes_zero": true
+      },
+      "贬谪羁旅": {
+        "delta": 0.146,
+        "se": 0.103,
+        "ci95_normal": [
+          -0.056,
+          0.347
+        ],
+        "ci95_boot": [
+          -0.084,
+          0.358
+        ],
+        "ci_excludes_zero": false
+      },
+      "旷达闲适": {
+        "delta": 0.884,
+        "se": 0.136,
+        "ci95_normal": [
+          0.618,
+          1.151
+        ],
+        "ci95_boot": [
+          0.598,
+          1.139
+        ],
+        "ci_excludes_zero": true
+      },
+      "自然山水": {
+        "delta": 4.524,
+        "se": 0.235,
+        "ci95_normal": [
+          4.063,
+          4.985
+        ],
+        "ci95_boot": [
+          4.128,
+          4.989
+        ],
+        "ci_excludes_zero": true
+      },
+      "空幻时空": {
+        "delta": 0.033,
+        "se": 0.171,
+        "ci95_normal": [
+          -0.301,
+          0.368
+        ],
+        "ci95_boot": [
+          -0.287,
+          0.343
+        ],
+        "ci_excludes_zero": false
+      },
+      "nmi": {
+        "delta": -0.676,
+        "se": 0.195,
+        "ci95_normal": [
+          -1.057,
+          -0.294
+        ],
+        "ci95_boot": [
+          -1.03,
+          -0.297
+        ],
+        "ci_excludes_zero": true
+      }
+    },
+    "tang_reprint_yuding_quantangshi": {
+      "n_authors": 479,
+      "悲苦孤寂": {
+        "delta": 0.526,
+        "se": 0.098,
+        "ci95_normal": [
+          0.335,
+          0.717
+        ],
+        "ci95_boot": [
+          0.352,
+          0.721
+        ],
+        "ci_excludes_zero": true
+      },
+      "贬谪羁旅": {
+        "delta": 0.093,
+        "se": 0.076,
+        "ci95_normal": [
+          -0.057,
+          0.242
+        ],
+        "ci95_boot": [
+          -0.063,
+          0.219
+        ],
+        "ci_excludes_zero": false
+      },
+      "旷达闲适": {
+        "delta": 0.546,
+        "se": 0.093,
+        "ci95_normal": [
+          0.363,
+          0.728
+        ],
+        "ci95_boot": [
+          0.393,
+          0.72
+        ],
+        "ci_excludes_zero": true
+      },
+      "自然山水": {
+        "delta": -0.23,
+        "se": 0.163,
+        "ci95_normal": [
+          -0.55,
+          0.09
+        ],
+        "ci95_boot": [
+          -0.524,
+          0.085
+        ],
+        "ci_excludes_zero": false
+      },
+      "空幻时空": {
+        "delta": -0.226,
+        "se": 0.118,
+        "ci95_normal": [
+          -0.457,
+          0.004
+        ],
+        "ci95_boot": [
+          -0.462,
+          0.034
+        ],
+        "ci_excludes_zero": false
+      },
+      "nmi": {
+        "delta": -0.041,
+        "se": 0.139,
+        "ci95_normal": [
+          -0.312,
+          0.231
+        ],
+        "ci95_boot": [
+          -0.293,
+          0.199
+        ],
+        "ci_excludes_zero": false
+      }
+    }
+  },
+  "latent_population_per_dim": {
+    "悲苦孤寂": {
+      "mu": 10.92,
+      "tau": 3.351,
+      "tau_ci95_boot": [
+        3.028,
+        3.623
+      ]
+    },
+    "贬谪羁旅": {
+      "mu": 6.889,
+      "tau": 1.561,
+      "tau_ci95_boot": [
+        1.398,
+        1.727
+      ]
+    },
+    "旷达闲适": {
+      "mu": 11.743,
+      "tau": 2.27,
+      "tau_ci95_boot": [
+        2.011,
+        2.509
+      ]
+    },
+    "自然山水": {
+      "mu": 36.096,
+      "tau": 9.704,
+      "tau_ci95_boot": [
+        8.744,
+        10.519
+      ]
+    },
+    "空幻时空": {
+      "mu": 19.658,
+      "tau": 3.434,
+      "tau_ci95_boot": [
+        3.049,
+        3.775
+      ]
+    }
+  },
+  "queue_authors": [
+    {
+      "author": "苏轼",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": true,
+      "chars_qss": 210950,
+      "chars_yuxuan": 41967,
+      "nmi_qss_measured": 0.407,
+      "nmi_yuxuan_measured": 0.333,
+      "observed_shift_nmi": -0.074,
+      "nmi_cf_official": {
+        "mean": 0.614,
+        "ci95": [
+          -0.098,
+          1.31
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": 0.042,
+        "ci95": [
+          -1.288,
+          1.564
+        ]
+      },
+      "chars_songshichao": 42101,
+      "nmi_songshichao_measured": -0.356,
+      "nmi_cf_private": {
+        "mean": -0.3,
+        "ci95": [
+          -0.94,
+          0.392
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 11.11,
+          "yuxuan_rate": 13.11,
+          "cf_official": {
+            "mean": 12.597,
+            "ci95": [
+              12.102,
+              13.044
+            ]
+          },
+          "songshichao_rate": 13.06,
+          "cf_private": {
+            "mean": 12.768,
+            "ci95": [
+              12.259,
+              13.252
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 6.64,
+          "yuxuan_rate": 6.74,
+          "cf_official": {
+            "mean": 6.7,
+            "ci95": [
+              6.344,
+              7.075
+            ]
+          },
+          "songshichao_rate": 7.77,
+          "cf_private": {
+            "mean": 6.912,
+            "ci95": [
+              6.532,
+              7.228
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 11.52,
+          "yuxuan_rate": 13.44,
+          "cf_official": {
+            "mean": 13.211,
+            "ci95": [
+              12.69,
+              13.669
+            ]
+          },
+          "songshichao_rate": 12.71,
+          "cf_private": {
+            "mean": 12.467,
+            "ci95": [
+              12.049,
+              12.905
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 33.4,
+          "yuxuan_rate": 48.35,
+          "cf_official": {
+            "mean": 49.89,
+            "ci95": [
+              49.036,
+              50.724
+            ]
+          },
+          "songshichao_rate": 38.43,
+          "cf_private": {
+            "mean": 37.807,
+            "ci95": [
+              37.038,
+              38.541
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 19.51,
+          "yuxuan_rate": 20.9,
+          "cf_official": {
+            "mean": 21.27,
+            "ci95": [
+              20.599,
+              21.919
+            ]
+          },
+          "songshichao_rate": 19.45,
+          "cf_private": {
+            "mean": 19.504,
+            "ci95": [
+              18.978,
+              20.066
+            ]
+          }
+        }
+      }
+    },
+    {
+      "author": "欧阳修",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": true,
+      "chars_qss": 85554,
+      "chars_yuxuan": 16767,
+      "nmi_qss_measured": -0.175,
+      "nmi_yuxuan_measured": -0.418,
+      "observed_shift_nmi": -0.243,
+      "nmi_cf_official": {
+        "mean": 0.062,
+        "ci95": [
+          -0.848,
+          1.013
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": -0.481,
+        "ci95": [
+          -2.773,
+          1.99
+        ]
+      },
+      "chars_songshichao": 30630,
+      "nmi_songshichao_measured": -2.09,
+      "nmi_cf_private": {
+        "mean": -1.151,
+        "ci95": [
+          -2.015,
+          -0.331
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 11.6,
+          "yuxuan_rate": 13.3,
+          "cf_official": {
+            "mean": 13.008,
+            "ci95": [
+              12.365,
+              13.673
+            ]
+          },
+          "songshichao_rate": 12.99,
+          "cf_private": {
+            "mean": 13.096,
+            "ci95": [
+              12.506,
+              13.716
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 8.04,
+          "yuxuan_rate": 8.47,
+          "cf_official": {
+            "mean": 8.1,
+            "ci95": [
+              7.568,
+              8.618
+            ]
+          },
+          "songshichao_rate": 7.15,
+          "cf_private": {
+            "mean": 7.955,
+            "ci95": [
+              7.496,
+              8.462
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 11.42,
+          "yuxuan_rate": 12.88,
+          "cf_official": {
+            "mean": 13.07,
+            "ci95": [
+              12.38,
+              13.706
+            ]
+          },
+          "songshichao_rate": 10.9,
+          "cf_private": {
+            "mean": 11.945,
+            "ci95": [
+              11.322,
+              12.513
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 34.26,
+          "yuxuan_rate": 55.17,
+          "cf_official": {
+            "mean": 51.427,
+            "ci95": [
+              50.229,
+              52.729
+            ]
+          },
+          "songshichao_rate": 30.92,
+          "cf_private": {
+            "mean": 37.167,
+            "ci95": [
+              36.129,
+              38.17
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 17.61,
+          "yuxuan_rate": 17.83,
+          "cf_official": {
+            "mean": 19.23,
+            "ci95": [
+              18.402,
+              20.018
+            ]
+          },
+          "songshichao_rate": 16.49,
+          "cf_private": {
+            "mean": 17.199,
+            "ci95": [
+              16.474,
+              17.915
+            ]
+          }
+        }
+      }
+    },
+    {
+      "author": "黄庭坚",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": true,
+      "chars_qss": 154737,
+      "chars_yuxuan": 6038,
+      "nmi_qss_measured": 1.344,
+      "nmi_yuxuan_measured": 0.166,
+      "observed_shift_nmi": -1.178,
+      "nmi_cf_official": {
+        "mean": 1.586,
+        "ci95": [
+          0.807,
+          2.332
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": 0.311,
+        "ci95": [
+          -3.358,
+          3.256
+        ]
+      },
+      "chars_songshichao": 27243,
+      "nmi_songshichao_measured": -0.184,
+      "nmi_cf_private": {
+        "mean": 0.542,
+        "ci95": [
+          -0.083,
+          1.204
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 9.11,
+          "yuxuan_rate": 9.77,
+          "cf_official": {
+            "mean": 10.5,
+            "ci95": [
+              9.951,
+              11.107
+            ]
+          },
+          "songshichao_rate": 10.43,
+          "cf_private": {
+            "mean": 10.593,
+            "ci95": [
+              10.136,
+              11.093
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 5.25,
+          "yuxuan_rate": 6.79,
+          "cf_official": {
+            "mean": 5.39,
+            "ci95": [
+              4.957,
+              5.808
+            ]
+          },
+          "songshichao_rate": 5.32,
+          "cf_private": {
+            "mean": 5.434,
+            "ci95": [
+              5.03,
+              5.844
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 10.45,
+          "yuxuan_rate": 9.94,
+          "cf_official": {
+            "mean": 12.086,
+            "ci95": [
+              11.494,
+              12.669
+            ]
+          },
+          "songshichao_rate": 10.24,
+          "cf_private": {
+            "mean": 11.136,
+            "ci95": [
+              10.699,
+              11.637
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 33.37,
+          "yuxuan_rate": 45.38,
+          "cf_official": {
+            "mean": 49.903,
+            "ci95": [
+              48.951,
+              50.894
+            ]
+          },
+          "songshichao_rate": 35.86,
+          "cf_private": {
+            "mean": 37.541,
+            "ci95": [
+              36.724,
+              38.389
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 18.88,
+          "yuxuan_rate": 17.06,
+          "cf_official": {
+            "mean": 20.535,
+            "ci95": [
+              19.809,
+              21.311
+            ]
+          },
+          "songshichao_rate": 17.69,
+          "cf_private": {
+            "mean": 18.598,
+            "ci95": [
+              17.934,
+              19.229
+            ]
+          }
+        }
+      }
+    },
+    {
+      "author": "秦观",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": true,
+      "chars_qss": 33126,
+      "chars_yuxuan": 2301,
+      "nmi_qss_measured": -2.113,
+      "nmi_yuxuan_measured": 0.0,
+      "observed_shift_nmi": 2.113,
+      "nmi_cf_official": {
+        "mean": -1.558,
+        "ci95": [
+          -3.172,
+          -0.008
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": 0.582,
+        "ci95": [
+          -4.136,
+          5.963
+        ]
+      },
+      "chars_songshichao": 8641,
+      "nmi_songshichao_measured": -4.398,
+      "nmi_cf_private": {
+        "mean": -2.719,
+        "ci95": [
+          -4.256,
+          -1.422
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 12.07,
+          "yuxuan_rate": 11.3,
+          "cf_official": {
+            "mean": 13.274,
+            "ci95": [
+              12.071,
+              14.355
+            ]
+          },
+          "songshichao_rate": 15.74,
+          "cf_private": {
+            "mean": 13.743,
+            "ci95": [
+              12.717,
+              14.888
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 7.4,
+          "yuxuan_rate": 6.08,
+          "cf_official": {
+            "mean": 7.276,
+            "ci95": [
+              6.427,
+              8.122
+            ]
+          },
+          "songshichao_rate": 8.91,
+          "cf_private": {
+            "mean": 7.593,
+            "ci95": [
+              6.75,
+              8.459
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 9.96,
+          "yuxuan_rate": 11.3,
+          "cf_official": {
+            "mean": 11.716,
+            "ci95": [
+              10.751,
+              12.699
+            ]
+          },
+          "songshichao_rate": 11.34,
+          "cf_private": {
+            "mean": 11.024,
+            "ci95": [
+              10.038,
+              11.934
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 33.42,
+          "yuxuan_rate": 56.5,
+          "cf_official": {
+            "mean": 50.439,
+            "ci95": [
+              48.609,
+              52.353
+            ]
+          },
+          "songshichao_rate": 42.36,
+          "cf_private": {
+            "mean": 38.939,
+            "ci95": [
+              37.438,
+              40.55
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 19.95,
+          "yuxuan_rate": 23.03,
+          "cf_official": {
+            "mean": 21.878,
+            "ci95": [
+              20.42,
+              23.375
+            ]
+          },
+          "songshichao_rate": 21.52,
+          "cf_private": {
+            "mean": 20.322,
+            "ci95": [
+              19.071,
+              21.541
+            ]
+          }
+        }
+      }
+    },
+    {
+      "author": "王禹偁",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": true,
+      "chars_qss": 59055,
+      "chars_yuxuan": 7656,
+      "nmi_qss_measured": -0.982,
+      "nmi_yuxuan_measured": 2.351,
+      "observed_shift_nmi": 3.333,
+      "nmi_cf_official": {
+        "mean": -0.273,
+        "ci95": [
+          -1.596,
+          0.996
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": 2.143,
+        "ci95": [
+          -0.706,
+          5.145
+        ]
+      },
+      "chars_songshichao": 19805,
+      "nmi_songshichao_measured": 0.757,
+      "nmi_cf_private": {
+        "mean": -0.784,
+        "ci95": [
+          -1.731,
+          0.233
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 11.46,
+          "yuxuan_rate": 10.45,
+          "cf_official": {
+            "mean": 12.521,
+            "ci95": [
+              11.653,
+              13.471
+            ]
+          },
+          "songshichao_rate": 12.98,
+          "cf_private": {
+            "mean": 12.708,
+            "ci95": [
+              12.073,
+              13.389
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 9.31,
+          "yuxuan_rate": 10.32,
+          "cf_official": {
+            "mean": 9.331,
+            "ci95": [
+              8.586,
+              9.989
+            ]
+          },
+          "songshichao_rate": 9.8,
+          "cf_private": {
+            "mean": 9.495,
+            "ci95": [
+              8.796,
+              10.178
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 10.48,
+          "yuxuan_rate": 12.8,
+          "cf_official": {
+            "mean": 12.249,
+            "ci95": [
+              11.359,
+              13.142
+            ]
+          },
+          "songshichao_rate": 13.73,
+          "cf_private": {
+            "mean": 11.924,
+            "ci95": [
+              11.214,
+              12.591
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 25.94,
+          "yuxuan_rate": 38.01,
+          "cf_official": {
+            "mean": 42.291,
+            "ci95": [
+              40.9,
+              43.758
+            ]
+          },
+          "songshichao_rate": 30.7,
+          "cf_private": {
+            "mean": 30.253,
+            "ci95": [
+              29.119,
+              31.479
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 14.61,
+          "yuxuan_rate": 16.07,
+          "cf_official": {
+            "mean": 16.462,
+            "ci95": [
+              15.367,
+              17.491
+            ]
+          },
+          "songshichao_rate": 14.85,
+          "cf_private": {
+            "mean": 14.744,
+            "ci95": [
+              13.966,
+              15.547
+            ]
+          }
+        }
+      }
+    },
+    {
+      "author": "范仲淹",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": false,
+      "chars_qss": 22363,
+      "chars_yuxuan": 4067,
+      "nmi_qss_measured": 3.354,
+      "nmi_yuxuan_measured": 4.918,
+      "observed_shift_nmi": 1.564,
+      "nmi_cf_official": {
+        "mean": 3.606,
+        "ci95": [
+          1.732,
+          5.433
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": 3.552,
+        "ci95": [
+          -0.436,
+          7.734
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 9.66,
+          "yuxuan_rate": 10.08,
+          "cf_official": {
+            "mean": 10.983,
+            "ci95": [
+              9.88,
+              12.235
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 6.13,
+          "yuxuan_rate": 6.15,
+          "cf_official": {
+            "mean": 6.275,
+            "ci95": [
+              5.295,
+              7.427
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 13.01,
+          "yuxuan_rate": 15.0,
+          "cf_official": {
+            "mean": 14.589,
+            "ci95": [
+              13.181,
+              15.957
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 39.17,
+          "yuxuan_rate": 59.5,
+          "cf_official": {
+            "mean": 56.07,
+            "ci95": [
+              53.469,
+              58.677
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 21.82,
+          "yuxuan_rate": 27.54,
+          "cf_official": {
+            "mean": 23.989,
+            "ci95": [
+              22.045,
+              26.186
+            ]
+          }
+        }
+      }
+    },
+    {
+      "author": "辛弃疾",
+      "in_songshi_corpus": true,
+      "in_official_channel": false,
+      "in_private_channel": false,
+      "chars_qss": 7059,
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 8.93
+        },
+        "贬谪羁旅": {
+          "qss_rate": 3.97
+        },
+        "旷达闲适": {
+          "qss_rate": 13.18
+        },
+        "自然山水": {
+          "qss_rate": 35.13
+        },
+        "空幻时空": {
+          "qss_rate": 20.82
+        }
+      }
+    },
+    {
+      "author": "陆游",
+      "in_songshi_corpus": true,
+      "in_official_channel": true,
+      "in_private_channel": true,
+      "chars_qss": 540788,
+      "chars_yuxuan": 25638,
+      "nmi_qss_measured": 0.565,
+      "nmi_yuxuan_measured": -1.326,
+      "observed_shift_nmi": -1.891,
+      "nmi_cf_official": {
+        "mean": 0.743,
+        "ci95": [
+          0.174,
+          1.412
+        ]
+      },
+      "nmi_reverse_from_official_only": {
+        "mean": -1.615,
+        "ci95": [
+          -3.597,
+          0.42
+        ]
+      },
+      "chars_songshichao": 52118,
+      "nmi_songshichao_measured": -0.863,
+      "nmi_cf_private": {
+        "mean": -0.262,
+        "ci95": [
+          -0.844,
+          0.397
+        ]
+      },
+      "per_dim": {
+        "悲苦孤寂": {
+          "qss_rate": 15.28,
+          "yuxuan_rate": 17.59,
+          "cf_official": {
+            "mean": 16.696,
+            "ci95": [
+              16.198,
+              17.164
+            ]
+          },
+          "songshichao_rate": 17.25,
+          "cf_private": {
+            "mean": 16.876,
+            "ci95": [
+              16.507,
+              17.279
+            ]
+          }
+        },
+        "贬谪羁旅": {
+          "qss_rate": 6.12,
+          "yuxuan_rate": 8.0,
+          "cf_official": {
+            "mean": 6.216,
+            "ci95": [
+              5.929,
+              6.512
+            ]
+          },
+          "songshichao_rate": 6.47,
+          "cf_private": {
+            "mean": 6.337,
+            "ci95": [
+              6.048,
+              6.605
+            ]
+          }
+        },
+        "旷达闲适": {
+          "qss_rate": 15.85,
+          "yuxuan_rate": 16.27,
+          "cf_official": {
+            "mean": 17.439,
+            "ci95": [
+              17.051,
+              17.871
+            ]
+          },
+          "songshichao_rate": 16.39,
+          "cf_private": {
+            "mean": 16.614,
+            "ci95": [
+              16.22,
+              17.003
+            ]
+          }
+        },
+        "自然山水": {
+          "qss_rate": 29.87,
+          "yuxuan_rate": 46.73,
+          "cf_official": {
+            "mean": 46.574,
+            "ci95": [
+              45.836,
+              47.292
+            ]
+          },
+          "songshichao_rate": 36.3,
+          "cf_private": {
+            "mean": 34.591,
+            "ci95": [
+              33.97,
+              35.227
+            ]
+          }
+        },
+        "空幻时空": {
+          "qss_rate": 19.25,
+          "yuxuan_rate": 20.09,
+          "cf_official": {
+            "mean": 21.048,
+            "ci95": [
+              20.593,
+              21.623
+            ]
+          },
+          "songshichao_rate": 19.13,
+          "cf_private": {
+            "mean": 19.227,
+            "ci95": [
+              18.764,
+              19.635
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "author_level_sensitivity": {
+    "definition": "observed shift d_i = NMI(官修选本测得) - NMI(全集测得), 256 authors",
+    "n_ci_excludes_zero": 26,
+    "top10_most_edition_fragile": [
+      {
+        "author": "舒雅",
+        "d": -34.21,
+        "se": 11.4,
+        "ci": [
+          -56.56,
+          -11.86
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "陈东",
+        "d": 22.53,
+        "se": 10.98,
+        "ci": [
+          1.02,
+          44.05
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "王梦应",
+        "d": -21.15,
+        "se": 8.69,
+        "ci": [
+          -38.18,
+          -4.13
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "赵蕃",
+        "d": 18.54,
+        "se": 6.96,
+        "ci": [
+          4.91,
+          32.18
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "田锡",
+        "d": -17.77,
+        "se": 4.97,
+        "ci": [
+          -27.52,
+          -8.03
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "周文璞",
+        "d": 16.03,
+        "se": 5.05,
+        "ci": [
+          6.13,
+          25.92
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "崔与之",
+        "d": -14.88,
+        "se": 6.57,
+        "ci": [
+          -27.77,
+          -2.0
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "程珌",
+        "d": 14.76,
+        "se": 7.42,
+        "ci": [
+          0.22,
+          29.3
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "戴昺",
+        "d": 14.27,
+        "se": 5.3,
+        "ci": [
+          3.89,
+          24.66
+        ],
+        "ci_excludes_zero": true
+      },
+      {
+        "author": "黄希旦",
+        "d": -13.52,
+        "se": 4.08,
+        "ci": [
+          -21.52,
+          -5.52
+        ],
+        "ci_excludes_zero": true
+      }
+    ],
+    "top10_most_stable": [
+      {
+        "author": "李之仪",
+        "d": -0.02,
+        "se": 4.42,
+        "ci": [
+          -8.68,
+          8.64
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "吕声之",
+        "d": 0.05,
+        "se": 7.7,
+        "ci": [
+          -15.04,
+          15.13
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "冯山",
+        "d": -0.06,
+        "se": 3.68,
+        "ci": [
+          -7.27,
+          7.14
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "苏轼",
+        "d": -0.07,
+        "se": 0.86,
+        "ci": [
+          -1.77,
+          1.62
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "施枢",
+        "d": 0.08,
+        "se": 5.88,
+        "ci": [
+          -11.45,
+          11.61
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "夏竦",
+        "d": 0.11,
+        "se": 6.93,
+        "ci": [
+          -13.48,
+          13.69
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "林景熙",
+        "d": 0.11,
+        "se": 2.73,
+        "ci": [
+          -5.24,
+          5.47
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "朱松",
+        "d": 0.12,
+        "se": 2.77,
+        "ci": [
+          -5.31,
+          5.56
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "吴龙翰",
+        "d": -0.15,
+        "se": 4.52,
+        "ci": [
+          -9.02,
+          8.72
+        ],
+        "ci_excludes_zero": false
+      },
+      {
+        "author": "朱淑真",
+        "d": -0.16,
+        "se": 4.0,
+        "ci": [
+          -8.01,
+          7.68
+        ],
+        "ci_excludes_zero": false
+      }
+    ],
+    "ranking_flips_queue8_official_channel": [],
+    "ranking_flips_all256": {
+      "n_authors": 256,
+      "spearman_rank_measured_vs_cf_official": 0.9633,
+      "n_discordant_pairs": 4426
+    }
+  },
+  "liuyuxi_tang": {
+    "author": "刘禹锡",
+    "in_tang_pair": true,
+    "nmi_qts_measured": -0.881,
+    "nmi_yuding_measured": -1.711,
+    "nmi_cf_tang_reprint": {
+      "mean": -1.262,
+      "ci95": [
+        -2.074,
+        -0.418
+      ]
+    },
+    "per_dim": {
+      "悲苦孤寂": {
+        "qts_rate": 11.98,
+        "yuding_rate": 12.81,
+        "cf_tang": {
+          "mean": 12.659,
+          "ci95": [
+            11.895,
+            13.344
+          ]
+        }
+      },
+      "贬谪羁旅": {
+        "qts_rate": 8.58,
+        "yuding_rate": 8.84,
+        "cf_tang": {
+          "mean": 8.765,
+          "ci95": [
+            8.1,
+            9.356
+          ]
+        }
+      },
+      "旷达闲适": {
+        "qts_rate": 11.1,
+        "yuding_rate": 11.1,
+        "cf_tang": {
+          "mean": 11.398,
+          "ci95": [
+            10.783,
+            12.07
+          ]
+        }
+      },
+      "自然山水": {
+        "qts_rate": 34.97,
+        "yuding_rate": 34.14,
+        "cf_tang": {
+          "mean": 34.471,
+          "ci95": [
+            33.235,
+            35.761
+          ]
+        }
+      },
+      "空幻时空": {
+        "qts_rate": 17.99,
+        "yuding_rate": 18.15,
+        "cf_tang": {
+          "mean": 17.975,
+          "ci95": [
+            17.183,
+            18.747
+          ]
+        }
+      }
+    }
+  }
+}

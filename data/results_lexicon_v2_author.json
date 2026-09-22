@@ -1,0 +1,13 @@
+{
+ "v1": {
+  "author_pearson": 0.374,
+  "author_spearman": 0.355,
+  "cohort_pearson": 0.692
+ },
+ "v2a": {
+  "author_pearson": 0.41,
+  "author_spearman": 0.381,
+  "cohort_pearson": 0.527
+ },
+ "n_authors": 41
+}

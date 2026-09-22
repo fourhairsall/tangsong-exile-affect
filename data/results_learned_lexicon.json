@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "V": 3501,
+    "min_freq": 20,
+    "W": 4,
+    "k": 100,
+    "n_pairs": 7868868,
+    "N_cooc": 15737736.0
+  },
+  "n_train_poems": 20386,
+  "lexicon_sizes": {
+    "悲苦孤寂": 61,
+    "贬谪羁旅": 23,
+    "旷达闲适": 44,
+    "自然山水": 94,
+    "空幻时空": 23
+  },
+  "lexicon_mean_cos": {
+    "悲苦孤寂": 0.6538,
+    "贬谪羁旅": null,
+    "旷达闲适": 0.6537,
+    "自然山水": 0.6726,
+    "空幻时空": null
+  },
+  "lexicon_fallback_to_M1_seeds": {
+    "悲苦孤寂": false,
+    "贬谪羁旅": true,
+    "旷达闲适": false,
+    "自然山水": false,
+    "空幻时空": true
+  },
+  "coverage_heldout_M1": {
+    "悲苦孤寂": 0.2854,
+    "贬谪羁旅": 0.32,
+    "旷达闲适": 0.3622,
+    "自然山水": 0.817,
+    "空幻时空": 0.6176
+  },
+  "coverage_heldout_learned": {
+    "悲苦孤寂": 0.1776,
+    "贬谪羁旅": 0.3272,
+    "旷达闲适": 0.1998,
+    "自然山水": 0.6056,
+    "空幻时空": 0.6166
+  },
+  "any_hit_M1": 0.9536,
+  "any_hit_learned": 0.8932,
+  "convergent_validity_author_pearson_r": 0.7483,
+  "n_authors_validated": 153,
+  "gate": {
+    "th": 0.55,
+    "delta": 0.13,
+    "note": "specificity (cos to best pole) AND neutral-contrast (cos-best minus cos-neutral); M1 seed chars locked to own category"
+  }
+}

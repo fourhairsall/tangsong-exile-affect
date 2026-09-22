@@ -1,0 +1,130 @@
+{
+  "pool_size": 20847,
+  "vocab_size": 7649,
+  "n_train": 17719,
+  "n_test": 3128,
+  "device": "cuda",
+  "epochs": 14,
+  "budget": "14ep / identical split & pool",
+  "models": {
+    "charcnn": {
+      "params": 563713,
+      "multitask": false,
+      "r": 0.9289024967676982,
+      "rho": 0.772695604995019,
+      "MAE": 3.5566372871398926,
+      "RMSE": 5.974758459340506,
+      "n_test": 3128
+    },
+    "labelmatched_cnn": {
+      "params": 597254,
+      "multitask": true,
+      "r": 0.9335309826900591,
+      "rho": 0.7705027419375876,
+      "MAE": 4.131226539611816,
+      "RMSE": 7.543629203025184,
+      "n_test": 3128,
+      "profile_pearson_r": [
+        0.8922499849887282,
+        0.031370457400071765,
+        0.8953103464236775,
+        0.041911918145219496,
+        -0.012155002212282379
+      ]
+    },
+    "wideplain_cnn": {
+      "params": 599622,
+      "multitask": true,
+      "r": 0.9765553100441908,
+      "rho": 0.7849089502120428,
+      "MAE": 1.8333696126937866,
+      "RMSE": 3.350858031887612,
+      "n_test": 3128,
+      "profile_pearson_r": [
+        0.9078738494503035,
+        -0.0319071050282942,
+        0.9103224333867973,
+        0.05776454465126838,
+        0.028264246773495448
+      ]
+    },
+    "overlock_1d": {
+      "params": 896326,
+      "multitask": true,
+      "r": 0.9738844101657735,
+      "rho": 0.7727632570384679,
+      "MAE": 1.7850239276885986,
+      "RMSE": 3.4786176115032457,
+      "n_test": 3128,
+      "profile_pearson_r": [
+        0.9553508156879613,
+        0.04631155778847141,
+        0.9585602534768514,
+        0.05207198114435364,
+        -0.015410614560302538
+      ]
+    },
+    "transxnet_1d": {
+      "params": 643462,
+      "multitask": true,
+      "r": 0.9813699393055217,
+      "rho": 0.7895793172496524,
+      "MAE": 1.4743586778640747,
+      "RMSE": 3.130575318280219,
+      "n_test": 3128,
+      "profile_pearson_r": [
+        0.9338746716259051,
+        -0.030112512911123605,
+        0.9461470367611524,
+        0.06612894801505857,
+        0.04327713005848104
+      ]
+    },
+    "pfgn_1d": {
+      "params": 738889,
+      "multitask": true,
+      "r": 0.9739208328922989,
+      "rho": 0.7840239111266888,
+      "MAE": 1.6146290302276611,
+      "RMSE": 3.551992077741294,
+      "n_test": 3128,
+      "profile_pearson_r": [
+        0.9280572317874798,
+        0.003424326085672244,
+        0.9362332053095149,
+        0.05525905457416195,
+        -0.03166296361719347
+      ]
+    },
+    "attnfractal_cnn": {
+      "params": 630534,
+      "multitask": true,
+      "r": 0.9766913595108402,
+      "rho": 0.7802943118902597,
+      "MAE": 1.6339327096939087,
+      "RMSE": 3.347790424947493,
+      "n_test": 3128,
+      "profile_pearson_r": [
+        0.9757069418221477,
+        0.024394361440016707,
+        0.970483501888009,
+        0.12465744186673437,
+        0.0499638217259111
+      ]
+    }
+  },
+  "references": {
+    "attnfractal_cnn_30ep_prior": {
+      "r": 0.9883,
+      "MAE": 1.11,
+      "note": "prior run dl_attn_fractal.py, 30-epoch ceiling (14ep already ~0.988)"
+    }
+  },
+  "citations": {
+    "overlock_1d": "OverLoCK (CVPR 2025), Lou & Yu, arXiv:2502.20087 — pure ConvNet, top-down attention + context-mixing dynamic kernels (ContMix).",
+    "transxnet_1d": "TransXNet (TNNLS 2025), Lou et al., arXiv:2310.19380 / DOI 10.1109/TNNLS.2025.3550979 — CNN-Transformer hybrid, Dual Dynamic token Mixer (D-Mixer).",
+    "pfgn_1d": "PFGNet (CVPR 2026), Cai et al., arXiv:2602.20537 — fully convolutional, frequency-guided peripheral gating.",
+    "charcnn": "Kim (2014) char-CNN baseline, reproduced from dl_model.py / analyze_v4.py.",
+    "attnfractal_cnn": "Proposed: multi-scale local conv + FractalTower (self-similar dilated residual) + multi-head readout attention; NMI + 5-dim profile heads."
+  }
+}

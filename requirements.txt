@@ -1,0 +1,26 @@
+# Pinned dependencies for full reproducibility of the analysis pipeline
+# (recompute_all.py re-derives every number in the paper from the raw corpora).
+#
+# PyTorch is pinned to the CPU build. Install with:
+#   pip install -r requirements.txt
+# If pip does not auto-select the CPU wheel, force the index:
+#   pip install torch==2.14.0+cpu --index-url https://download.pytorch.org/whl/cpu
+
+torch==2.14.0+cpu
+numpy>=1.24
+
+# Traditional->simplified conversion. Two distributions expose the identical
+# `opencc.OpenCC('t2s')` API, but their conversion dictionaries are NOT
+# interchangeable at the precision reported in this paper:
+#
+#   opencc-python-reimplemented==0.1.7 -> Tang n=479 authors, A=0.9493
+#   OpenCC==1.4.2                      -> Tang n=478 authors, A=0.9494
+#
+# Every number here was produced with the reimplementation, which reproduces
+# cross_edition_points.json and Table tab:invariance exactly (Tang A=0.9493 at
+# n=479; Song A=0.5149 at n=256). Substituting OpenCC 1.4.2 shifts the fourth
+# decimal and drops one Tang author from the >=300-character inclusion set, so
+# Table tab:tang and the realignment figures of tab:realign would not re-derive
+# exactly. Prefer the pinned variant below; if only OpenCC is available, treat
+# small discrepancies in the last reported digit as expected.
+opencc-python-reimplemented==0.1.7

@@ -1,0 +1,112 @@
+{
+  "method": "per-author sign-flip probability under lexicon perturbation: each of B draws independently removes a random 10% of entries from each affective pole (Kuang, Bei), NMI recomputed from surviving word counts over the author's complete collection; flip = sign reversal relative to the full-lexicon NMI",
+  "seed": 20260918,
+  "B": 2000,
+  "drop_fraction": 0.1,
+  "n_drop_kuang": 4,
+  "n_drop_bei": 6,
+  "pole_sizes": {
+    "旷达闲适": 43,
+    "悲苦孤寂": 56
+  },
+  "baseline_source": "results_v5_methods.json:net_mind_methods:M1_lexicon (asserted equal)",
+  "aggregation": "identical to methods_compare_v5.py:agg_net (str.count, per-1000-chars)",
+  "flip_rates": {
+    "柳宗元": {
+      "nmi_baseline": 0.221,
+      "flip_rate": 0.3425,
+      "flip_pct": 34.2,
+      "perturbed_mean": 0.36,
+      "perturbed_p05": -0.937,
+      "perturbed_p95": 1.654
+    },
+    "刘禹锡": {
+      "nmi_baseline": -0.881,
+      "flip_rate": 0.2695,
+      "flip_pct": 26.9,
+      "perturbed_mean": -0.616,
+      "perturbed_p05": -2.291,
+      "perturbed_p95": 0.952
+    },
+    "韩愈": {
+      "nmi_baseline": -2.491,
+      "flip_rate": 0.006,
+      "flip_pct": 0.6,
+      "perturbed_mean": -2.125,
+      "perturbed_p05": -3.513,
+      "perturbed_p95": -0.86
+    },
+    "白居易": {
+      "nmi_baseline": 1.762,
+      "flip_rate": 0.096,
+      "flip_pct": 9.6,
+      "perturbed_mean": 1.788,
+      "perturbed_p05": -0.526,
+      "perturbed_p95": 3.78
+    },
+    "苏轼": {
+      "nmi_baseline": 0.408,
+      "flip_rate": 0.2825,
+      "flip_pct": 28.2,
+      "perturbed_mean": 0.516,
+      "perturbed_p05": -1.143,
+      "perturbed_p95": 2.167
+    },
+    "欧阳修": {
+      "nmi_baseline": -0.175,
+      "flip_rate": 0.524,
+      "flip_pct": 52.4,
+      "perturbed_mean": -0.014,
+      "perturbed_p05": -1.918,
+      "perturbed_p95": 1.707
+    },
+    "黄庭坚": {
+      "nmi_baseline": 1.344,
+      "flip_rate": 0.065,
+      "flip_pct": 6.5,
+      "perturbed_mean": 1.349,
+      "perturbed_p05": -0.103,
+      "perturbed_p95": 2.598
+    },
+    "秦观": {
+      "nmi_baseline": -2.113,
+      "flip_rate": 0.0255,
+      "flip_pct": 2.5,
+      "perturbed_mean": -1.738,
+      "perturbed_p05": -3.321,
+      "perturbed_p95": -0.242
+    },
+    "王禹偁": {
+      "nmi_baseline": -0.982,
+      "flip_rate": 0.211,
+      "flip_pct": 21.1,
+      "perturbed_mean": -0.742,
+      "perturbed_p05": -2.372,
+      "perturbed_p95": 0.694
+    },
+    "范仲淹": {
+      "nmi_baseline": 3.354,
+      "flip_rate": 0.002,
+      "flip_pct": 0.2,
+      "perturbed_mean": 3.173,
+      "perturbed_p05": 1.431,
+      "perturbed_p95": 4.785
+    },
+    "辛弃疾": {
+      "nmi_baseline": 4.25,
+      "flip_rate": 0.0005,
+      "flip_pct": 0.1,
+      "perturbed_mean": 4.016,
+      "perturbed_p05": 1.983,
+      "perturbed_p95": 5.667
+    },
+    "陆游": {
+      "nmi_baseline": 0.566,
+      "flip_rate": 0.2675,
+      "flip_pct": 26.8,
+      "perturbed_mean": 0.733,
+      "perturbed_p05": -1.393,
+      "perturbed_p95": 2.691
+    }
+  }
+}

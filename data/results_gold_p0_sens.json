@@ -1,0 +1,161 @@
+{
+ "all": {
+  "n": 290,
+  "rho": 0.4597,
+  "ci": [
+   0.366,
+   0.549
+  ],
+  "underpowered": false
+ },
+ "in_pool": {
+  "n": 96,
+  "rho": 0.4515,
+  "ci": [
+   0.309,
+   0.589
+  ],
+  "underpowered": false
+ },
+ "out_pool": {
+  "n": 194,
+  "rho": 0.4633,
+  "ci": [
+   0.345,
+   0.573
+  ],
+  "underpowered": false
+ },
+ "quanji": {
+  "n": 235,
+  "rho": 0.4624,
+  "ci": [
+   0.367,
+   0.553
+  ],
+  "underpowered": false
+ },
+ "xuanben": {
+  "n": 55,
+  "rho": 0.4282,
+  "ci": [
+   0.167,
+   0.627
+  ],
+  "underpowered": false
+ },
+ "in_pool_quanji": {
+  "n": 75,
+  "rho": 0.5229,
+  "ci": [
+   0.39,
+   0.652
+  ],
+  "underpowered": false
+ },
+ "out_pool_quanji": {
+  "n": 160,
+  "rho": 0.4375,
+  "ci": [
+   0.314,
+   0.551
+  ],
+  "underpowered": false
+ },
+ "in_pool_xuanben": {
+  "n": 21,
+  "rho": 0.0868,
+  "ci": [
+   -0.547,
+   0.521
+  ],
+  "underpowered": false
+ },
+ "out_pool_xuanben": {
+  "n": 34,
+  "rho": 0.6199,
+  "ci": [
+   0.325,
+   0.794
+  ],
+  "underpowered": false
+ },
+ "drop_len<28": {
+  "n": 274,
+  "rho": 0.4426,
+  "ci": [
+   0.351,
+   0.536
+  ],
+  "underpowered": false
+ },
+ "drop_extreme_nmi": {
+  "n": 272,
+  "rho": 0.4334,
+  "ci": [
+   0.335,
+   0.525
+  ],
+  "underpowered": false
+ },
+ "drop_long": {
+  "n": 283,
+  "rho": 0.462,
+  "ci": [
+   0.367,
+   0.548
+  ],
+  "underpowered": false
+ },
+ "cohort": {
+  "n": 96,
+  "rho": 0.4515,
+  "ci": [
+   0.307,
+   0.591
+  ],
+  "underpowered": false
+ },
+ "noncohort": {
+  "n": 194,
+  "rho": 0.4633,
+  "ci": [
+   0.34,
+   0.573
+  ],
+  "underpowered": false
+ },
+ "cohort_quanji": {
+  "n": 75,
+  "rho": 0.5229,
+  "ci": [
+   0.387,
+   0.653
+  ],
+  "underpowered": false
+ },
+ "cohort_xuanben": {
+  "n": 21,
+  "rho": 0.0868,
+  "ci": [
+   -0.549,
+   0.524
+  ],
+  "underpowered": false
+ },
+ "pool_AUTH": [
+  "刘禹锡",
+  "柳宗元",
+  "欧阳修",
+  "王禹偁",
+  "白居易",
+  "秦观",
+  "苏轼",
+  "范仲淹",
+  "辛弃疾",
+  "陆游",
+  "韩愈",
+  "黄庭坚"
+ ],
+ "pool_n_authors_round2": 12
+}

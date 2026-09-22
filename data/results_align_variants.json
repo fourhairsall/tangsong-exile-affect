@@ -1,0 +1,106 @@
+{
+ "pairs": {
+  "QTS_vs_YD": {
+   "pair": "QTS_vs_YD",
+   "label": "Tang: QTS vs YD (same work, 2 digitizations)",
+   "shared_works": 39079,
+   "identical_works": 18229,
+   "frac_identical": 0.4665,
+   "variant_works": 20850,
+   "mean_char_similarity": 0.8744,
+   "A_all_matched": 0.9649,
+   "n_all_matched": 2275,
+   "A_variant_only": 0.8789,
+   "n_variant_only": 1496,
+   "mean_abs_delta": 4.5478,
+   "mean_abs_delta_variant": 8.5239,
+   "between_author_sd": 28.5464,
+   "ratio_mean_abs_over_sd": 0.1593,
+   "n_shared_works_for_delta": 39079
+  },
+  "QSS_vs_YXSS": {
+   "pair": "QSS_vs_YXSS",
+   "label": "Song: QSS vs YuXuan (selection)",
+   "shared_works": 4639,
+   "identical_works": 0,
+   "frac_identical": 0.0,
+   "variant_works": 4639,
+   "mean_char_similarity": 0.7927,
+   "A_all_matched": 0.9553,
+   "n_all_matched": 499,
+   "A_variant_only": 0.9553,
+   "n_variant_only": 500,
+   "mean_abs_delta": 5.1789,
+   "mean_abs_delta_variant": 5.1789,
+   "between_author_sd": 15.9592,
+   "ratio_mean_abs_over_sd": 0.3245,
+   "n_shared_works_for_delta": 4639
+  },
+  "QSS_vs_SSC": {
+   "pair": "QSS_vs_SSC",
+   "label": "Song: QSS vs SongShiChao (selection)",
+   "shared_works": 5378,
+   "identical_works": 0,
+   "frac_identical": 0.0,
+   "variant_works": 5378,
+   "mean_char_similarity": 0.8425,
+   "A_all_matched": 0.952,
+   "n_all_matched": 75,
+   "A_variant_only": 0.952,
+   "n_variant_only": 75,
+   "mean_abs_delta": 3.4162,
+   "mean_abs_delta_variant": 3.4162,
+   "between_author_sd": 4.3741,
+   "ratio_mean_abs_over_sd": 0.781,
+   "n_shared_works_for_delta": 5378
+  },
+  "YXSS_vs_SSC": {
+   "pair": "YXSS_vs_SSC",
+   "label": "Song: two anthologies",
+   "shared_works": 1067,
+   "identical_works": 83,
+   "frac_identical": 0.0778,
+   "variant_works": 984,
+   "mean_char_similarity": 0.8342,
+   "A_all_matched": 0.9076,
+   "n_all_matched": 70,
+   "A_variant_only": 0.9006,
+   "n_variant_only": 70,
+   "mean_abs_delta": 4.5949,
+   "mean_abs_delta_variant": 4.9825,
+   "between_author_sd": 7.877,
+   "ratio_mean_abs_over_sd": 0.5833,
+   "n_shared_works_for_delta": 1067
+  }
+ },
+ "per_poem_paired_delta": {
+  "QTS_vs_YD": {
+   "mean_abs_delta": 4.5478,
+   "mean_abs_delta_variant": 8.5239,
+   "between_author_sd": 28.5464,
+   "ratio_mean_abs_over_sd": 0.1593,
+   "n_shared_works_for_delta": 39079
+  },
+  "QSS_vs_YXSS": {
+   "mean_abs_delta": 5.1789,
+   "mean_abs_delta_variant": 5.1789,
+   "between_author_sd": 15.9592,
+   "ratio_mean_abs_over_sd": 0.3245,
+   "n_shared_works_for_delta": 4639
+  },
+  "QSS_vs_SSC": {
+   "mean_abs_delta": 3.4162,
+   "mean_abs_delta_variant": 3.4162,
+   "between_author_sd": 4.3741,
+   "ratio_mean_abs_over_sd": 0.781,
+   "n_shared_works_for_delta": 5378
+  },
+  "YXSS_vs_SSC": {
+   "mean_abs_delta": 4.5949,
+   "mean_abs_delta_variant": 4.9825,
+   "between_author_sd": 7.877,
+   "ratio_mean_abs_over_sd": 0.5833,
+   "n_shared_works_for_delta": 1067
+  }
+ }
+}

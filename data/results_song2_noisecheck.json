@@ -1,0 +1,142 @@
+{
+  "method": "noise-floor: W=1000 poem-level bootstrap resamples (with replacement) from each author's complete-collection poems, assembled to the anthology's character size; SEED=20260915",
+  "unit": "poem (corrected from consecutive character window)",
+  "W": 1000,
+  "seed": 20260915,
+  "n_authors": 7,
+  "mean_abs_z": 0.79,
+  "frac_abs_z_gt2": 0.0,
+  "frac_abs_z_gt1": 0.286,
+  "frac_delta_positive": 0.571,
+  "mean_poem_boot_sd": 6.59,
+  "mean_abs_delta": 4.57,
+  "mean_rho_profile_5cat": 0.917,
+  "rows": [
+    {
+      "author": "苏轼",
+      "n_full_chars": 210950,
+      "n_full_poems": 2824,
+      "n_anth_chars": 2102,
+      "net_full": 0.476,
+      "net_anth": 5.294,
+      "delta": 4.818,
+      "poem_boot_mu": 0.309,
+      "poem_boot_sd": 4.29,
+      "z": 1.162,
+      "pct": 0.885,
+      "ci95": [
+        -7.67,
+        9.014
+      ],
+      "rho_profile_5cat": 1.0
+    },
+    {
+      "author": "欧阳修",
+      "n_full_chars": 85554,
+      "n_full_poems": 954,
+      "n_anth_chars": 1069,
+      "net_full": -0.205,
+      "net_anth": 3.742,
+      "delta": 3.947,
+      "poem_boot_mu": -0.456,
+      "poem_boot_sd": 6.25,
+      "z": 0.672,
+      "pct": 0.747,
+      "ci95": [
+        -12.875,
+        11.84
+      ],
+      "rho_profile_5cat": 0.7
+    },
+    {
+      "author": "黄庭坚",
+      "n_full_chars": 154737,
+      "n_full_poems": 2204,
+      "n_anth_chars": 538,
+      "net_full": 1.575,
+      "net_anth": 7.519,
+      "delta": 5.944,
+      "poem_boot_mu": 1.788,
+      "poem_boot_sd": 7.382,
+      "z": 0.776,
+      "pct": 0.789,
+      "ci95": [
+        -12.713,
+        17.022
+      ],
+      "rho_profile_5cat": 1.0
+    },
+    {
+      "author": "秦观",
+      "n_full_chars": 33126,
+      "n_full_poems": 468,
+      "n_anth_chars": 349,
+      "net_full": -2.471,
+      "net_anth": -5.731,
+      "delta": -3.26,
+      "poem_boot_mu": -2.263,
+      "poem_boot_sd": 10.15,
+      "z": -0.342,
+      "pct": 0.372,
+      "ci95": [
+        -23.563,
+        17.857
+      ],
+      "rho_profile_5cat": 1.0
+    },
+    {
+      "author": "王禹偁",
+      "n_full_chars": 59055,
+      "n_full_poems": 668,
+      "n_anth_chars": 773,
+      "net_full": -1.154,
+      "net_anth": 2.594,
+      "delta": 3.748,
+      "poem_boot_mu": -0.923,
+      "poem_boot_sd": 6.544,
+      "z": 0.537,
+      "pct": 0.686,
+      "ci95": [
+        -15.017,
+        11.351
+      ],
+      "rho_profile_5cat": 0.821
+    },
+    {
+      "author": "范仲淹",
+      "n_full_chars": 22363,
+      "n_full_poems": 311,
+      "n_anth_chars": 716,
+      "net_full": 3.954,
+      "net_anth": 1.396,
+      "delta": -2.558,
+      "poem_boot_mu": 3.958,
+      "poem_boot_sd": 6.923,
+      "z": -0.37,
+      "pct": 0.338,
+      "ci95": [
+        -9.224,
+        17.86
+      ],
+      "rho_profile_5cat": 1.0
+    },
+    {
+      "author": "陆游",
+      "n_full_chars": 540788,
+      "n_full_poems": 9271,
+      "n_anth_chars": 2425,
+      "net_full": 0.659,
+      "net_anth": -7.054,
+      "delta": -7.713,
+      "poem_boot_mu": 0.622,
+      "poem_boot_sd": 4.59,
+      "z": -1.672,
+      "pct": 0.053,
+      "ci95": [
+        -8.98,
+        9.015
+      ],
+      "rho_profile_5cat": 0.9
+    }
+  ]
+}
