@@ -358,6 +358,7 @@ reference). The last three rows of the proposed family are structural variants o
 the AttentionFractal CNN (deep bottleneck, lexicon-feature channel, attention
 consistency).}
 \label{tab:extbench}
+\setlength{\tabcolsep}{3.5pt}
 \begin{tabular}{lccccc}
 \toprule
 Model & Params (M) & CV $r$ & Author $\rho$ & Gold $\rho$ (ours) & Gold $\rho$ (lexicon)\\
@@ -808,7 +809,7 @@ source (the basis of the tables above); \emph{Aligned} = only works present in b
 sources (key as defined in text). Coverage = matched-work characters divided by
 pooled characters. 95\% CI from a clustered-author bootstrap ($B{=}2000$ author-level resamples); $n$ = authors in the pooled / aligned estimate.}
 \label{tab:realign}
-\begin{tabular}{lcccr}
+\begin{tabular}{p{5.4cm}cccr}
 \toprule
 Pair & $A$ pooled (95\% CI) & $A$ aligned (95\% CI) & $n$ (pool/align) & Coverage\\
 \midrule
